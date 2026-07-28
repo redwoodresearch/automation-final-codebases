@@ -1,0 +1,24 @@
+[project]
+name = "hint-faithfulness-replication"
+version = "1.0.0"
+description = "Replication/extension of Chen et al. 2025 hint-based CoT faithfulness evals (MMLU + GPQA, 30 models)"
+requires-python = ">=3.11"
+dependencies = [
+    "aiofiles>=23.2",
+    "anthropic>=0.55",
+    "attrs>=23.2",
+    "httpx>=0.27",
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+    "tqdm>=4.66",
+    "gdown>=5.1",
+]
+
+[dependency-groups]
+dev = ["pytest>=8.0"]
+
+[tool.black]
+line-length = 120
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

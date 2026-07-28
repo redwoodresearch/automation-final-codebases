@@ -1,0 +1,22 @@
+# virtualenv + caches
+.venv/
+__pycache__/
+.pytest_cache/
+file_cache_dir/
+
+# the released CoT Faithfulness dataset (large; fetch with data/download_dataset.py)
+data/faithfulness/
+data/cot_faithfulness_raw/*.zip
+
+# raw model transcripts (large; fetch with data/download_transcripts.py or regenerate).
+# Committed exceptions: the DeepSeek R1 t=0 transcripts (*.jsonl.gz) and all judge_* verdict files.
+results/tier1_*.jsonl
+results/tier2_*.jsonl
+results/gpqa_tier1_*.jsonl
+results/gpqa_tier2_*.jsonl
+
+# cost log written by the run scripts
+total_cost.jsonl
+
+# GPQA-Diamond (not re-hosted; fetch with data/download_gpqa.py)
+data/gpqa/gpqa_diamond.jsonl

@@ -1,0 +1,968 @@
+{
+ "_meta": {
+  "generated_by": "scripts/analyze_following.py",
+  "description": "Per-model hint-following decomposition (counts over eligible examples, pooled over the 6 hint types). 'correct'/'incorrect' = whether the hint points at the correct answer."
+ },
+ "models": {
+  "opus-4-1": {
+   "display": "Opus 4.1",
+   "group": "anthropic",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 139,
+     "change_to_hint": 82,
+     "change_to_non_hint": 0,
+     "no_change": 57
+    },
+    "incorrect": {
+     "n_eligible": 2950,
+     "change_to_hint": 228,
+     "change_to_non_hint": 36,
+     "no_change": 2686
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 288,
+     "change_to_hint": 243,
+     "change_to_non_hint": 8,
+     "no_change": 37
+    },
+    "incorrect": {
+     "n_eligible": 1113,
+     "change_to_hint": 392,
+     "change_to_non_hint": 47,
+     "no_change": 674
+    }
+   }
+  },
+  "sonnet-4-5": {
+   "display": "Sonnet 4.5",
+   "group": "anthropic",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 1210,
+     "change_to_hint": 766,
+     "change_to_non_hint": 11,
+     "no_change": 433
+    },
+    "incorrect": {
+     "n_eligible": 17512,
+     "change_to_hint": 2225,
+     "change_to_non_hint": 241,
+     "no_change": 15046
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 231,
+     "change_to_hint": 203,
+     "change_to_non_hint": 1,
+     "no_change": 27
+    },
+    "incorrect": {
+     "n_eligible": 1099,
+     "change_to_hint": 417,
+     "change_to_non_hint": 36,
+     "no_change": 646
+    }
+   }
+  },
+  "haiku-4-5": {
+   "display": "Haiku 4.5",
+   "group": "anthropic",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 245,
+     "change_to_hint": 173,
+     "change_to_non_hint": 4,
+     "no_change": 68
+    },
+    "incorrect": {
+     "n_eligible": 2922,
+     "change_to_hint": 569,
+     "change_to_non_hint": 55,
+     "no_change": 2298
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 352,
+     "change_to_hint": 286,
+     "change_to_non_hint": 24,
+     "no_change": 42
+    },
+    "incorrect": {
+     "n_eligible": 1063,
+     "change_to_hint": 432,
+     "change_to_non_hint": 81,
+     "no_change": 550
+    }
+   }
+  },
+  "opus-4-5": {
+   "display": "Opus 4.5",
+   "group": "anthropic",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 148,
+     "change_to_hint": 90,
+     "change_to_non_hint": 0,
+     "no_change": 58
+    },
+    "incorrect": {
+     "n_eligible": 2941,
+     "change_to_hint": 304,
+     "change_to_non_hint": 21,
+     "no_change": 2616
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 190,
+     "change_to_hint": 150,
+     "change_to_non_hint": 3,
+     "no_change": 37
+    },
+    "incorrect": {
+     "n_eligible": 1148,
+     "change_to_hint": 372,
+     "change_to_non_hint": 23,
+     "no_change": 753
+    }
+   }
+  },
+  "opus-4-6": {
+   "display": "Opus 4.6",
+   "group": "anthropic",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 142,
+     "change_to_hint": 77,
+     "change_to_non_hint": 0,
+     "no_change": 65
+    },
+    "incorrect": {
+     "n_eligible": 2942,
+     "change_to_hint": 334,
+     "change_to_non_hint": 25,
+     "no_change": 2583
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 135,
+     "change_to_hint": 95,
+     "change_to_non_hint": 0,
+     "no_change": 40
+    },
+    "incorrect": {
+     "n_eligible": 1102,
+     "change_to_hint": 284,
+     "change_to_non_hint": 18,
+     "no_change": 800
+    }
+   }
+  },
+  "sonnet-4-6": {
+   "display": "Sonnet 4.6",
+   "group": "anthropic",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 203,
+     "change_to_hint": 136,
+     "change_to_non_hint": 4,
+     "no_change": 63
+    },
+    "incorrect": {
+     "n_eligible": 2900,
+     "change_to_hint": 484,
+     "change_to_non_hint": 32,
+     "no_change": 2384
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 151,
+     "change_to_hint": 114,
+     "change_to_non_hint": 6,
+     "no_change": 31
+    },
+    "incorrect": {
+     "n_eligible": 1155,
+     "change_to_hint": 366,
+     "change_to_non_hint": 35,
+     "no_change": 754
+    }
+   }
+  },
+  "opus-4-7": {
+   "display": "Opus 4.7",
+   "group": "anthropic",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 156,
+     "change_to_hint": 98,
+     "change_to_non_hint": 3,
+     "no_change": 55
+    },
+    "incorrect": {
+     "n_eligible": 2941,
+     "change_to_hint": 457,
+     "change_to_non_hint": 32,
+     "no_change": 2452
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 88,
+     "change_to_hint": 59,
+     "change_to_non_hint": 0,
+     "no_change": 29
+    },
+    "incorrect": {
+     "n_eligible": 1091,
+     "change_to_hint": 270,
+     "change_to_non_hint": 16,
+     "no_change": 805
+    }
+   }
+  },
+  "opus-4-8": {
+   "display": "Opus 4.8",
+   "group": "anthropic",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 125,
+     "change_to_hint": 72,
+     "change_to_non_hint": 3,
+     "no_change": 50
+    },
+    "incorrect": {
+     "n_eligible": 2954,
+     "change_to_hint": 466,
+     "change_to_non_hint": 11,
+     "no_change": 2477
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 85,
+     "change_to_hint": 56,
+     "change_to_non_hint": 0,
+     "no_change": 29
+    },
+    "incorrect": {
+     "n_eligible": 1063,
+     "change_to_hint": 254,
+     "change_to_non_hint": 6,
+     "no_change": 803
+    }
+   }
+  },
+  "fable-5": {
+   "display": "Fable 5",
+   "group": "anthropic",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 89,
+     "change_to_hint": 61,
+     "change_to_non_hint": 1,
+     "no_change": 27
+    },
+    "incorrect": {
+     "n_eligible": 2209,
+     "change_to_hint": 597,
+     "change_to_non_hint": 13,
+     "no_change": 1599
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 37,
+     "change_to_hint": 25,
+     "change_to_non_hint": 0,
+     "no_change": 12
+    },
+    "incorrect": {
+     "n_eligible": 790,
+     "change_to_hint": 276,
+     "change_to_non_hint": 3,
+     "no_change": 511
+    }
+   }
+  },
+  "sonnet-5": {
+   "display": "Sonnet 5",
+   "group": "anthropic",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 208,
+     "change_to_hint": 155,
+     "change_to_non_hint": 1,
+     "no_change": 52
+    },
+    "incorrect": {
+     "n_eligible": 2884,
+     "change_to_hint": 603,
+     "change_to_non_hint": 34,
+     "no_change": 2247
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 80,
+     "change_to_hint": 60,
+     "change_to_non_hint": 3,
+     "no_change": 17
+    },
+    "incorrect": {
+     "n_eligible": 1007,
+     "change_to_hint": 317,
+     "change_to_non_hint": 25,
+     "no_change": 665
+    }
+   }
+  },
+  "deepseek-r1": {
+   "display": "DeepSeek R1",
+   "group": "openweight",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 225,
+     "change_to_hint": 158,
+     "change_to_non_hint": 2,
+     "no_change": 65
+    },
+    "incorrect": {
+     "n_eligible": 2927,
+     "change_to_hint": 573,
+     "change_to_non_hint": 38,
+     "no_change": 2316
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 144,
+     "change_to_hint": 106,
+     "change_to_non_hint": 2,
+     "no_change": 36
+    },
+    "incorrect": {
+     "n_eligible": 931,
+     "change_to_hint": 237,
+     "change_to_non_hint": 38,
+     "no_change": 656
+    }
+   }
+  },
+  "qwen3-235b-think": {
+   "display": "Qwen3-235B-Thinking",
+   "group": "openweight",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 223,
+     "change_to_hint": 160,
+     "change_to_non_hint": 1,
+     "no_change": 62
+    },
+    "incorrect": {
+     "n_eligible": 2904,
+     "change_to_hint": 549,
+     "change_to_non_hint": 28,
+     "no_change": 2327
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 237,
+     "change_to_hint": 209,
+     "change_to_non_hint": 4,
+     "no_change": 24
+    },
+    "incorrect": {
+     "n_eligible": 1094,
+     "change_to_hint": 463,
+     "change_to_non_hint": 27,
+     "no_change": 604
+    }
+   }
+  },
+  "deepseek-v3.2": {
+   "display": "DeepSeek V3.2",
+   "group": "openweight",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 167,
+     "change_to_hint": 108,
+     "change_to_non_hint": 1,
+     "no_change": 58
+    },
+    "incorrect": {
+     "n_eligible": 2940,
+     "change_to_hint": 529,
+     "change_to_non_hint": 30,
+     "no_change": 2381
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 168,
+     "change_to_hint": 133,
+     "change_to_non_hint": 13,
+     "no_change": 22
+    },
+    "incorrect": {
+     "n_eligible": 1139,
+     "change_to_hint": 365,
+     "change_to_non_hint": 50,
+     "no_change": 724
+    }
+   }
+  },
+  "kimi-k2.5": {
+   "display": "Kimi K2.5",
+   "group": "openweight",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 191,
+     "change_to_hint": 107,
+     "change_to_non_hint": 2,
+     "no_change": 82
+    },
+    "incorrect": {
+     "n_eligible": 2940,
+     "change_to_hint": 271,
+     "change_to_non_hint": 28,
+     "no_change": 2641
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 87,
+     "change_to_hint": 61,
+     "change_to_non_hint": 1,
+     "no_change": 25
+    },
+    "incorrect": {
+     "n_eligible": 1041,
+     "change_to_hint": 156,
+     "change_to_non_hint": 13,
+     "no_change": 872
+    }
+   }
+  },
+  "glm-5.2": {
+   "display": "GLM-5.2",
+   "group": "openweight",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 167,
+     "change_to_hint": 102,
+     "change_to_non_hint": 3,
+     "no_change": 62
+    },
+    "incorrect": {
+     "n_eligible": 2886,
+     "change_to_hint": 674,
+     "change_to_non_hint": 37,
+     "no_change": 2175
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 43,
+     "change_to_hint": 34,
+     "change_to_non_hint": 3,
+     "no_change": 6
+    },
+    "incorrect": {
+     "n_eligible": 916,
+     "change_to_hint": 192,
+     "change_to_non_hint": 20,
+     "no_change": 704
+    }
+   }
+  },
+  "gpt-oss-120b": {
+   "display": "gpt-oss-120b",
+   "group": "openweight",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 267,
+     "change_to_hint": 164,
+     "change_to_non_hint": 11,
+     "no_change": 92
+    },
+    "incorrect": {
+     "n_eligible": 2903,
+     "change_to_hint": 736,
+     "change_to_non_hint": 69,
+     "no_change": 2098
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 326,
+     "change_to_hint": 224,
+     "change_to_non_hint": 22,
+     "no_change": 80
+    },
+    "incorrect": {
+     "n_eligible": 1068,
+     "change_to_hint": 413,
+     "change_to_non_hint": 59,
+     "no_change": 596
+    }
+   }
+  },
+  "gpt-5.5": {
+   "display": "GPT-5.5",
+   "group": "frontier",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 75,
+     "change_to_hint": 47,
+     "change_to_non_hint": 0,
+     "no_change": 28
+    },
+    "incorrect": {
+     "n_eligible": 1477,
+     "change_to_hint": 293,
+     "change_to_non_hint": 5,
+     "no_change": 1179
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 102,
+     "change_to_hint": 78,
+     "change_to_non_hint": 2,
+     "no_change": 22
+    },
+    "incorrect": {
+     "n_eligible": 1178,
+     "change_to_hint": 446,
+     "change_to_non_hint": 14,
+     "no_change": 718
+    }
+   }
+  },
+  "gemini-3.1-pro": {
+   "display": "Gemini 3.1 Pro",
+   "group": "frontier",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 101,
+     "change_to_hint": 56,
+     "change_to_non_hint": 0,
+     "no_change": 45
+    },
+    "incorrect": {
+     "n_eligible": 1469,
+     "change_to_hint": 138,
+     "change_to_non_hint": 8,
+     "no_change": 1323
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 92,
+     "change_to_hint": 74,
+     "change_to_non_hint": 1,
+     "no_change": 17
+    },
+    "incorrect": {
+     "n_eligible": 1171,
+     "change_to_hint": 369,
+     "change_to_non_hint": 14,
+     "no_change": 788
+    }
+   }
+  },
+  "gpt-5": {
+   "display": "GPT-5",
+   "group": "frontier",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 76,
+     "change_to_hint": 43,
+     "change_to_non_hint": 0,
+     "no_change": 33
+    },
+    "incorrect": {
+     "n_eligible": 1476,
+     "change_to_hint": 195,
+     "change_to_non_hint": 13,
+     "no_change": 1268
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 184,
+     "change_to_hint": 141,
+     "change_to_non_hint": 11,
+     "no_change": 32
+    },
+    "incorrect": {
+     "n_eligible": 1146,
+     "change_to_hint": 322,
+     "change_to_non_hint": 68,
+     "no_change": 756
+    }
+   }
+  },
+  "gpt-5-mini": {
+   "display": "GPT-5 Mini",
+   "group": "frontier",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 128,
+     "change_to_hint": 70,
+     "change_to_non_hint": 5,
+     "no_change": 53
+    },
+    "incorrect": {
+     "n_eligible": 1462,
+     "change_to_hint": 345,
+     "change_to_non_hint": 16,
+     "no_change": 1101
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 253,
+     "change_to_hint": 180,
+     "change_to_non_hint": 9,
+     "no_change": 64
+    },
+    "incorrect": {
+     "n_eligible": 1096,
+     "change_to_hint": 322,
+     "change_to_non_hint": 38,
+     "no_change": 736
+    }
+   }
+  },
+  "gpt-5-nano": {
+   "display": "GPT-5 Nano",
+   "group": "frontier",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 155,
+     "change_to_hint": 103,
+     "change_to_non_hint": 5,
+     "no_change": 47
+    },
+    "incorrect": {
+     "n_eligible": 1422,
+     "change_to_hint": 242,
+     "change_to_non_hint": 35,
+     "no_change": 1145
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 380,
+     "change_to_hint": 268,
+     "change_to_non_hint": 23,
+     "no_change": 89
+    },
+    "incorrect": {
+     "n_eligible": 1023,
+     "change_to_hint": 359,
+     "change_to_non_hint": 74,
+     "no_change": 590
+    }
+   }
+  },
+  "gpt-5.1": {
+   "display": "GPT-5.1",
+   "group": "frontier",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 110,
+     "change_to_hint": 64,
+     "change_to_non_hint": 1,
+     "no_change": 45
+    },
+    "incorrect": {
+     "n_eligible": 1442,
+     "change_to_hint": 199,
+     "change_to_non_hint": 13,
+     "no_change": 1230
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 206,
+     "change_to_hint": 156,
+     "change_to_non_hint": 9,
+     "no_change": 41
+    },
+    "incorrect": {
+     "n_eligible": 1107,
+     "change_to_hint": 349,
+     "change_to_non_hint": 67,
+     "no_change": 691
+    }
+   }
+  },
+  "gpt-5.2": {
+   "display": "GPT-5.2",
+   "group": "frontier",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 84,
+     "change_to_hint": 52,
+     "change_to_non_hint": 2,
+     "no_change": 30
+    },
+    "incorrect": {
+     "n_eligible": 1458,
+     "change_to_hint": 262,
+     "change_to_non_hint": 10,
+     "no_change": 1186
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 143,
+     "change_to_hint": 105,
+     "change_to_non_hint": 5,
+     "no_change": 33
+    },
+    "incorrect": {
+     "n_eligible": 1158,
+     "change_to_hint": 413,
+     "change_to_non_hint": 49,
+     "no_change": 696
+    }
+   }
+  },
+  "gpt-5.4": {
+   "display": "GPT-5.4",
+   "group": "frontier",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 91,
+     "change_to_hint": 54,
+     "change_to_non_hint": 3,
+     "no_change": 34
+    },
+    "incorrect": {
+     "n_eligible": 1461,
+     "change_to_hint": 356,
+     "change_to_non_hint": 17,
+     "no_change": 1088
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 140,
+     "change_to_hint": 108,
+     "change_to_non_hint": 6,
+     "no_change": 26
+    },
+    "incorrect": {
+     "n_eligible": 1172,
+     "change_to_hint": 394,
+     "change_to_non_hint": 35,
+     "no_change": 743
+    }
+   }
+  },
+  "gpt-5.6-luna": {
+   "display": "GPT-5.6 Luna",
+   "group": "frontier",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 120,
+     "change_to_hint": 91,
+     "change_to_non_hint": 1,
+     "no_change": 28
+    },
+    "incorrect": {
+     "n_eligible": 1464,
+     "change_to_hint": 399,
+     "change_to_non_hint": 22,
+     "no_change": 1043
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 172,
+     "change_to_hint": 145,
+     "change_to_non_hint": 4,
+     "no_change": 23
+    },
+    "incorrect": {
+     "n_eligible": 1131,
+     "change_to_hint": 535,
+     "change_to_non_hint": 35,
+     "no_change": 561
+    }
+   }
+  },
+  "gpt-5.6-sol": {
+   "display": "GPT-5.6 Sol",
+   "group": "frontier",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 76,
+     "change_to_hint": 49,
+     "change_to_non_hint": 3,
+     "no_change": 24
+    },
+    "incorrect": {
+     "n_eligible": 1475,
+     "change_to_hint": 314,
+     "change_to_non_hint": 4,
+     "no_change": 1157
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 76,
+     "change_to_hint": 63,
+     "change_to_non_hint": 4,
+     "no_change": 9
+    },
+    "incorrect": {
+     "n_eligible": 1176,
+     "change_to_hint": 469,
+     "change_to_non_hint": 20,
+     "no_change": 687
+    }
+   }
+  },
+  "gpt-5.6-terra": {
+   "display": "GPT-5.6 Terra",
+   "group": "frontier",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 69,
+     "change_to_hint": 47,
+     "change_to_non_hint": 1,
+     "no_change": 21
+    },
+    "incorrect": {
+     "n_eligible": 1476,
+     "change_to_hint": 389,
+     "change_to_non_hint": 15,
+     "no_change": 1072
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 165,
+     "change_to_hint": 144,
+     "change_to_non_hint": 2,
+     "no_change": 19
+    },
+    "incorrect": {
+     "n_eligible": 1150,
+     "change_to_hint": 490,
+     "change_to_non_hint": 43,
+     "no_change": 617
+    }
+   }
+  },
+  "gemini-3.1-flash-lite": {
+   "display": "Gemini 3.1 Flash-Lite",
+   "group": "frontier",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 133,
+     "change_to_hint": 98,
+     "change_to_non_hint": 0,
+     "no_change": 35
+    },
+    "incorrect": {
+     "n_eligible": 1423,
+     "change_to_hint": 377,
+     "change_to_non_hint": 27,
+     "no_change": 1019
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 263,
+     "change_to_hint": 223,
+     "change_to_non_hint": 7,
+     "no_change": 33
+    },
+    "incorrect": {
+     "n_eligible": 1001,
+     "change_to_hint": 519,
+     "change_to_non_hint": 36,
+     "no_change": 446
+    }
+   }
+  },
+  "gemini-3.5-flash": {
+   "display": "Gemini 3.5 Flash",
+   "group": "frontier",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 95,
+     "change_to_hint": 57,
+     "change_to_non_hint": 0,
+     "no_change": 38
+    },
+    "incorrect": {
+     "n_eligible": 1462,
+     "change_to_hint": 369,
+     "change_to_non_hint": 10,
+     "no_change": 1083
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 101,
+     "change_to_hint": 82,
+     "change_to_non_hint": 1,
+     "no_change": 18
+    },
+    "incorrect": {
+     "n_eligible": 1170,
+     "change_to_hint": 442,
+     "change_to_non_hint": 19,
+     "no_change": 709
+    }
+   }
+  },
+  "gemini-3.6-flash": {
+   "display": "Gemini 3.6 Flash",
+   "group": "frontier",
+   "mmlu": {
+    "correct": {
+     "n_eligible": 107,
+     "change_to_hint": 79,
+     "change_to_non_hint": 0,
+     "no_change": 28
+    },
+    "incorrect": {
+     "n_eligible": 1445,
+     "change_to_hint": 386,
+     "change_to_non_hint": 11,
+     "no_change": 1048
+    }
+   },
+   "gpqa": {
+    "correct": {
+     "n_eligible": 74,
+     "change_to_hint": 58,
+     "change_to_non_hint": 0,
+     "no_change": 16
+    },
+    "incorrect": {
+     "n_eligible": 1171,
+     "change_to_hint": 464,
+     "change_to_non_hint": 31,
+     "no_change": 676
+    }
+   }
+  }
+ }
+}

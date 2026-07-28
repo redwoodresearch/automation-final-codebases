@@ -1,0 +1,994 @@
+{
+ "_meta": {
+  "generated_by": "scripts/analyze_mentions_split.py",
+  "description": "Mention rate vs full verbalized rate among followed-hint pairs, by hint direction, per dataset plus the equal-weight average. Robustness check: the incorrect-vs-correct gap on mentions alone needs no counterfactual dependence judgment.",
+  "n_models": 31,
+  "n_models_gap_positive_mentions": 31,
+  "median_gap_mentions_pp": 21.240373665777398,
+  "median_gap_verbalized_pp": 34.44780176494973
+ },
+ "models": {
+  "deepseek-r1": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 158,
+     "mentions_pct": 84.81012658227849,
+     "verbalized_pct": 42.40506329113924
+    },
+    "gpqa": {
+     "n_judged": 106,
+     "mentions_pct": 82.0754716981132,
+     "verbalized_pct": 57.54716981132076
+    },
+    "avg_mentions_pct": 83.44279914019585,
+    "avg_verbalized_pct": 49.97611655123
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 573,
+     "mentions_pct": 97.03315881326353,
+     "verbalized_pct": 88.65619546247818
+    },
+    "gpqa": {
+     "n_judged": 237,
+     "mentions_pct": 94.09282700421942,
+     "verbalized_pct": 87.34177215189874
+    },
+    "avg_mentions_pct": 95.56299290874148,
+    "avg_verbalized_pct": 87.99898380718847
+   },
+   "gap_mentions_pp": 12.120193768545633,
+   "gap_verbalized_pp": 38.02286725595847
+  },
+  "deepseek-r1_t0": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 137,
+     "mentions_pct": 86.86131386861314,
+     "verbalized_pct": 46.715328467153284
+    },
+    "avg_mentions_pct": 86.86131386861314,
+    "avg_verbalized_pct": 46.715328467153284
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 559,
+     "mentions_pct": 97.67441860465117,
+     "verbalized_pct": 88.72987477638641
+    },
+    "avg_mentions_pct": 97.67441860465117,
+    "avg_verbalized_pct": 88.72987477638641
+   },
+   "gap_mentions_pp": 10.813104736038028,
+   "gap_verbalized_pp": 42.014546309233125
+  },
+  "deepseek-v3.2": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 108,
+     "mentions_pct": 68.51851851851852,
+     "verbalized_pct": 35.18518518518518
+    },
+    "gpqa": {
+     "n_judged": 133,
+     "mentions_pct": 75.93984962406014,
+     "verbalized_pct": 57.89473684210526
+    },
+    "avg_mentions_pct": 72.22918407128932,
+    "avg_verbalized_pct": 46.539961013645225
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 529,
+     "mentions_pct": 88.468809073724,
+     "verbalized_pct": 80.52930056710775
+    },
+    "gpqa": {
+     "n_judged": 365,
+     "mentions_pct": 92.05479452054794,
+     "verbalized_pct": 84.93150684931507
+    },
+    "avg_mentions_pct": 90.26180179713597,
+    "avg_verbalized_pct": 82.73040370821141
+   },
+   "gap_mentions_pp": 18.03261772584665,
+   "gap_verbalized_pp": 36.19044269456619
+  },
+  "fable-5": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 61,
+     "mentions_pct": 27.868852459016395,
+     "verbalized_pct": 21.311475409836067
+    },
+    "gpqa": {
+     "n_judged": 25,
+     "mentions_pct": 32.0,
+     "verbalized_pct": 28.0
+    },
+    "avg_mentions_pct": 29.934426229508198,
+    "avg_verbalized_pct": 24.65573770491803
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 597,
+     "mentions_pct": 83.24958123953098,
+     "verbalized_pct": 81.74204355108878
+    },
+    "gpqa": {
+     "n_judged": 276,
+     "mentions_pct": 79.34782608695652,
+     "verbalized_pct": 78.6231884057971
+    },
+    "avg_mentions_pct": 81.29870366324374,
+    "avg_verbalized_pct": 80.18261597844294
+   },
+   "gap_mentions_pp": 51.364277433735545,
+   "gap_verbalized_pp": 55.52687827352491
+  },
+  "gemini-3.1-flash-lite": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 98,
+     "mentions_pct": 32.6530612244898,
+     "verbalized_pct": 24.489795918367346
+    },
+    "gpqa": {
+     "n_judged": 223,
+     "mentions_pct": 30.044843049327355,
+     "verbalized_pct": 26.905829596412556
+    },
+    "avg_mentions_pct": 31.348952136908576,
+    "avg_verbalized_pct": 25.69781275738995
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 377,
+     "mentions_pct": 66.04774535809018,
+     "verbalized_pct": 64.72148541114058
+    },
+    "gpqa": {
+     "n_judged": 519,
+     "mentions_pct": 56.64739884393064,
+     "verbalized_pct": 55.49132947976879
+    },
+    "avg_mentions_pct": 61.347572101010414,
+    "avg_verbalized_pct": 60.10640744545468
+   },
+   "gap_mentions_pp": 29.998619964101838,
+   "gap_verbalized_pp": 34.408594688064724
+  },
+  "gemini-3.1-pro": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 56,
+     "mentions_pct": 37.5,
+     "verbalized_pct": 33.92857142857143
+    },
+    "gpqa": {
+     "n_judged": 73,
+     "mentions_pct": 26.027397260273972,
+     "verbalized_pct": 19.17808219178082
+    },
+    "avg_mentions_pct": 31.763698630136986,
+    "avg_verbalized_pct": 26.553326810176124
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 138,
+     "mentions_pct": 73.18840579710145,
+     "verbalized_pct": 71.73913043478261
+    },
+    "gpqa": {
+     "n_judged": 369,
+     "mentions_pct": 61.24661246612466,
+     "verbalized_pct": 60.43360433604336
+    },
+    "avg_mentions_pct": 67.21750913161306,
+    "avg_verbalized_pct": 66.08636738541298
+   },
+   "gap_mentions_pp": 35.45381050147607,
+   "gap_verbalized_pp": 39.53304057523686
+  },
+  "gemini-3.5-flash": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 57,
+     "mentions_pct": 36.8421052631579,
+     "verbalized_pct": 26.31578947368421
+    },
+    "gpqa": {
+     "n_judged": 82,
+     "mentions_pct": 28.048780487804876,
+     "verbalized_pct": 25.609756097560975
+    },
+    "avg_mentions_pct": 32.44544287548139,
+    "avg_verbalized_pct": 25.96277278562259
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 369,
+     "mentions_pct": 86.72086720867209,
+     "verbalized_pct": 86.72086720867209
+    },
+    "gpqa": {
+     "n_judged": 442,
+     "mentions_pct": 70.36199095022624,
+     "verbalized_pct": 68.77828054298642
+    },
+    "avg_mentions_pct": 78.54142907944916,
+    "avg_verbalized_pct": 77.74957387582926
+   },
+   "gap_mentions_pp": 46.09598620396777,
+   "gap_verbalized_pp": 51.786801090206666
+  },
+  "gemini-3.6-flash": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 79,
+     "mentions_pct": 41.77215189873418,
+     "verbalized_pct": 29.11392405063291
+    },
+    "gpqa": {
+     "n_judged": 58,
+     "mentions_pct": 39.6551724137931,
+     "verbalized_pct": 29.310344827586206
+    },
+    "avg_mentions_pct": 40.71366215626364,
+    "avg_verbalized_pct": 29.21213443910956
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 386,
+     "mentions_pct": 89.89637305699482,
+     "verbalized_pct": 88.860103626943
+    },
+    "gpqa": {
+     "n_judged": 464,
+     "mentions_pct": 78.66379310344827,
+     "verbalized_pct": 75.64655172413794
+    },
+    "avg_mentions_pct": 84.28008308022154,
+    "avg_verbalized_pct": 82.25332767554048
+   },
+   "gap_mentions_pp": 43.56642092395791,
+   "gap_verbalized_pp": 53.041193236430914
+  },
+  "glm-5.2": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 102,
+     "mentions_pct": 61.76470588235294,
+     "verbalized_pct": 47.05882352941177
+    },
+    "gpqa": {
+     "n_judged": 34,
+     "mentions_pct": 70.58823529411765,
+     "verbalized_pct": 52.94117647058823
+    },
+    "avg_mentions_pct": 66.1764705882353,
+    "avg_verbalized_pct": 50.0
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 674,
+     "mentions_pct": 93.026706231454,
+     "verbalized_pct": 89.76261127596439
+    },
+    "gpqa": {
+     "n_judged": 192,
+     "mentions_pct": 94.79166666666667,
+     "verbalized_pct": 90.625
+    },
+    "avg_mentions_pct": 93.90918644906034,
+    "avg_verbalized_pct": 90.1938056379822
+   },
+   "gap_mentions_pp": 27.73271586082504,
+   "gap_verbalized_pp": 40.193805637982194
+  },
+  "gpt-5": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 43,
+     "mentions_pct": 27.906976744186046,
+     "verbalized_pct": 25.58139534883721
+    },
+    "gpqa": {
+     "n_judged": 141,
+     "mentions_pct": 25.53191489361702,
+     "verbalized_pct": 18.43971631205674
+    },
+    "avg_mentions_pct": 26.719445818901534,
+    "avg_verbalized_pct": 22.010555830446975
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 195,
+     "mentions_pct": 54.87179487179487,
+     "verbalized_pct": 54.35897435897436
+    },
+    "gpqa": {
+     "n_judged": 322,
+     "mentions_pct": 58.69565217391305,
+     "verbalized_pct": 57.7639751552795
+    },
+    "avg_mentions_pct": 56.78372352285396,
+    "avg_verbalized_pct": 56.06147475712693
+   },
+   "gap_mentions_pp": 30.064277703952428,
+   "gap_verbalized_pp": 34.050918926679955
+  },
+  "gpt-5-mini": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 70,
+     "mentions_pct": 18.571428571428573,
+     "verbalized_pct": 17.142857142857142
+    },
+    "gpqa": {
+     "n_judged": 180,
+     "mentions_pct": 28.88888888888889,
+     "verbalized_pct": 24.444444444444443
+    },
+    "avg_mentions_pct": 23.73015873015873,
+    "avg_verbalized_pct": 20.79365079365079
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 345,
+     "mentions_pct": 32.17391304347826,
+     "verbalized_pct": 29.855072463768117
+    },
+    "gpqa": {
+     "n_judged": 322,
+     "mentions_pct": 40.993788819875775,
+     "verbalized_pct": 39.440993788819874
+    },
+    "avg_mentions_pct": 36.58385093167702,
+    "avg_verbalized_pct": 34.648033126293996
+   },
+   "gap_mentions_pp": 12.853692201518289,
+   "gap_verbalized_pp": 13.854382332643205
+  },
+  "gpt-5-nano": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 103,
+     "mentions_pct": 43.689320388349515,
+     "verbalized_pct": 34.95145631067961
+    },
+    "gpqa": {
+     "n_judged": 268,
+     "mentions_pct": 32.08955223880597,
+     "verbalized_pct": 28.73134328358209
+    },
+    "avg_mentions_pct": 37.88943631357775,
+    "avg_verbalized_pct": 31.841399797130848
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 242,
+     "mentions_pct": 54.54545454545455,
+     "verbalized_pct": 52.892561983471076
+    },
+    "gpqa": {
+     "n_judged": 359,
+     "mentions_pct": 50.97493036211699,
+     "verbalized_pct": 49.58217270194986
+    },
+    "avg_mentions_pct": 52.76019245378577,
+    "avg_verbalized_pct": 51.23736734271047
+   },
+   "gap_mentions_pp": 14.870756140208023,
+   "gap_verbalized_pp": 19.395967545579623
+  },
+  "gpt-5.1": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 64,
+     "mentions_pct": 10.9375,
+     "verbalized_pct": 9.375
+    },
+    "gpqa": {
+     "n_judged": 156,
+     "mentions_pct": 23.71794871794872,
+     "verbalized_pct": 17.94871794871795
+    },
+    "avg_mentions_pct": 17.327724358974358,
+    "avg_verbalized_pct": 13.661858974358974
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 199,
+     "mentions_pct": 17.08542713567839,
+     "verbalized_pct": 16.582914572864322
+    },
+    "gpqa": {
+     "n_judged": 349,
+     "mentions_pct": 30.37249283667622,
+     "verbalized_pct": 30.08595988538682
+    },
+    "avg_mentions_pct": 23.728959986177305,
+    "avg_verbalized_pct": 23.33443722912557
+   },
+   "gap_mentions_pp": 6.401235627202947,
+   "gap_verbalized_pp": 9.672578254766595
+  },
+  "gpt-5.2": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 52,
+     "mentions_pct": 7.6923076923076925,
+     "verbalized_pct": 7.6923076923076925
+    },
+    "gpqa": {
+     "n_judged": 105,
+     "mentions_pct": 13.333333333333334,
+     "verbalized_pct": 11.428571428571429
+    },
+    "avg_mentions_pct": 10.512820512820513,
+    "avg_verbalized_pct": 9.56043956043956
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 262,
+     "mentions_pct": 9.541984732824428,
+     "verbalized_pct": 9.16030534351145
+    },
+    "gpqa": {
+     "n_judged": 413,
+     "mentions_pct": 27.602905569007262,
+     "verbalized_pct": 27.360774818401936
+    },
+    "avg_mentions_pct": 18.572445150915847,
+    "avg_verbalized_pct": 18.260540080956694
+   },
+   "gap_mentions_pp": 8.059624638095334,
+   "gap_verbalized_pp": 8.700100520517134
+  },
+  "gpt-5.4": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 54,
+     "mentions_pct": 11.11111111111111,
+     "verbalized_pct": 9.25925925925926
+    },
+    "gpqa": {
+     "n_judged": 108,
+     "mentions_pct": 13.88888888888889,
+     "verbalized_pct": 8.333333333333334
+    },
+    "avg_mentions_pct": 12.5,
+    "avg_verbalized_pct": 8.796296296296298
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 356,
+     "mentions_pct": 20.224719101123597,
+     "verbalized_pct": 19.9438202247191
+    },
+    "gpqa": {
+     "n_judged": 394,
+     "mentions_pct": 40.35532994923858,
+     "verbalized_pct": 38.3248730964467
+    },
+    "avg_mentions_pct": 30.29002452518109,
+    "avg_verbalized_pct": 29.1343466605829
+   },
+   "gap_mentions_pp": 17.79002452518109,
+   "gap_verbalized_pp": 20.3380503642866
+  },
+  "gpt-5.5": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 47,
+     "mentions_pct": 21.27659574468085,
+     "verbalized_pct": 17.02127659574468
+    },
+    "gpqa": {
+     "n_judged": 78,
+     "mentions_pct": 19.23076923076923,
+     "verbalized_pct": 11.538461538461538
+    },
+    "avg_mentions_pct": 20.25368248772504,
+    "avg_verbalized_pct": 14.27986906710311
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 293,
+     "mentions_pct": 25.255972696245735,
+     "verbalized_pct": 23.549488054607508
+    },
+    "gpqa": {
+     "n_judged": 446,
+     "mentions_pct": 36.54708520179372,
+     "verbalized_pct": 34.30493273542601
+    },
+    "avg_mentions_pct": 30.901528949019728,
+    "avg_verbalized_pct": 28.927210395016758
+   },
+   "gap_mentions_pp": 10.647846461294687,
+   "gap_verbalized_pp": 14.647341327913647
+  },
+  "gpt-5.6-luna": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 91,
+     "mentions_pct": 18.681318681318682,
+     "verbalized_pct": 15.384615384615385
+    },
+    "gpqa": {
+     "n_judged": 145,
+     "mentions_pct": 4.137931034482759,
+     "verbalized_pct": 3.4482758620689653
+    },
+    "avg_mentions_pct": 11.40962485790072,
+    "avg_verbalized_pct": 9.416445623342176
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 399,
+     "mentions_pct": 25.81453634085213,
+     "verbalized_pct": 25.31328320802005
+    },
+    "gpqa": {
+     "n_judged": 535,
+     "mentions_pct": 27.850467289719628,
+     "verbalized_pct": 26.72897196261682
+    },
+    "avg_mentions_pct": 26.83250181528588,
+    "avg_verbalized_pct": 26.021127585318435
+   },
+   "gap_mentions_pp": 15.42287695738516,
+   "gap_verbalized_pp": 16.60468196197626
+  },
+  "gpt-5.6-sol": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 49,
+     "mentions_pct": 8.16326530612245,
+     "verbalized_pct": 8.16326530612245
+    },
+    "gpqa": {
+     "n_judged": 62,
+     "mentions_pct": 6.451612903225806,
+     "verbalized_pct": 6.451612903225806
+    },
+    "avg_mentions_pct": 7.307439104674128,
+    "avg_verbalized_pct": 7.307439104674128
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 314,
+     "mentions_pct": 21.337579617834393,
+     "verbalized_pct": 20.38216560509554
+    },
+    "gpqa": {
+     "n_judged": 469,
+     "mentions_pct": 24.093816631130064,
+     "verbalized_pct": 22.81449893390192
+    },
+    "avg_mentions_pct": 22.71569812448223,
+    "avg_verbalized_pct": 21.59833226949873
+   },
+   "gap_mentions_pp": 15.408259019808103,
+   "gap_verbalized_pp": 14.290893164824602
+  },
+  "gpt-5.6-terra": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 47,
+     "mentions_pct": 2.127659574468085,
+     "verbalized_pct": 2.127659574468085
+    },
+    "gpqa": {
+     "n_judged": 144,
+     "mentions_pct": 7.638888888888889,
+     "verbalized_pct": 4.861111111111111
+    },
+    "avg_mentions_pct": 4.883274231678487,
+    "avg_verbalized_pct": 3.494385342789598
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 389,
+     "mentions_pct": 18.251928020565554,
+     "verbalized_pct": 17.480719794344473
+    },
+    "gpqa": {
+     "n_judged": 490,
+     "mentions_pct": 16.3265306122449,
+     "verbalized_pct": 16.122448979591837
+    },
+    "avg_mentions_pct": 17.289229316405226,
+    "avg_verbalized_pct": 16.801584386968155
+   },
+   "gap_mentions_pp": 12.405955084726738,
+   "gap_verbalized_pp": 13.307199044178557
+  },
+  "gpt-oss-120b": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 164,
+     "mentions_pct": 64.63414634146342,
+     "verbalized_pct": 48.170731707317074
+    },
+    "gpqa": {
+     "n_judged": 224,
+     "mentions_pct": 66.07142857142857,
+     "verbalized_pct": 60.714285714285715
+    },
+    "avg_mentions_pct": 65.352787456446,
+    "avg_verbalized_pct": 54.44250871080139
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 736,
+     "mentions_pct": 92.79891304347827,
+     "verbalized_pct": 89.1304347826087
+    },
+    "gpqa": {
+     "n_judged": 413,
+     "mentions_pct": 80.38740920096852,
+     "verbalized_pct": 74.57627118644068
+    },
+    "avg_mentions_pct": 86.59316112222339,
+    "avg_verbalized_pct": 81.85335298452469
+   },
+   "gap_mentions_pp": 21.240373665777398,
+   "gap_verbalized_pp": 27.4108442737233
+  },
+  "haiku-4-5": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 173,
+     "mentions_pct": 50.28901734104046,
+     "verbalized_pct": 29.479768786127167
+    },
+    "gpqa": {
+     "n_judged": 286,
+     "mentions_pct": 33.21678321678322,
+     "verbalized_pct": 24.125874125874127
+    },
+    "avg_mentions_pct": 41.75290027891184,
+    "avg_verbalized_pct": 26.802821456000647
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 569,
+     "mentions_pct": 67.83831282952548,
+     "verbalized_pct": 59.578207381370824
+    },
+    "gpqa": {
+     "n_judged": 431,
+     "mentions_pct": 48.25986078886311,
+     "verbalized_pct": 42.22737819025522
+    },
+    "avg_mentions_pct": 58.04908680919429,
+    "avg_verbalized_pct": 50.90279278581302
+   },
+   "gap_mentions_pp": 16.296186530282455,
+   "gap_verbalized_pp": 24.099971329812373
+  },
+  "kimi-k2.5": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 107,
+     "mentions_pct": 86.91588785046729,
+     "verbalized_pct": 52.33644859813084
+    },
+    "gpqa": {
+     "n_judged": 61,
+     "mentions_pct": 55.73770491803279,
+     "verbalized_pct": 34.42622950819672
+    },
+    "avg_mentions_pct": 71.32679638425003,
+    "avg_verbalized_pct": 43.381339053163785
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 271,
+     "mentions_pct": 96.30996309963099,
+     "verbalized_pct": 83.76383763837639
+    },
+    "gpqa": {
+     "n_judged": 156,
+     "mentions_pct": 85.25641025641026,
+     "verbalized_pct": 78.2051282051282
+    },
+    "avg_mentions_pct": 90.78318667802063,
+    "avg_verbalized_pct": 80.98448292175229
+   },
+   "gap_mentions_pp": 19.456390293770596,
+   "gap_verbalized_pp": 37.6031438685885
+  },
+  "opus-4-1": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 86,
+     "mentions_pct": 31.3953488372093,
+     "verbalized_pct": 18.6046511627907
+    },
+    "gpqa": {
+     "n_judged": 243,
+     "mentions_pct": 16.46090534979424,
+     "verbalized_pct": 15.22633744855967
+    },
+    "avg_mentions_pct": 23.92812709350177,
+    "avg_verbalized_pct": 16.915494305675185
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 232,
+     "mentions_pct": 59.05172413793103,
+     "verbalized_pct": 54.741379310344826
+    },
+    "gpqa": {
+     "n_judged": 392,
+     "mentions_pct": 39.54081632653061,
+     "verbalized_pct": 39.285714285714285
+    },
+    "avg_mentions_pct": 49.296270232230825,
+    "avg_verbalized_pct": 47.01354679802955
+   },
+   "gap_mentions_pp": 25.368143138729053,
+   "gap_verbalized_pp": 30.098052492354366
+  },
+  "opus-4-5": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 90,
+     "mentions_pct": 38.888888888888886,
+     "verbalized_pct": 22.22222222222222
+    },
+    "gpqa": {
+     "n_judged": 150,
+     "mentions_pct": 16.666666666666668,
+     "verbalized_pct": 14.0
+    },
+    "avg_mentions_pct": 27.77777777777778,
+    "avg_verbalized_pct": 18.11111111111111
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 304,
+     "mentions_pct": 60.526315789473685,
+     "verbalized_pct": 58.88157894736842
+    },
+    "gpqa": {
+     "n_judged": 372,
+     "mentions_pct": 60.215053763440864,
+     "verbalized_pct": 59.40860215053763
+    },
+    "avg_mentions_pct": 60.370684776457274,
+    "avg_verbalized_pct": 59.14509054895302
+   },
+   "gap_mentions_pp": 32.592906998679496,
+   "gap_verbalized_pp": 41.03397943784191
+  },
+  "opus-4-6": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 77,
+     "mentions_pct": 27.272727272727273,
+     "verbalized_pct": 24.675324675324674
+    },
+    "gpqa": {
+     "n_judged": 95,
+     "mentions_pct": 12.631578947368421,
+     "verbalized_pct": 9.473684210526315
+    },
+    "avg_mentions_pct": 19.952153110047846,
+    "avg_verbalized_pct": 17.074504442925495
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 334,
+     "mentions_pct": 57.48502994011976,
+     "verbalized_pct": 55.08982035928144
+    },
+    "gpqa": {
+     "n_judged": 283,
+     "mentions_pct": 70.31802120141343,
+     "verbalized_pct": 69.25795053003533
+    },
+    "avg_mentions_pct": 63.901525570766594,
+    "avg_verbalized_pct": 62.17388544465838
+   },
+   "gap_mentions_pp": 43.94937246071875,
+   "gap_verbalized_pp": 45.09938100173289
+  },
+  "opus-4-7": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 98,
+     "mentions_pct": 17.346938775510203,
+     "verbalized_pct": 16.3265306122449
+    },
+    "gpqa": {
+     "n_judged": 59,
+     "mentions_pct": 27.11864406779661,
+     "verbalized_pct": 20.338983050847457
+    },
+    "avg_mentions_pct": 22.232791421653406,
+    "avg_verbalized_pct": 18.332756831546178
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 457,
+     "mentions_pct": 59.08096280087528,
+     "verbalized_pct": 57.76805251641138
+    },
+    "gpqa": {
+     "n_judged": 270,
+     "mentions_pct": 67.4074074074074,
+     "verbalized_pct": 67.4074074074074
+    },
+    "avg_mentions_pct": 63.24418510414134,
+    "avg_verbalized_pct": 62.58772996190939
+   },
+   "gap_mentions_pp": 41.011393682487935,
+   "gap_verbalized_pp": 44.25497313036321
+  },
+  "opus-4-8": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 72,
+     "mentions_pct": 41.666666666666664,
+     "verbalized_pct": 27.77777777777778
+    },
+    "gpqa": {
+     "n_judged": 56,
+     "mentions_pct": 32.142857142857146,
+     "verbalized_pct": 26.785714285714285
+    },
+    "avg_mentions_pct": 36.904761904761905,
+    "avg_verbalized_pct": 27.28174603174603
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 466,
+     "mentions_pct": 80.04291845493562,
+     "verbalized_pct": 76.82403433476395
+    },
+    "gpqa": {
+     "n_judged": 254,
+     "mentions_pct": 78.74015748031496,
+     "verbalized_pct": 77.95275590551181
+    },
+    "avg_mentions_pct": 79.39153796762528,
+    "avg_verbalized_pct": 77.38839512013789
+   },
+   "gap_mentions_pp": 42.48677606286338,
+   "gap_verbalized_pp": 50.106649088391855
+  },
+  "qwen3-235b-think": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 160,
+     "mentions_pct": 73.125,
+     "verbalized_pct": 41.875
+    },
+    "gpqa": {
+     "n_judged": 209,
+     "mentions_pct": 72.2488038277512,
+     "verbalized_pct": 62.67942583732057
+    },
+    "avg_mentions_pct": 72.6869019138756,
+    "avg_verbalized_pct": 52.27721291866028
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 549,
+     "mentions_pct": 91.98542805100182,
+     "verbalized_pct": 82.87795992714025
+    },
+    "gpqa": {
+     "n_judged": 463,
+     "mentions_pct": 90.92872570194385,
+     "verbalized_pct": 86.60907127429806
+    },
+    "avg_mentions_pct": 91.45707687647283,
+    "avg_verbalized_pct": 84.74351560071915
+   },
+   "gap_mentions_pp": 18.770174962597224,
+   "gap_verbalized_pp": 32.46630268205887
+  },
+  "sonnet-4-5": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 766,
+     "mentions_pct": 42.55874673629243,
+     "verbalized_pct": 25.97911227154047
+    },
+    "gpqa": {
+     "n_judged": 203,
+     "mentions_pct": 26.600985221674875,
+     "verbalized_pct": 19.211822660098523
+    },
+    "avg_mentions_pct": 34.57986597898365,
+    "avg_verbalized_pct": 22.595467465819496
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 2225,
+     "mentions_pct": 65.52808988764045,
+     "verbalized_pct": 60.0
+    },
+    "gpqa": {
+     "n_judged": 416,
+     "mentions_pct": 55.76923076923077,
+     "verbalized_pct": 54.08653846153846
+    },
+    "avg_mentions_pct": 60.64866032843561,
+    "avg_verbalized_pct": 57.043269230769226
+   },
+   "gap_mentions_pp": 26.068794349451963,
+   "gap_verbalized_pp": 34.44780176494973
+  },
+  "sonnet-4-6": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 136,
+     "mentions_pct": 27.941176470588236,
+     "verbalized_pct": 22.794117647058822
+    },
+    "gpqa": {
+     "n_judged": 114,
+     "mentions_pct": 23.68421052631579,
+     "verbalized_pct": 21.92982456140351
+    },
+    "avg_mentions_pct": 25.812693498452013,
+    "avg_verbalized_pct": 22.361971104231166
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 484,
+     "mentions_pct": 66.73553719008264,
+     "verbalized_pct": 65.49586776859505
+    },
+    "gpqa": {
+     "n_judged": 366,
+     "mentions_pct": 60.92896174863388,
+     "verbalized_pct": 60.65573770491803
+    },
+    "avg_mentions_pct": 63.83224946935826,
+    "avg_verbalized_pct": 63.07580273675654
+   },
+   "gap_mentions_pp": 38.01955597090625,
+   "gap_verbalized_pp": 40.71383163252538
+  },
+  "sonnet-5": {
+   "correct": {
+    "mmlu": {
+     "n_judged": 155,
+     "mentions_pct": 25.806451612903224,
+     "verbalized_pct": 21.93548387096774
+    },
+    "gpqa": {
+     "n_judged": 60,
+     "mentions_pct": 20.0,
+     "verbalized_pct": 16.666666666666668
+    },
+    "avg_mentions_pct": 22.903225806451612,
+    "avg_verbalized_pct": 19.301075268817204
+   },
+   "incorrect": {
+    "mmlu": {
+     "n_judged": 603,
+     "mentions_pct": 69.98341625207297,
+     "verbalized_pct": 68.49087893864014
+    },
+    "gpqa": {
+     "n_judged": 317,
+     "mentions_pct": 54.25867507886435,
+     "verbalized_pct": 54.25867507886435
+    },
+    "avg_mentions_pct": 62.12104566546866,
+    "avg_verbalized_pct": 61.37477700875225
+   },
+   "gap_mentions_pp": 39.21781985901704,
+   "gap_verbalized_pp": 42.073701739935046
+  }
+ }
+}
