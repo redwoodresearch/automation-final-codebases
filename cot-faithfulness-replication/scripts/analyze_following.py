@@ -40,16 +40,24 @@ def merged_rows(t1: str, t2: str) -> dict:
 
 def decomposition(rows: dict, arm_tag: str) -> dict | None:
     trips = []
+    eligible_questions = set()
     for ht in ALL_TYPES:
         for p in build_pairs(rows, f"{ht}_{arm_tag}"):
             if p.is_valid:
                 trips.append((p.a_u, p.a_h, p.hint))
+                if p.a_u != p.hint:
+                    eligible_questions.add(p.question_index)
     cell = make_cell(trips)
     n = cell.n_eligible
     if n == 0:
         return None
     return {
         "n_eligible": n,
+        # Eligible pairs count each question once per hint type, so they overstate the
+        # independent sample: the six observations of a question share that question and
+        # (for five of the six hints) the same unhinted baseline. This is the number of
+        # DISTINCT questions behind the cell, which is closer to the effective sample size.
+        "n_distinct_questions": len(eligible_questions),
         "change_to_hint": cell.n_switch_to_hint,
         "change_to_non_hint": cell.n_switch_to_other,
         "no_change": n - cell.n_switch_to_hint - cell.n_switch_to_other,
