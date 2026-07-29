@@ -1,9 +1,12 @@
 """Emit the post's judge-disagreement appendix: full DeepSeek R1 transcripts with both verdicts.
 
-Selection is deterministic and not cherry-picked: for each hint type we take the
+Selection is deterministic and not cherry-picked: for each hint type shown we take the
 MEDIAN-LENGTH disagreement (by total chain-of-thought characters) in the direction where
 Claude Opus 4.8 called the CoT faithful and the era-matched Claude 3 Opus did not, plus the
 median-length example of the rarer opposite direction. Writes markdown drop-downs to stdout.
+
+SHOWN covers one structural hint, one social hint, and the opposite direction; pass --all to
+emit every hint type.
 
   python scripts/make_disagreement_examples.py > /tmp/disagreements.md
 """
@@ -26,6 +29,9 @@ TIERS = [
 DISPLAY = {"suggestion": "Sycophancy", "posthoc": "Consistency", "fewshot_symbol": "Visual marker",
            "metadata": "Metadata answer key", "grader_hacking": "Leaked grader code",
            "unethical_information": "Unauthorized access"}
+# The hint types shown in the post: one structural (the hint models follow most) and one
+# social (where the dependence call is genuinely ambiguous).
+SHOWN = ["grader_hacking", "suggestion"]
 
 
 def load_judge(path):
@@ -80,8 +86,9 @@ def main() -> None:
         s = sorted(subset, key=lambda c: c["length"])
         return s[len(s) // 2] if s else None
 
+    shown = list(DISPLAY) if "--all" in sys.argv else SHOWN
     picked = []
-    for ht in DISPLAY:
+    for ht in shown:
         c = median_of([c for c in cases if c["hint_type"] == ht and c["direction"] == "opus48_faithful"])
         if c:
             picked.append(c)
