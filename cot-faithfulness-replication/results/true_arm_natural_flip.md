@@ -22,7 +22,6 @@ roughly the flip rate; incorrect-hint following (the numbers the post's conclusi
 unaffected. Chen et al.'s correct-hint numbers carry the same inflation, so the cross-paper
 comparison is like for like.
 
-Provenance: measured during the original run from unhinted resample transcripts
-(`resamples_true_eligible_*` files); those resample transcripts are not part of the released
-raw-transcript archive, so this note records the measured rates rather than shipping a
-regeneration path. The post cites these numbers in the correct-hint caveat.
+Provenance: measured from the unhinted resample transcripts (`resamples_true_eligible_*`),
+which are in the Hugging Face archive under `unhinted_resamples/` (fetch with
+`python data/download_transcripts.py`). The post cites these numbers in the correct-hint caveat.
