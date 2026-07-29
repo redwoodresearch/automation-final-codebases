@@ -36,6 +36,7 @@ analyze() {
   # transcripts, and refuse to overwrite a committed table when those are missing.
   $PY scripts/analyze_judge_dependence.py   # results/judge_dependence.json
   $PY scripts/analyze_mentions_split.py     # results/mentions_split.json (offline: judge files are committed)
+  $PY scripts/analyze_judge_disagreements.py  # results/judge_disagreements.json (offline)
   $PY scripts/analyze_following.py          # results/following_tables.json
   $PY scripts/analyze_faithfulness.py       # results/faithfulness_tables.json
   $PY scripts/analyze_sonnet45.py           # results/sonnet45_detail.json
