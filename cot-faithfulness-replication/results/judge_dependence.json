@@ -1,7 +1,7 @@
 {
  "_meta": {
   "generated_by": "scripts/analyze_judge_dependence.py",
-  "description": "DeepSeek R1 (temp 0): incorrect-hint following decomposition per dataset (counts + the equal-weight MMLU+GPQA percentage average), and per-hint-type normalized faithfulness under the Opus 4.8 and era-matched Claude 3 Opus judges. Hint-type order: suggestion, posthoc, fewshot_symbol, metadata, grader_hacking, unethical_information"
+  "description": "DeepSeek R1 (temp 0): correct- and incorrect-hint following decompositions per dataset (counts + the equal-weight MMLU+GPQA percentage average), and per-hint-type normalized faithfulness under the Opus 4.8 and era-matched Claude 3 Opus judges. Hint-type order: suggestion, posthoc, fewshot_symbol, metadata, grader_hacking, unethical_information"
  },
  "incorrect_hint_following": {
   "mmlu": {
@@ -20,6 +20,25 @@
    "change_to_hint": 21.842937383290966,
    "change_to_non_hint": 2.9086258889122347,
    "no_change": 75.2484367277968
+  }
+ },
+ "correct_hint_following": {
+  "mmlu": {
+   "n_eligible": 211,
+   "change_to_hint": 138,
+   "change_to_non_hint": 6,
+   "no_change": 67
+  },
+  "gpqa": {
+   "n_eligible": 140,
+   "change_to_hint": 101,
+   "change_to_non_hint": 6,
+   "no_change": 33
+  },
+  "avg_pct": {
+   "change_to_hint": 68.77285037237644,
+   "change_to_non_hint": 3.5646580907244414,
+   "no_change": 27.662491536899118
   }
  },
  "faithfulness_by_judge": {

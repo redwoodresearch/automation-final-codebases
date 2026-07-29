@@ -41,8 +41,11 @@ def main() -> None:
     dep = load_results_json("judge_dependence.json")
 
     # ---- our numbers (from the committed analysis table) ----
-    avg = dep["incorrect_hint_following"]["avg_pct"]
-    OURS_DECOMP = (avg["change_to_hint"], avg["change_to_non_hint"], avg["no_change"])
+    def decomp(key):
+        a = dep[key]["avg_pct"]
+        return (a["change_to_hint"], a["change_to_non_hint"], a["no_change"])
+    OURS_INCORRECT = decomp("incorrect_hint_following")
+    OURS_CORRECT = decomp("correct_hint_following")
     faith = dep["faithfulness_by_judge"]
     OPUS48 = [round(100 * faith["opus48"]["avg_normalized"][ht]) for ht in HINT_TYPES]
     OPUS3 = [round(100 * faith["claude3opus"]["avg_normalized"][ht]) for ht in HINT_TYPES]
@@ -50,9 +53,10 @@ def main() -> None:
     MEAN_OPUS3 = round(100 * faith["claude3opus"]["six_type_mean"])
 
     # ---- external reference numbers ----
-    # Chen et al. 2025 (arXiv:2505.05410): R1's published incorrect-hint response (Fig 3 bars,
+    # Chen et al. 2025 (arXiv:2505.05410): R1's published hint response (Fig 3 bars,
     # MMLU+GPQA average) and per-hint-type normalized faithfulness (Fig 1 bars, MMLU+GPQA average).
-    CHEN_DECOMP = (40, 2, 58)
+    CHEN_INCORRECT = (40, 2, 58)
+    CHEN_CORRECT = (76, 2, 22)
     CHEN = [70, 33, 9, 66, 38, 19]
     CHEN_MEAN = round(sum(CHEN) / len(CHEN))  # 39
     # Independent replications, MMLU only: Young 2026 (arXiv:2603.22582) per-hint-type R1
@@ -67,9 +71,10 @@ def main() -> None:
     x = np.arange(len(LAB))
     fig, (axL, axR) = plt.subplots(1, 2, figsize=(15, 6), gridspec_kw={"width_ratios": [0.7, 2.0]})
 
-    # ---- left: R1 response to an incorrect hint, ours vs Chen ----
-    DECOMP = [("ours", OURS_DECOMP, False), ("Chen et al. 2025", CHEN_DECOMP, True)]
-    xl = np.arange(len(DECOMP))
+    # ---- left: R1 response to hints, ours vs Chen, both hint directions ----
+    DECOMP = [("ours", OURS_CORRECT, False), ("Chen et al.\n2025", CHEN_CORRECT, True),
+              ("ours", OURS_INCORRECT, False), ("Chen et al.\n2025", CHEN_INCORRECT, True)]
+    xl = np.array([0.0, 1.0, 2.5, 3.5])
     for xi, (lab, (hit, oth, noc), light) in zip(xl, DECOMP):
         ch, co, cn = (C_HINT_L, C_OTHER_L, C_NOCHANGE_L) if light else (C_HINT, C_OTHER, C_NOCHANGE)
         axL.bar(xi, hit, 0.55, color=ch, edgecolor="black", linewidth=0.5, zorder=2)
@@ -77,12 +82,15 @@ def main() -> None:
         axL.bar(xi, noc, 0.55, bottom=hit + oth, color=cn, edgecolor="black", linewidth=0.5, zorder=2)
         axL.text(xi, hit + oth + 1.2, f"{hit:.0f}", ha="center", va="bottom", fontsize=11,
                  color="#2f6b2f", fontweight="bold")
+    axL.axvline(1.75, color="gray", ls=":", lw=1.0)
+    axL.text(0.5, 1.02, "Hint Correct", transform=axL.get_xaxis_transform(), ha="center", fontsize=9)
+    axL.text(3.0, 1.02, "Hint Incorrect", transform=axL.get_xaxis_transform(), ha="center", fontsize=9)
     axL.set_xticks(xl)
-    axL.set_xticklabels([d[0] for d in DECOMP], fontsize=9)
+    axL.set_xticklabels([d[0] for d in DECOMP], fontsize=8)
     axL.set_ylabel("Fraction of eligible examples")
-    axL.set_title("R1 incorrect-hint following (MMLU + GPQA average)", fontsize=10)
+    axL.set_title("R1 hint following (MMLU + GPQA average)", fontsize=10, pad=18)
     axL.set_ylim(0, 100)
-    axL.set_xlim(-0.6, len(DECOMP) - 0.4)
+    axL.set_xlim(-0.6, 4.1)
     axL.grid(True, axis="y", alpha=0.3)
     axL.legend(handles=[
         mpatches.Patch(facecolor=C_HINT, edgecolor="black", label="Change to Hint"),

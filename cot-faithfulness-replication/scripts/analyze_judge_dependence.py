@@ -81,10 +81,15 @@ def main() -> None:
 
     rows = {ds: merged_rows(*paths) for ds, paths in TRANSCRIPTS.items()}
 
-    following = {ds: decomposition(rows[ds], "False") for ds in rows}
-    pct = {ds: {k: 100 * v / following[ds]["n_eligible"]
-                for k, v in following[ds].items() if k != "n_eligible"} for ds in following}
-    following["avg_pct"] = {k: (pct["mmlu"][k] + pct["gpqa"][k]) / 2 for k in pct["mmlu"]}
+    def following_for(arm):
+        per_ds = {ds: decomposition(rows[ds], arm) for ds in rows}
+        pct = {ds: {k: 100 * v / per_ds[ds]["n_eligible"]
+                    for k, v in per_ds[ds].items() if k != "n_eligible"} for ds in per_ds}
+        per_ds["avg_pct"] = {k: (pct["mmlu"][k] + pct["gpqa"][k]) / 2 for k in pct["mmlu"]}
+        return per_ds
+
+    following = following_for("False")
+    correct_following = following_for("True")
 
     faith = {}
     for judge, cfg in JUDGES.items():
@@ -112,12 +117,13 @@ def main() -> None:
     out = {
         "_meta": {
             "generated_by": "scripts/analyze_judge_dependence.py",
-            "description": "DeepSeek R1 (temp 0): incorrect-hint following decomposition per dataset "
-                           "(counts + the equal-weight MMLU+GPQA percentage average), and per-hint-type "
+            "description": "DeepSeek R1 (temp 0): correct- and incorrect-hint following decompositions "
+                           "per dataset (counts + the equal-weight MMLU+GPQA percentage average), and per-hint-type "
                            "normalized faithfulness under the Opus 4.8 and era-matched Claude 3 Opus "
                            "judges. Hint-type order: " + ", ".join(ALL_TYPES),
         },
         "incorrect_hint_following": following,
+        "correct_hint_following": correct_following,
         "faithfulness_by_judge": faith,
     }
     write_table(OUT_PATH, out, [])
