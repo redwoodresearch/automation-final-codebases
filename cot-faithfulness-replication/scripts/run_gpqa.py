@@ -1,7 +1,7 @@
 """Collect the GPQA hint grid for one model.
 
 Mirrors run_mmlu.py (same model dispatch, response cache, resume-skip, row schema) but the prompts
-come from lib.gpqa (GPQA-diamond questions + the six released/reconstructed hint templates) instead of
+come from lib.gpqa (GPQA-diamond questions + the six hint templates) instead of
 the MMLU released dataset. Two tiers, matching the two GPQA epistemic tiers:
   default    : unhinted_plain, unhinted_fewshot_symbol, suggestion/posthoc/fewshot_symbol × {True,False}
   --tier2    : metadata/grader_hacking/unethical_information × {True,False}
@@ -49,7 +49,7 @@ RESULTS_DIR = Path("results")
 async def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", required=True)
-    parser.add_argument("--tier2", action="store_true", help="run the 3 full-reconstruction types instead of the tier-1 set")
+    parser.add_argument("--tier2", action="store_true", help="run the 3 Table-1 types instead of the tier-1 set")
     parser.add_argument("--conditions", nargs="*", default=None, help="subset of condition names (default: the tier's conditions)")
     parser.add_argument("--n-questions", type=int, default=gpqa.N_QUESTIONS_FULL)
     parser.add_argument("--sample-idx", type=int, default=0)

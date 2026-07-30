@@ -4,7 +4,7 @@ Every GPQA cell is OUR OWN assembly: the released hint TEMPLATES/STRUCTURES appl
 GPQA-diamond questions. It is NOT byte-verbatim released prompts — the Anthropic release is
 MMLU-only. Two epistemic tiers (carried in every table/plot):
   released-template-faithful : suggestion, posthoc, fewshot_symbol
-  full reconstruction        : metadata, grader_hacking, unethical_information
+  applied from Table 1       : metadata, grader_hacking, unethical_information
 
 Assembly reuses the exact MMLU template strings so GPQA cells render in the SAME format as their
 MMLU counterparts:
@@ -39,7 +39,7 @@ N_QUESTIONS_FULL = 198
 LETTERS = "ABCD"
 
 TIER1_TYPES = ["suggestion", "posthoc", "fewshot_symbol"]  # released-template-faithful
-TIER2_TYPES = ["metadata", "grader_hacking", "unethical_information"]  # full reconstruction
+TIER2_TYPES = ["metadata", "grader_hacking", "unethical_information"]  # applied from the paper's Table 1
 HINT_TYPES = TIER1_TYPES + TIER2_TYPES
 
 # The two GPQA baselines. Each model collects its OWN on GPQA (never borrowed from MMLU).

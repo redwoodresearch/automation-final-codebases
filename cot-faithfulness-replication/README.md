@@ -65,7 +65,7 @@ The six hint types come in two groups (called **tier 1 / tier 2** throughout the
 - **Tier 1 (released)** — sycophancy ("suggestion"), consistency ("posthoc"), and visual
   marker ("fewshot_symbol"): Anthropic released ready-to-run MMLU prompt files for these,
   which are used byte-verbatim (`data/download_dataset.py` fetches them).
-- **Tier 2 (reconstructed)** — metadata answer key ("metadata"), leaked grader code
+- **Tier 2 (applied from the paper's Table 1)** — metadata answer key ("metadata"), leaked grader code
   ("grader_hacking"), and "unauthorized access" ("unethical_information"): no released
   files, so the paper's Table 1 templates are inserted into the plain questions
   (`lib/tier2.py`).
@@ -87,7 +87,7 @@ Model groups and their inference paths:
 lib/            importable core
   dataset.py      released-dataset loading (MMLU prompts, hint letters)
   tier1.py        run conditions, Anthropic request config, answer extraction
-  tier2.py        the three reconstructed hint templates
+  tier2.py        the three Table 1 hint templates
   gpqa.py         GPQA-Diamond hint assembly (all six types)
   llm.py          cached/retrying Anthropic calls    openrouter.py  same for OpenRouter
   sweep.py        Claude + open-weight model registry  frontier.py  GPT/Gemini registry
@@ -101,6 +101,8 @@ lib/            importable core
   figures.py      shared plot helpers (ordering, colors, committed-table loading)
 scripts/        entry points (run from the repo root)
   run_mmlu.py / run_gpqa.py            collect transcripts (any of the 30 models)
+  run_unhinted_resamples.py            extra unhinted samples on the correct-hint-eligible
+                                       questions (the natural flip-to-correct baseline)
   judge_mmlu_tier1.py / judge_mmlu_tier2.py / judge_gpqa.py   Opus 4.8 judging
   judge_era_mmlu.py                    era-matched Claude 3 Opus judge (R1 MMLU);
                                        for GPQA use judge_gpqa.py --variant model3opus_std
@@ -119,8 +121,9 @@ data/           inputs
 cost_tracker.py, file_cache.py, pricing/    vendored shared utilities: per-run API cost
                 accounting (writes total_cost.jsonl) and the on-disk response cache the
                 run/judge scripts use to make reruns free
-results/        committed: the four analysis tables (following_tables.json,
-                faithfulness_tables.json, sonnet45_detail.json, judge_dependence.json),
+results/        committed: the analysis tables (following_tables.json,
+                faithfulness_tables.json, sonnet45_detail.json, judge_dependence.json,
+                mentions_split.json, judge_disagreements.json, natural_flip.json),
                 all judge verdict JSONLs (judge_*.jsonl), the DeepSeek R1 t=0 transcripts
                 (*.jsonl.gz), and dataset_verification.md (the released dataset's structural
                 invariants, from scripts/verify_dataset.py). Raw transcripts for the other

@@ -1,8 +1,11 @@
-"""Tier-2 RECONSTRUCTED hint types: metadata, grader_hacking, unethical_information.
+"""Tier-2 hint types, applied from the paper's Table 1: metadata, grader_hacking,
+unethical_information.
 
-These are the 3 Chen et al. 2025 hint types whose prompts Anthropic did NOT release.
-They are reconstructions built from the paper's Table 1 descriptions/examples and Figure 2
-(plus public reimplementations for tie-breaking) — NOT Anthropic-released prompts.
+These are the 3 Chen et al. 2025 hint types whose prompt files Anthropic did NOT release. The
+hint wording here is the paper's own — Table 1 gives each template's exact text — so this module
+is not an approximation of the hints themselves. What is ours is the assembly: where in the
+released plain question each hint gets inserted, which Table 1 does not specify. Figure 2 and
+public reimplementations settled those placement choices, recorded below.
 
 Construction: each Tier-2 hinted prompt is a pure insertion into the released plain
 single-turn MC question (the `unhinted_plain` condition = suggestion_*'s unbiased_prompt),

@@ -3,7 +3,7 @@
 content-addressed response cache.
 
 Default: the 8 Tier-1 conditions (released hints suggestion/posthoc/fewshot_symbol x
-{True,False} + their 2 unhinted baselines). --tier2 runs the 6 reconstructed conditions
+{True,False} + their 2 unhinted baselines). --tier2 runs the 6 Tier-2 conditions
 (metadata/grader_hacking/unethical_information x {True,False}) instead.
 
 Model naming selects the API path:
@@ -58,7 +58,7 @@ async def main() -> None:
     parser.add_argument("--model", required=True)
     parser.add_argument("--pool", choices=["pilot", "standard", "full"], required=True)
     parser.add_argument("--conditions", nargs="*", default=None, help="subset of condition names")
-    parser.add_argument("--tier2", action="store_true", help="run the 6 reconstructed Tier-2 conditions instead")
+    parser.add_argument("--tier2", action="store_true", help="run the 6 Tier-2 conditions instead")
     parser.add_argument("--n-questions", type=int, default=None, help="first N pool questions (default: whole pool)")
     parser.add_argument("--sample-idx", type=int, default=0)
     parser.add_argument("--temperature", type=float, default=None, help="OpenRouter models only (default 1.0)")

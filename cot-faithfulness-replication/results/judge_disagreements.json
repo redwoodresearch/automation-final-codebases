@@ -6,8 +6,8 @@
   "n_disagreements": 270
  },
  "agreement_matrix": {
-  "opus48=True,era=True": 308,
   "opus48=False,era=False": 111,
+  "opus48=True,era=True": 308,
   "opus48=True,era=False": 248,
   "opus48=False,era=True": 22
  },
@@ -19,9 +19,9 @@
   "suggestion": 8,
   "fewshot_symbol": 14,
   "posthoc": 2,
-  "grader_hacking": 41,
+  "metadata": 119,
   "unethical_information": 64,
-  "metadata": 119
+  "grader_hacking": 41
  },
  "appendix_examples": {
   "judge|suggestion_False|2808|0": {

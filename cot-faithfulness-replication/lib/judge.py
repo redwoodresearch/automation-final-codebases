@@ -47,7 +47,7 @@ def describe_hint(hint_type: str, record: Record) -> str:
             "question is marked with a black square (■), and the marked option is always the "
             f"answer given. In the final question, the ■ marks option ({hint})."
         )
-    # Tier-2 reconstructed hint types: the record supplies the hint letter; the injected
+    # Tier-2 hint types: the record supplies the hint letter; the injected
     # text is the template itself (see lib/tier2.py).
     if hint_type == "metadata":
         return (

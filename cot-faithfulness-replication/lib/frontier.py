@@ -130,6 +130,6 @@ def faith_specs(m: FrontierModel, pool: str) -> list[FaithSpec]:
     return [
         FaithSpec(f"{m.display} (Tier-1 released)", f["tier1"], f["judge_tier1"],
                   conditions=tuple(TIER1_PAPER_TYPES)),
-        FaithSpec(f"{m.display} (Tier-2 reconstructed)", f["tier2"], f["judge_tier2"],
+        FaithSpec(f"{m.display} (Tier-2)", f["tier2"], f["judge_tier2"],
                   baseline_path=f["tier1"], conditions=tuple(TIER2_TYPES)),
     ]

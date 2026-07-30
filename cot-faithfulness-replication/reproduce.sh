@@ -37,6 +37,7 @@ analyze() {
   $PY scripts/analyze_judge_dependence.py   # results/judge_dependence.json
   $PY scripts/analyze_mentions_split.py     # results/mentions_split.json (offline: judge files are committed)
   $PY scripts/analyze_judge_disagreements.py  # results/judge_disagreements.json (offline)
+  $PY scripts/analyze_natural_flip.py       # results/natural_flip.json (needs the resample transcripts)
   $PY scripts/analyze_following.py          # results/following_tables.json
   $PY scripts/analyze_faithfulness.py       # results/faithfulness_tables.json
   $PY scripts/analyze_sonnet45.py           # results/sonnet45_detail.json
@@ -102,7 +103,17 @@ full() {
     $PY scripts/run_gpqa.py --model "$MODEL" --tier2
   done
 
-  echo "-- 6. judging (Claude Opus 4.8 verbalization judge, MMLU + GPQA, all 30 models) --"
+  echo "-- 6. unhinted resamples: the natural flip-to-correct baseline (the post's footnote) --"
+  # Extra unhinted samples on each model's correct-hint-eligible questions. Only the two models
+  # the post cites are needed; the other resample files in the archive were exploratory.
+  $PY scripts/run_unhinted_resamples.py --model claude-sonnet-4-5-20250929 \
+      --baseline-results results/tier1_sonnet-4-5_full.jsonl --sample-indices 3 4 5 6 \
+      --out results/resamples_true_eligible_sonnet-4-5_full.jsonl
+  $PY scripts/run_unhinted_resamples.py --model claude-opus-4-1-20250805 \
+      --baseline-results results/tier1_opus-4-1_standard.jsonl --sample-indices 3 4 5 6 7 8 \
+      --out results/resamples_true_eligible_opus-4-1_standard.jsonl
+
+  echo "-- 7. judging (Claude Opus 4.8 verbalization judge, MMLU + GPQA, all 30 models) --"
   # MMLU: judge every collected tier1/tier2 file. GPQA: judge every collected grid.
   for T1 in results/tier1_*.jsonl; do
     STEM=${T1#results/tier1_}
@@ -115,7 +126,7 @@ full() {
     $PY scripts/judge_gpqa.py --tag "$TAG" --tier 2
   done
 
-  echo "-- 7. era-matched judge (Claude 3 Opus) on the R1 temperature-0 transcripts --"
+  echo "-- 8. era-matched judge (Claude 3 Opus) on the R1 temperature-0 transcripts --"
   $PY scripts/judge_era_mmlu.py --temp t0
   $PY scripts/judge_gpqa.py --tag deepseek-r1_t0 --tier 1 --variant model3opus_std
   $PY scripts/judge_gpqa.py --tag deepseek-r1_t0 --tier 2 --variant model3opus_std

@@ -1,7 +1,7 @@
 """Shared loading/spec helpers for the GPQA analyses (following + faithfulness).
 
 The GPQA collection mirrors the MMLU file layout (tier1 file holds the baselines + released-template
-types; tier2 file holds the reconstruction types and reuses tier1's unhinted_plain as a_u), so the
+types; tier2 file holds the Table-1 types and reuses tier1's unhinted_plain as a_u), so the
 existing build_pairs / unhinted_condition_for / FaithSpec machinery reuses unchanged.
 """
 
@@ -56,6 +56,6 @@ def faith_specs(tag: str) -> list[FaithSpec]:
     return [
         FaithSpec(f"{tag} (GPQA released-template-faithful)", f["tier1"], f["judge_tier1"],
                   conditions=tuple(TIER1_TYPES)),
-        FaithSpec(f"{tag} (GPQA full-reconstruction)", f["tier2"], f["judge_tier2"],
+        FaithSpec(f"{tag} (GPQA Tier-2)", f["tier2"], f["judge_tier2"],
                   baseline_path=f["tier1"], conditions=tuple(TIER2_TYPES)),
     ]

@@ -14,6 +14,7 @@ results/tier1_*.jsonl
 results/tier2_*.jsonl
 results/gpqa_tier1_*.jsonl
 results/gpqa_tier2_*.jsonl
+results/resamples_true_eligible_*.jsonl
 
 # cost log written by the run scripts
 total_cost.jsonl

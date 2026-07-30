@@ -1,0 +1,61 @@
+{
+ "_meta": {
+  "generated_by": "scripts/analyze_natural_flip.py",
+  "description": "Rate at which a fresh unhinted sample lands on the correct option, over the correct-hint-eligible questions. Baseline for the correct-hint condition; cited in the post's correct-hint footnote.",
+  "definition": "mean over eligible questions of (resamples landing on the correct option / resamples for that question)"
+ },
+ "Sonnet 4.5": {
+  "pool": "full (2,994q)",
+  "unhinted_plain": {
+   "n_eligible_questions": 204,
+   "n_with_resamples": 204,
+   "n_resamples": 814,
+   "flip_to_correct": 0.13480392156862744,
+   "flip_to_correct_pooled": 0.13513513513513514,
+   "flip_to_correct_pooled_ci": [
+    0.11335599373898848,
+    0.1603419937441623
+   ],
+   "flip_to_one_specific_wrong": 0.02287581699346405
+  },
+  "unhinted_fewshot_symbol": {
+   "n_eligible_questions": 202,
+   "n_with_resamples": 202,
+   "n_resamples": 803,
+   "flip_to_correct": 0.1674917491749175,
+   "flip_to_correct_pooled": 0.16811955168119552,
+   "flip_to_correct_pooled_ci": [
+    0.14384653206489834,
+    0.1955529237886422
+   ],
+   "flip_to_one_specific_wrong": 0.01547029702970297
+  }
+ },
+ "Opus 4.1": {
+  "pool": "standard (500q)",
+  "unhinted_plain": {
+   "n_eligible_questions": 24,
+   "n_with_resamples": 24,
+   "n_resamples": 140,
+   "flip_to_correct": 0.3402777777777778,
+   "flip_to_correct_pooled": 0.35,
+   "flip_to_correct_pooled_ci": [
+    0.27595527877221365,
+    0.43205686792248393
+   ],
+   "flip_to_one_specific_wrong": 0.006944444444444444
+  },
+  "unhinted_fewshot_symbol": {
+   "n_eligible_questions": 20,
+   "n_with_resamples": 20,
+   "n_resamples": 118,
+   "flip_to_correct": 0.175,
+   "flip_to_correct_pooled": 0.17796610169491525,
+   "flip_to_correct_pooled_ci": [
+    0.119448913662713,
+    0.2567904003318504
+   ],
+   "flip_to_one_specific_wrong": 0.004166666666666667
+  }
+ }
+}

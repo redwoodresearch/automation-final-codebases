@@ -1,4 +1,4 @@
-"""Download the raw model transcripts (the tier1_*/tier2_*/gpqa_* JSONL files) into results/.
+"""Download the raw model transcripts (tier1_*/tier2_*/gpqa_*/resamples_* JSONL) into results/.
 
 The committed repo carries everything needed to redraw the figures (the aggregate tables in
 results/*.json, all judge verdict files, and the DeepSeek R1 t=0 transcripts). The remaining
@@ -20,8 +20,10 @@ from pathlib import Path
 
 HF_REPO = "ejcgan/hint-faithfulness-transcripts"
 # Pinned to the exact upload this project's committed tables were produced from, so a future
-# re-upload can't silently change what reproducers download.
-HF_REVISION = "75ffaaf7d1b1e0062f38c7b3644bfd3d3562e260"
+# re-upload can't silently change what reproducers download. This revision adds the
+# unhinted_resamples/ files (the natural-flip baseline) to the earlier 75ffaaf7 upload; the
+# hinted transcripts are byte-identical between the two.
+HF_REVISION = "31cb8d0e23e488467d42a743c5d50f10f53ca84a"
 
 RESULTS_DIR = Path(__file__).parent.parent / "results"
 
