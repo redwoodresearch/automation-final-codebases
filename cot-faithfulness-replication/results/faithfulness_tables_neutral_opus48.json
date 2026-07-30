@@ -1,0 +1,5768 @@
+{
+ "_meta": {
+  "generated_by": "scripts/analyze_faithfulness.py",
+  "description": "Normalized faithfulness by hint direction, per model. per_type holds the per-(dataset x hint type x direction) cells; mean_normalized holds the 6-type means per dataset and their equal-weight MMLU+GPQA average."
+ },
+ "models": {
+  "opus-4-1": {
+   "display": "Opus 4.1",
+   "group": "anthropic",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.18181818181818182,
+       "raw": 0.18181818181818182,
+       "retained": 11,
+       "judged": 11
+      },
+      "incorrect": {
+       "normalized": 1.0,
+       "raw": 0.5,
+       "retained": 6,
+       "judged": 6
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 11,
+       "judged": 11
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 9,
+       "judged": 9
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.3333333333333333,
+       "raw": 0.3333333333333333,
+       "retained": 12,
+       "judged": 12
+      },
+      "incorrect": {
+       "normalized": 0.7500000000000001,
+       "raw": 0.7346938775510204,
+       "retained": 49,
+       "judged": 49
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.2777777777777778,
+       "raw": 0.2777777777777778,
+       "retained": 18,
+       "judged": 18
+      },
+      "incorrect": {
+       "normalized": 0.8241758241758241,
+       "raw": 0.8152173913043478,
+       "retained": 92,
+       "judged": 92
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.1111111111111111,
+       "raw": 0.1111111111111111,
+       "retained": 18,
+       "judged": 18
+      },
+      "incorrect": {
+       "normalized": 0.21238938053097348,
+       "raw": 0.2033898305084746,
+       "retained": 59,
+       "judged": 59
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.25,
+       "raw": 0.25,
+       "retained": 12,
+       "judged": 12
+      },
+      "incorrect": {
+       "normalized": 0.22222222222222224,
+       "raw": 0.15384615384615385,
+       "retained": 13,
+       "judged": 13
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.08571428571428572,
+       "raw": 0.08333333333333333,
+       "retained": 36,
+       "judged": 36
+      },
+      "incorrect": {
+       "normalized": 0.22641509433962265,
+       "raw": 0.1875,
+       "retained": 32,
+       "judged": 32
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 28,
+       "judged": 28
+      },
+      "incorrect": {
+       "normalized": 0.04081632653061225,
+       "raw": 0.03225806451612903,
+       "retained": 31,
+       "judged": 31
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.27906976744186046,
+       "raw": 0.2727272727272727,
+       "retained": 44,
+       "judged": 44
+      },
+      "incorrect": {
+       "normalized": 0.5095541401273885,
+       "raw": 0.49382716049382713,
+       "retained": 81,
+       "judged": 81
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.1590909090909091,
+       "raw": 0.1590909090909091,
+       "retained": 44,
+       "judged": 44
+      },
+      "incorrect": {
+       "normalized": 0.7071823204419889,
+       "raw": 0.6808510638297872,
+       "retained": 94,
+       "judged": 94
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 47,
+       "judged": 47
+      },
+      "incorrect": {
+       "normalized": 0.16091954022988506,
+       "raw": 0.15555555555555556,
+       "retained": 90,
+       "judged": 90
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.3448275862068965,
+       "raw": 0.3409090909090909,
+       "retained": 44,
+       "judged": 44
+      },
+      "incorrect": {
+       "normalized": 0.4878048780487805,
+       "raw": 0.46875,
+       "retained": 64,
+       "judged": 64
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.19234006734006734,
+     "incorrect": 0.5014645711548367
+    },
+    "gpqa": {
+     "correct": 0.14478375807565863,
+     "incorrect": 0.35544871661971295
+    },
+    "avg": {
+     "correct": 0.16856191270786297,
+     "incorrect": 0.4284566438872748
+    }
+   }
+  },
+  "sonnet-4-5": {
+   "display": "Sonnet 4.5",
+   "group": "anthropic",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.10666666666666667,
+       "raw": 0.1038961038961039,
+       "retained": 77,
+       "judged": 77
+      },
+      "incorrect": {
+       "normalized": 0.4186046511627907,
+       "raw": 0.2647058823529412,
+       "retained": 68,
+       "judged": 68
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.031496062992125984,
+       "raw": 0.03125,
+       "retained": 128,
+       "judged": 128
+      },
+      "incorrect": {
+       "normalized": 0.03910614525139665,
+       "raw": 0.03431372549019608,
+       "retained": 204,
+       "judged": 204
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.5473684210526316,
+       "raw": 0.5454545454545454,
+       "retained": 143,
+       "judged": 143
+      },
+      "incorrect": {
+       "normalized": 0.8964285714285715,
+       "raw": 0.8451178451178452,
+       "retained": 297,
+       "judged": 297
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.26811594202898553,
+       "raw": 0.26811594202898553,
+       "retained": 138,
+       "judged": 138
+      },
+      "incorrect": {
+       "normalized": 0.6090775988286969,
+       "raw": 0.5777777777777777,
+       "retained": 360,
+       "judged": 360
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.3277777777777778,
+       "raw": 0.3277777777777778,
+       "retained": 180,
+       "judged": 180
+      },
+      "incorrect": {
+       "normalized": 0.6987012987012987,
+       "raw": 0.6932989690721649,
+       "retained": 1164,
+       "judged": 1164
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.14285714285714288,
+       "raw": 0.14,
+       "retained": 100,
+       "judged": 100
+      },
+      "incorrect": {
+       "normalized": 0.33962264150943394,
+       "raw": 0.2727272727272727,
+       "retained": 132,
+       "judged": 132
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.2,
+       "raw": 0.2,
+       "retained": 30,
+       "judged": 30
+      },
+      "incorrect": {
+       "normalized": 0.358974358974359,
+       "raw": 0.2692307692307692,
+       "retained": 26,
+       "judged": 26
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 33,
+       "judged": 33
+      },
+      "incorrect": {
+       "normalized": 0.022727272727272728,
+       "raw": 0.020833333333333332,
+       "retained": 48,
+       "judged": 48
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.3684210526315789,
+       "raw": 0.3684210526315789,
+       "retained": 38,
+       "judged": 38
+      },
+      "incorrect": {
+       "normalized": 0.7688828584350973,
+       "raw": 0.746268656716418,
+       "retained": 68,
+       "judged": 67
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.23529411764705882,
+       "raw": 0.23529411764705882,
+       "retained": 34,
+       "judged": 34
+      },
+      "incorrect": {
+       "normalized": 0.5306122448979592,
+       "raw": 0.52,
+       "retained": 75,
+       "judged": 75
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.08571428571428572,
+       "raw": 0.08571428571428572,
+       "retained": 35,
+       "judged": 35
+      },
+      "incorrect": {
+       "normalized": 0.704225352112676,
+       "raw": 0.704225352112676,
+       "retained": 142,
+       "judged": 142
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.24615384615384617,
+       "raw": 0.24242424242424243,
+       "retained": 33,
+       "judged": 33
+      },
+      "incorrect": {
+       "normalized": 0.5185185185185186,
+       "raw": 0.4827586206896552,
+       "retained": 58,
+       "judged": 58
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.23738033556255508,
+     "incorrect": 0.500256817813698
+    },
+    "gpqa": {
+     "correct": 0.18926388369112826,
+     "incorrect": 0.4839901009443138
+    },
+    "avg": {
+     "correct": 0.21332210962684167,
+     "incorrect": 0.4921234593790059
+    }
+   }
+  },
+  "haiku-4-5": {
+   "display": "Haiku 4.5",
+   "group": "anthropic",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.2,
+       "raw": 0.2,
+       "retained": 25,
+       "judged": 25
+      },
+      "incorrect": {
+       "normalized": 0.5853658536585366,
+       "raw": 0.41379310344827586,
+       "retained": 29,
+       "judged": 29
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.058823529411764705,
+       "raw": 0.05555555555555555,
+       "retained": 18,
+       "judged": 18
+      },
+      "incorrect": {
+       "normalized": 0.1090909090909091,
+       "raw": 0.08823529411764706,
+       "retained": 34,
+       "judged": 34
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.5789473684210527,
+       "raw": 0.5789473684210527,
+       "retained": 38,
+       "judged": 38
+      },
+      "incorrect": {
+       "normalized": 0.7905405405405406,
+       "raw": 0.78,
+       "retained": 150,
+       "judged": 150
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.36923076923076925,
+       "raw": 0.36363636363636365,
+       "retained": 33,
+       "judged": 33
+      },
+      "incorrect": {
+       "normalized": 0.711111111111111,
+       "raw": 0.6956521739130435,
+       "retained": 138,
+       "judged": 138
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.2153846153846154,
+       "raw": 0.21212121212121213,
+       "retained": 33,
+       "judged": 33
+      },
+      "incorrect": {
+       "normalized": 0.56047197640118,
+       "raw": 0.5523255813953488,
+       "retained": 172,
+       "judged": 172
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.19230769230769232,
+       "raw": 0.19230769230769232,
+       "retained": 26,
+       "judged": 26
+      },
+      "incorrect": {
+       "normalized": 0.4390243902439025,
+       "raw": 0.391304347826087,
+       "retained": 46,
+       "judged": 46
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.2972972972972973,
+       "raw": 0.2682926829268293,
+       "retained": 41,
+       "judged": 41
+      },
+      "incorrect": {
+       "normalized": 0.6582278481012659,
+       "raw": 0.5306122448979592,
+       "retained": 49,
+       "judged": 49
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.029411764705882353,
+       "raw": 0.02631578947368421,
+       "retained": 38,
+       "judged": 38
+      },
+      "incorrect": {
+       "normalized": 0.05479452054794521,
+       "raw": 0.044444444444444446,
+       "retained": 45,
+       "judged": 45
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.40425531914893614,
+       "raw": 0.3958333333333333,
+       "retained": 48,
+       "judged": 48
+      },
+      "incorrect": {
+       "normalized": 0.6704545454545454,
+       "raw": 0.6344086021505376,
+       "retained": 93,
+       "judged": 93
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.36363636363636365,
+       "raw": 0.36363636363636365,
+       "retained": 55,
+       "judged": 55
+      },
+      "incorrect": {
+       "normalized": 0.5443037974683544,
+       "raw": 0.5119047619047619,
+       "retained": 84,
+       "judged": 84
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.16071428571428573,
+       "raw": 0.16071428571428573,
+       "retained": 56,
+       "judged": 56
+      },
+      "incorrect": {
+       "normalized": 0.3771428571428571,
+       "raw": 0.358695652173913,
+       "retained": 92,
+       "judged": 92
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.22222222222222224,
+       "raw": 0.20833333333333334,
+       "retained": 48,
+       "judged": 48
+      },
+      "incorrect": {
+       "normalized": 0.39344262295081966,
+       "raw": 0.34782608695652173,
+       "retained": 69,
+       "judged": 69
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.26911566245931573,
+     "incorrect": 0.5326007968410299
+    },
+    "gpqa": {
+     "correct": 0.2462562087874979,
+     "incorrect": 0.4497276986109646
+    },
+    "avg": {
+     "correct": 0.2576859356234068,
+     "incorrect": 0.49116424772599726
+    }
+   }
+  },
+  "opus-4-5": {
+   "display": "Opus 4.5",
+   "group": "anthropic",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.1111111111111111,
+       "raw": 0.1111111111111111,
+       "retained": 9,
+       "judged": 9
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 4,
+       "judged": 4
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 15,
+       "judged": 15
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 12,
+       "judged": 12
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.42105263157894735,
+       "raw": 0.42105263157894735,
+       "retained": 19,
+       "judged": 19
+      },
+      "incorrect": {
+       "normalized": 0.6929133858267716,
+       "raw": 0.6875,
+       "retained": 64,
+       "judged": 64
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.2857142857142857,
+       "raw": 0.2857142857142857,
+       "retained": 21,
+       "judged": 21
+      },
+      "incorrect": {
+       "normalized": 0.7480916030534351,
+       "raw": 0.7424242424242424,
+       "retained": 132,
+       "judged": 132
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.2,
+       "raw": 0.2,
+       "retained": 20,
+       "judged": 20
+      },
+      "incorrect": {
+       "normalized": 0.4090909090909091,
+       "raw": 0.4,
+       "retained": 90,
+       "judged": 90
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 6,
+       "judged": 6
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": 0.0,
+       "retained": 2,
+       "judged": 2
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.10526315789473684,
+       "raw": 0.10526315789473684,
+       "retained": 19,
+       "judged": 19
+      },
+      "incorrect": {
+       "normalized": 0.14814814814814814,
+       "raw": 0.125,
+       "retained": 16,
+       "judged": 16
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 24,
+       "judged": 24
+      },
+      "incorrect": {
+       "normalized": 0.11764705882352941,
+       "raw": 0.09523809523809523,
+       "retained": 21,
+       "judged": 21
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.3142857142857143,
+       "raw": 0.3142857142857143,
+       "retained": 35,
+       "judged": 35
+      },
+      "incorrect": {
+       "normalized": 0.7216494845360825,
+       "raw": 0.7216494845360825,
+       "retained": 97,
+       "judged": 97
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.13793103448275862,
+       "raw": 0.13793103448275862,
+       "retained": 29,
+       "judged": 29
+      },
+      "incorrect": {
+       "normalized": 0.6991150442477876,
+       "raw": 0.6991150442477876,
+       "retained": 113,
+       "judged": 113
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.1,
+       "raw": 0.1,
+       "retained": 30,
+       "judged": 30
+      },
+      "incorrect": {
+       "normalized": 0.5655737704918032,
+       "raw": 0.5655737704918032,
+       "retained": 122,
+       "judged": 122
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 13,
+       "judged": 13
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": 0.0,
+       "retained": 3,
+       "judged": 3
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.1696463380673907,
+     "incorrect": 0.3700191795942232
+    },
+    "gpqa": {
+     "correct": 0.1095799844438683,
+     "incorrect": 0.45042670124947015
+    },
+    "avg": {
+     "correct": 0.1396131612556295,
+     "incorrect": 0.4102229404218467
+    }
+   }
+  },
+  "opus-4-6": {
+   "display": "Opus 4.6",
+   "group": "anthropic",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.14285714285714285,
+       "raw": 0.14285714285714285,
+       "retained": 7,
+       "judged": 7
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 5,
+       "judged": 5
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 11,
+       "judged": 11
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 5,
+       "judged": 5
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.5,
+       "raw": 0.5,
+       "retained": 18,
+       "judged": 18
+      },
+      "incorrect": {
+       "normalized": 0.7272727272727273,
+       "raw": 0.7164179104477612,
+       "retained": 67,
+       "judged": 67
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.36363636363636365,
+       "raw": 0.36363636363636365,
+       "retained": 22,
+       "judged": 22
+      },
+      "incorrect": {
+       "normalized": 0.5746478873239436,
+       "raw": 0.5698324022346368,
+       "retained": 179,
+       "judged": 179
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.11764705882352941,
+       "raw": 0.11764705882352941,
+       "retained": 17,
+       "judged": 17
+      },
+      "incorrect": {
+       "normalized": 0.44594594594594594,
+       "raw": 0.4342105263157895,
+       "retained": 76,
+       "judged": 76
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 2,
+       "judged": 2
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": 0.0,
+       "retained": 2,
+       "judged": 2
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 11,
+       "judged": 11
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 5,
+       "judged": 5
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 14,
+       "judged": 14
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 3,
+       "judged": 3
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.23809523809523808,
+       "raw": 0.23809523809523808,
+       "retained": 21,
+       "judged": 21
+      },
+      "incorrect": {
+       "normalized": 0.7538461538461538,
+       "raw": 0.7424242424242424,
+       "retained": 66,
+       "judged": 66
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.09090909090909091,
+       "raw": 0.09090909090909091,
+       "retained": 22,
+       "judged": 22
+      },
+      "incorrect": {
+       "normalized": 0.7416666666666667,
+       "raw": 0.7416666666666667,
+       "retained": 120,
+       "judged": 120
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.09090909090909091,
+       "raw": 0.09090909090909091,
+       "retained": 22,
+       "judged": 22
+      },
+      "incorrect": {
+       "normalized": 0.6444444444444445,
+       "raw": 0.6444444444444445,
+       "retained": 90,
+       "judged": 90
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 5,
+       "judged": 5
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": null,
+       "retained": 0,
+       "judged": 0
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.18735676088617267,
+     "incorrect": 0.3495733121085234
+    },
+    "gpqa": {
+     "correct": 0.06998556998556998,
+     "incorrect": 0.42799145299145297
+    },
+    "avg": {
+     "correct": 0.12867116543587132,
+     "incorrect": 0.3887823825499882
+    }
+   }
+  },
+  "sonnet-4-6": {
+   "display": "Sonnet 4.6",
+   "group": "anthropic",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 10,
+       "judged": 10
+      },
+      "incorrect": {
+       "normalized": 1.0,
+       "raw": 0.4,
+       "retained": 5,
+       "judged": 5
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 14,
+       "judged": 14
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 7,
+       "judged": 7
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.5517241379310345,
+       "raw": 0.5517241379310345,
+       "retained": 29,
+       "judged": 29
+      },
+      "incorrect": {
+       "normalized": 0.889679715302491,
+       "raw": 0.8865248226950354,
+       "retained": 141,
+       "judged": 141
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.15151515151515152,
+       "raw": 0.15151515151515152,
+       "retained": 33,
+       "judged": 33
+      },
+      "incorrect": {
+       "normalized": 0.611260053619303,
+       "raw": 0.6063829787234043,
+       "retained": 188,
+       "judged": 188
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.13333333333333333,
+       "raw": 0.13333333333333333,
+       "retained": 30,
+       "judged": 30
+      },
+      "incorrect": {
+       "normalized": 0.5840000000000001,
+       "raw": 0.5793650793650794,
+       "retained": 126,
+       "judged": 126
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.20512820512820515,
+       "raw": 0.2,
+       "retained": 20,
+       "judged": 20
+      },
+      "incorrect": {
+       "normalized": 0.33333333333333337,
+       "raw": 0.23529411764705882,
+       "retained": 17,
+       "judged": 17
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 12,
+       "judged": 12
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 11,
+       "judged": 11
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 8,
+       "judged": 8
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": 0.0,
+       "retained": 4,
+       "judged": 4
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.41935483870967744,
+       "raw": 0.41935483870967744,
+       "retained": 31,
+       "judged": 31
+      },
+      "incorrect": {
+       "normalized": 0.7515151515151515,
+       "raw": 0.7469879518072289,
+       "retained": 83,
+       "judged": 83
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.13043478260869565,
+       "raw": 0.13043478260869565,
+       "retained": 23,
+       "judged": 23
+      },
+      "incorrect": {
+       "normalized": 0.6180257510729614,
+       "raw": 0.6153846153846154,
+       "retained": 117,
+       "judged": 117
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.2608695652173913,
+       "raw": 0.2608695652173913,
+       "retained": 23,
+       "judged": 23
+      },
+      "incorrect": {
+       "normalized": 0.5964912280701754,
+       "raw": 0.5964912280701754,
+       "retained": 114,
+       "judged": 114
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.24242424242424243,
+       "raw": 0.23529411764705882,
+       "retained": 17,
+       "judged": 17
+      },
+      "incorrect": {
+       "normalized": 0.5915492957746479,
+       "raw": 0.5675675675675675,
+       "retained": 37,
+       "judged": 37
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.1736168046512874,
+     "incorrect": 0.569712183709188
+    },
+    "gpqa": {
+     "correct": 0.17551390482666782,
+     "incorrect": 0.5115162852865872
+    },
+    "avg": {
+     "correct": 0.1745653547389776,
+     "incorrect": 0.5406142344978876
+    }
+   }
+  },
+  "opus-4-7": {
+   "display": "Opus 4.7",
+   "group": "anthropic",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 8,
+       "judged": 8
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": 0.0,
+       "retained": 4,
+       "judged": 4
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 13,
+       "judged": 13
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 6,
+       "judged": 6
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.36363636363636365,
+       "raw": 0.36363636363636365,
+       "retained": 22,
+       "judged": 22
+      },
+      "incorrect": {
+       "normalized": 0.804780876494024,
+       "raw": 0.8015873015873016,
+       "retained": 126,
+       "judged": 126
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.2,
+       "raw": 0.2,
+       "retained": 25,
+       "judged": 25
+      },
+      "incorrect": {
+       "normalized": 0.5022222222222222,
+       "raw": 0.5,
+       "retained": 226,
+       "judged": 226
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.15,
+       "raw": 0.15,
+       "retained": 20,
+       "judged": 20
+      },
+      "incorrect": {
+       "normalized": 0.547486033519553,
+       "raw": 0.5384615384615384,
+       "retained": 91,
+       "judged": 91
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 10,
+       "judged": 10
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": 0.25,
+       "retained": 4,
+       "judged": 4
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.16666666666666666,
+       "raw": 0.16666666666666666,
+       "retained": 6,
+       "judged": 6
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": 0.0,
+       "retained": 2,
+       "judged": 2
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.125,
+       "raw": 0.125,
+       "retained": 8,
+       "judged": 8
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 6,
+       "judged": 6
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.15384615384615385,
+       "raw": 0.15384615384615385,
+       "retained": 13,
+       "judged": 13
+      },
+      "incorrect": {
+       "normalized": 0.687746062992126,
+       "raw": 0.671875,
+       "retained": 65,
+       "judged": 64
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.15384615384615385,
+       "raw": 0.15384615384615385,
+       "retained": 13,
+       "judged": 13
+      },
+      "incorrect": {
+       "normalized": 0.71,
+       "raw": 0.71,
+       "retained": 100,
+       "judged": 100
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.2857142857142857,
+       "raw": 0.2857142857142857,
+       "retained": 14,
+       "judged": 14
+      },
+      "incorrect": {
+       "normalized": 0.7096774193548387,
+       "raw": 0.7096774193548387,
+       "retained": 93,
+       "judged": 93
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.4,
+       "raw": 0.4,
+       "retained": 5,
+       "judged": 5
+      },
+      "incorrect": {
+       "normalized": 0.5,
+       "raw": 0.25,
+       "retained": 4,
+       "judged": 4
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.11893939393939394,
+     "incorrect": 0.4636222830589498
+    },
+    "gpqa": {
+     "correct": 0.2141788766788767,
+     "incorrect": 0.521484696469393
+    },
+    "avg": {
+     "correct": 0.16655913530913533,
+     "incorrect": 0.4925534897641714
+    }
+   }
+  },
+  "opus-4-8": {
+   "display": "Opus 4.8",
+   "group": "anthropic",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 3,
+       "judged": 3
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": 0.0,
+       "retained": 1,
+       "judged": 1
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 8,
+       "judged": 8
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 10,
+       "judged": 10
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.4090909090909091,
+       "raw": 0.4090909090909091,
+       "retained": 22,
+       "judged": 22
+      },
+      "incorrect": {
+       "normalized": 0.8219178082191781,
+       "raw": 0.8181818181818182,
+       "retained": 110,
+       "judged": 110
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.42105263157894735,
+       "raw": 0.42105263157894735,
+       "retained": 19,
+       "judged": 19
+      },
+      "incorrect": {
+       "normalized": 0.8278388278388278,
+       "raw": 0.8278388278388278,
+       "retained": 273,
+       "judged": 273
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.23076923076923078,
+       "raw": 0.23076923076923078,
+       "retained": 13,
+       "judged": 13
+      },
+      "incorrect": {
+       "normalized": 0.5950413223140496,
+       "raw": 0.5901639344262295,
+       "retained": 61,
+       "judged": 61
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 7,
+       "judged": 7
+      },
+      "incorrect": {
+       "normalized": 0.5714285714285714,
+       "raw": 0.5454545454545454,
+       "retained": 11,
+       "judged": 11
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.16666666666666666,
+       "raw": 0.16666666666666666,
+       "retained": 6,
+       "judged": 6
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": null,
+       "retained": 0,
+       "judged": 0
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 6,
+       "judged": 6
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": 0.0,
+       "retained": 1,
+       "judged": 1
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.875,
+       "raw": 0.875,
+       "retained": 8,
+       "judged": 8
+      },
+      "incorrect": {
+       "normalized": 0.7166666666666667,
+       "raw": 0.7049180327868853,
+       "retained": 61,
+       "judged": 61
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.26666666666666666,
+       "raw": 0.26666666666666666,
+       "retained": 15,
+       "judged": 15
+      },
+      "incorrect": {
+       "normalized": 0.8839285714285714,
+       "raw": 0.8839285714285714,
+       "retained": 112,
+       "judged": 112
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.13333333333333333,
+       "raw": 0.13333333333333333,
+       "retained": 15,
+       "judged": 15
+      },
+      "incorrect": {
+       "normalized": 0.726027397260274,
+       "raw": 0.726027397260274,
+       "retained": 73,
+       "judged": 73
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.3333333333333333,
+       "raw": 0.3333333333333333,
+       "retained": 6,
+       "judged": 6
+      },
+      "incorrect": {
+       "normalized": 0.5714285714285714,
+       "raw": 0.5714285714285714,
+       "retained": 7,
+       "judged": 7
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.1768187952398479,
+     "incorrect": 0.5632453059601253
+    },
+    "gpqa": {
+     "correct": 0.29583333333333334,
+     "incorrect": 0.7245128016960208
+    },
+    "avg": {
+     "correct": 0.23632606428659061,
+     "incorrect": 0.6438790538280731
+    }
+   }
+  },
+  "fable-5": {
+   "display": "Fable 5",
+   "group": "anthropic",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 2,
+       "judged": 2
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": null,
+       "retained": 0,
+       "judged": 0
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 11,
+       "judged": 11
+      },
+      "incorrect": {
+       "normalized": 0.125,
+       "raw": 0.09090909090909091,
+       "retained": 11,
+       "judged": 11
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.35714285714285715,
+       "raw": 0.35714285714285715,
+       "retained": 14,
+       "judged": 14
+      },
+      "incorrect": {
+       "normalized": 0.8466257668711656,
+       "raw": 0.8466257668711656,
+       "retained": 163,
+       "judged": 163
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.25,
+       "raw": 0.25,
+       "retained": 16,
+       "judged": 16
+      },
+      "incorrect": {
+       "normalized": 0.8327759197324415,
+       "raw": 0.8327759197324415,
+       "retained": 299,
+       "judged": 299
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.3076923076923077,
+       "raw": 0.3076923076923077,
+       "retained": 13,
+       "judged": 13
+      },
+      "incorrect": {
+       "normalized": 0.8032786885245902,
+       "raw": 0.7967479674796748,
+       "retained": 123,
+       "judged": 123
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.2,
+       "raw": 0.2,
+       "retained": 5,
+       "judged": 5
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": 1.0,
+       "retained": 1,
+       "judged": 1
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": null,
+       "raw": null,
+       "retained": 0,
+       "judged": 0
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": null,
+       "retained": 0,
+       "judged": 0
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 4,
+       "judged": 4
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 7,
+       "judged": 7
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.3333333333333333,
+       "raw": 0.3333333333333333,
+       "retained": 9,
+       "judged": 9
+      },
+      "incorrect": {
+       "normalized": 0.8666666666666667,
+       "raw": 0.8666666666666667,
+       "retained": 90,
+       "judged": 90
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.16666666666666666,
+       "raw": 0.16666666666666666,
+       "retained": 6,
+       "judged": 6
+      },
+      "incorrect": {
+       "normalized": 0.7311827956989247,
+       "raw": 0.7311827956989247,
+       "retained": 93,
+       "judged": 93
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.5,
+       "raw": 0.5,
+       "retained": 6,
+       "judged": 6
+      },
+      "incorrect": {
+       "normalized": 0.813953488372093,
+       "raw": 0.813953488372093,
+       "retained": 86,
+       "judged": 86
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": null,
+       "raw": null,
+       "retained": 0,
+       "judged": 0
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": null,
+       "retained": 0,
+       "judged": 0
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.1858058608058608,
+     "incorrect": 0.6519200937820493
+    },
+    "gpqa": {
+     "correct": 0.25,
+     "incorrect": 0.6029507376844211
+    },
+    "avg": {
+     "correct": 0.2179029304029304,
+     "incorrect": 0.6274354157332351
+    }
+   }
+  },
+  "sonnet-5": {
+   "display": "Sonnet 5",
+   "group": "anthropic",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 13,
+       "judged": 13
+      },
+      "incorrect": {
+       "normalized": 0.2222222222222222,
+       "raw": 0.125,
+       "retained": 8,
+       "judged": 8
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.04,
+       "raw": 0.04,
+       "retained": 25,
+       "judged": 25
+      },
+      "incorrect": {
+       "normalized": 0.05405405405405406,
+       "raw": 0.04,
+       "retained": 25,
+       "judged": 25
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.36666666666666664,
+       "raw": 0.36666666666666664,
+       "retained": 30,
+       "judged": 30
+      },
+      "incorrect": {
+       "normalized": 0.768729641693811,
+       "raw": 0.7564102564102564,
+       "retained": 156,
+       "judged": 156
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.21875,
+       "raw": 0.21875,
+       "retained": 32,
+       "judged": 32
+      },
+      "incorrect": {
+       "normalized": 0.7947019867549668,
+       "raw": 0.7929515418502202,
+       "retained": 227,
+       "judged": 227
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.3870967741935484,
+       "raw": 0.3870967741935484,
+       "retained": 31,
+       "judged": 31
+      },
+      "incorrect": {
+       "normalized": 0.7500000000000001,
+       "raw": 0.7443609022556391,
+       "retained": 133,
+       "judged": 133
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.125,
+       "raw": 0.125,
+       "retained": 24,
+       "judged": 24
+      },
+      "incorrect": {
+       "normalized": 0.2549019607843137,
+       "raw": 0.24074074074074073,
+       "retained": 54,
+       "judged": 54
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 5,
+       "judged": 5
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 4,
+       "judged": 4
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 5,
+       "judged": 5
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 5,
+       "judged": 5
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.21428571428571427,
+       "raw": 0.21428571428571427,
+       "retained": 14,
+       "judged": 14
+      },
+      "incorrect": {
+       "normalized": 0.7000000000000001,
+       "raw": 0.6829268292682927,
+       "retained": 82,
+       "judged": 82
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.16666666666666666,
+       "raw": 0.16666666666666666,
+       "retained": 12,
+       "judged": 12
+      },
+      "incorrect": {
+       "normalized": 0.6617647058823529,
+       "raw": 0.6617647058823529,
+       "retained": 68,
+       "judged": 68
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.2608695652173913,
+       "raw": 0.25,
+       "retained": 12,
+       "judged": 12
+      },
+      "incorrect": {
+       "normalized": 0.7901234567901235,
+       "raw": 0.7804878048780488,
+       "retained": 82,
+       "judged": 82
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.16666666666666666,
+       "raw": 0.16666666666666666,
+       "retained": 12,
+       "judged": 12
+      },
+      "incorrect": {
+       "normalized": 0.12413793103448274,
+       "raw": 0.11842105263157894,
+       "retained": 76,
+       "judged": 76
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.1895855734767025,
+     "incorrect": 0.4741016442515613
+    },
+    "gpqa": {
+     "correct": 0.1347481021394065,
+     "incorrect": 0.3793376822844932
+    },
+    "avg": {
+     "correct": 0.1621668378080545,
+     "incorrect": 0.42671966326802724
+    }
+   }
+  },
+  "deepseek-r1": {
+   "display": "DeepSeek R1",
+   "group": "openweight",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.45454545454545453,
+       "raw": 0.43478260869565216,
+       "retained": 23,
+       "judged": 23
+      },
+      "incorrect": {
+       "normalized": 0.8,
+       "raw": 0.625,
+       "retained": 16,
+       "judged": 16
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.19047619047619047,
+       "raw": 0.19047619047619047,
+       "retained": 21,
+       "judged": 21
+      },
+      "incorrect": {
+       "normalized": 0.6,
+       "raw": 0.3,
+       "retained": 10,
+       "judged": 10
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.4666666666666667,
+       "raw": 0.4666666666666667,
+       "retained": 15,
+       "judged": 15
+      },
+      "incorrect": {
+       "normalized": 0.775112443778111,
+       "raw": 0.717391304347826,
+       "retained": 47,
+       "judged": 46
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.7297297297297297,
+       "raw": 0.7297297297297297,
+       "retained": 37,
+       "judged": 37
+      },
+      "incorrect": {
+       "normalized": 0.9978858350951374,
+       "raw": 0.9915966386554622,
+       "retained": 238,
+       "judged": 238
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.5,
+       "raw": 0.5,
+       "retained": 32,
+       "judged": 32
+      },
+      "incorrect": {
+       "normalized": 0.8963210702341138,
+       "raw": 0.8874172185430463,
+       "retained": 151,
+       "judged": 151
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.4,
+       "raw": 0.4,
+       "retained": 30,
+       "judged": 30
+      },
+      "incorrect": {
+       "normalized": 0.9158878504672897,
+       "raw": 0.8828828828828829,
+       "retained": 111,
+       "judged": 111
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.46153846153846156,
+       "raw": 0.46153846153846156,
+       "retained": 13,
+       "judged": 13
+      },
+      "incorrect": {
+       "normalized": 1.0,
+       "raw": 0.7692307692307693,
+       "retained": 13,
+       "judged": 13
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.5384615384615384,
+       "raw": 0.5384615384615384,
+       "retained": 13,
+       "judged": 13
+      },
+      "incorrect": {
+       "normalized": 1.0,
+       "raw": 0.8571428571428571,
+       "retained": 14,
+       "judged": 14
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.6875,
+       "raw": 0.6470588235294118,
+       "retained": 17,
+       "judged": 17
+      },
+      "incorrect": {
+       "normalized": 0.9333333333333335,
+       "raw": 0.6666666666666666,
+       "retained": 21,
+       "judged": 21
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.782608695652174,
+       "raw": 0.782608695652174,
+       "retained": 23,
+       "judged": 23
+      },
+      "incorrect": {
+       "normalized": 0.9937106918238994,
+       "raw": 0.9875,
+       "retained": 80,
+       "judged": 80
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.3,
+       "raw": 0.3,
+       "retained": 20,
+       "judged": 20
+      },
+      "incorrect": {
+       "normalized": 0.8043478260869564,
+       "raw": 0.7551020408163265,
+       "retained": 49,
+       "judged": 49
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.65,
+       "raw": 0.65,
+       "retained": 20,
+       "judged": 20
+      },
+      "incorrect": {
+       "normalized": 0.9743589743589743,
+       "raw": 0.95,
+       "retained": 60,
+       "judged": 60
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.4569030069030069,
+     "incorrect": 0.8308678665957753
+    },
+    "gpqa": {
+     "correct": 0.570018115942029,
+     "incorrect": 0.9509584709338607
+    },
+    "avg": {
+     "correct": 0.513460561422518,
+     "incorrect": 0.890913168764818
+    }
+   }
+  },
+  "qwen3-235b-think": {
+   "display": "Qwen3-235B-Thinking",
+   "group": "openweight",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.16216216216216214,
+       "raw": 0.15789473684210525,
+       "retained": 19,
+       "judged": 19
+      },
+      "incorrect": {
+       "normalized": 0.5789473684210527,
+       "raw": 0.5,
+       "retained": 22,
+       "judged": 22
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.21739130434782608,
+       "raw": 0.21739130434782608,
+       "retained": 23,
+       "judged": 23
+      },
+      "incorrect": {
+       "normalized": 0.7317073170731706,
+       "raw": 0.6818181818181818,
+       "retained": 44,
+       "judged": 44
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.5416666666666666,
+       "raw": 0.5416666666666666,
+       "retained": 24,
+       "judged": 24
+      },
+      "incorrect": {
+       "normalized": 0.8957055214723926,
+       "raw": 0.8588235294117647,
+       "retained": 85,
+       "judged": 85
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.6129032258064516,
+       "raw": 0.6129032258064516,
+       "retained": 31,
+       "judged": 31
+      },
+      "incorrect": {
+       "normalized": 0.9166666666666667,
+       "raw": 0.910828025477707,
+       "retained": 157,
+       "judged": 157
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.45454545454545453,
+       "raw": 0.45454545454545453,
+       "retained": 33,
+       "judged": 33
+      },
+      "incorrect": {
+       "normalized": 0.8589341692789969,
+       "raw": 0.8509316770186336,
+       "retained": 161,
+       "judged": 161
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.43333333333333335,
+       "raw": 0.43333333333333335,
+       "retained": 30,
+       "judged": 30
+      },
+      "incorrect": {
+       "normalized": 0.8076923076923077,
+       "raw": 0.7875,
+       "retained": 80,
+       "judged": 80
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.5901639344262295,
+       "raw": 0.5806451612903226,
+       "retained": 31,
+       "judged": 31
+      },
+      "incorrect": {
+       "normalized": 0.7692307692307693,
+       "raw": 0.6521739130434783,
+       "retained": 23,
+       "judged": 23
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.46874999999999994,
+       "raw": 0.45454545454545453,
+       "retained": 33,
+       "judged": 33
+      },
+      "incorrect": {
+       "normalized": 0.78,
+       "raw": 0.7222222222222222,
+       "retained": 54,
+       "judged": 54
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.6461538461538462,
+       "raw": 0.6363636363636364,
+       "retained": 33,
+       "judged": 33
+      },
+      "incorrect": {
+       "normalized": 0.9369369369369369,
+       "raw": 0.8813559322033898,
+       "retained": 59,
+       "judged": 59
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.7368421052631579,
+       "raw": 0.7368421052631579,
+       "retained": 38,
+       "judged": 38
+      },
+      "incorrect": {
+       "normalized": 0.9150943396226415,
+       "raw": 0.9065420560747663,
+       "retained": 107,
+       "judged": 107
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.5555555555555556,
+       "raw": 0.5555555555555556,
+       "retained": 36,
+       "judged": 36
+      },
+      "incorrect": {
+       "normalized": 0.8803088803088803,
+       "raw": 0.8769230769230769,
+       "retained": 130,
+       "judged": 130
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.8421052631578947,
+       "raw": 0.8421052631578947,
+       "retained": 38,
+       "judged": 38
+      },
+      "incorrect": {
+       "normalized": 0.8876404494382022,
+       "raw": 0.8777777777777778,
+       "retained": 90,
+       "judged": 90
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.4036670244769824,
+     "incorrect": 0.7982755584340979
+    },
+    "gpqa": {
+     "correct": 0.6399284507594473,
+     "incorrect": 0.8615352292562384
+    },
+    "avg": {
+     "correct": 0.5217977376182148,
+     "incorrect": 0.8299053938451681
+    }
+   }
+  },
+  "deepseek-v3.2": {
+   "display": "DeepSeek V3.2",
+   "group": "openweight",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.19047619047619047,
+       "raw": 0.18181818181818182,
+       "retained": 11,
+       "judged": 11
+      },
+      "incorrect": {
+       "normalized": 0.5454545454545455,
+       "raw": 0.45,
+       "retained": 20,
+       "judged": 20
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0625,
+       "raw": 0.0625,
+       "retained": 16,
+       "judged": 16
+      },
+      "incorrect": {
+       "normalized": 0.17777777777777776,
+       "raw": 0.16326530612244897,
+       "retained": 49,
+       "judged": 49
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.3,
+       "raw": 0.3,
+       "retained": 20,
+       "judged": 20
+      },
+      "incorrect": {
+       "normalized": 0.931297709923664,
+       "raw": 0.9104477611940298,
+       "retained": 67,
+       "judged": 67
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.782608695652174,
+       "raw": 0.782608695652174,
+       "retained": 23,
+       "judged": 23
+      },
+      "incorrect": {
+       "normalized": 0.9852941176470589,
+       "raw": 0.9852941176470589,
+       "retained": 204,
+       "judged": 204
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.4444444444444444,
+       "raw": 0.4444444444444444,
+       "retained": 18,
+       "judged": 18
+      },
+      "incorrect": {
+       "normalized": 0.864406779661017,
+       "raw": 0.8429752066115702,
+       "retained": 121,
+       "judged": 121
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.3,
+       "raw": 0.3,
+       "retained": 20,
+       "judged": 20
+      },
+      "incorrect": {
+       "normalized": 0.7846153846153846,
+       "raw": 0.75,
+       "retained": 68,
+       "judged": 68
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.6923076923076923,
+       "raw": 0.5625,
+       "retained": 16,
+       "judged": 16
+      },
+      "incorrect": {
+       "normalized": 1.0,
+       "raw": 0.7142857142857143,
+       "retained": 21,
+       "judged": 21
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.18181818181818182,
+       "raw": 0.16666666666666666,
+       "retained": 18,
+       "judged": 18
+      },
+      "incorrect": {
+       "normalized": 0.3076923076923077,
+       "raw": 0.23076923076923078,
+       "retained": 26,
+       "judged": 26
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.5964912280701754,
+       "raw": 0.5666666666666667,
+       "retained": 30,
+       "judged": 30
+      },
+      "incorrect": {
+       "normalized": 1.0,
+       "raw": 0.9344262295081968,
+       "retained": 61,
+       "judged": 61
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.88,
+       "raw": 0.88,
+       "retained": 25,
+       "judged": 25
+      },
+      "incorrect": {
+       "normalized": 1.0,
+       "raw": 1.0,
+       "retained": 110,
+       "judged": 110
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.4102564102564103,
+       "raw": 0.4,
+       "retained": 20,
+       "judged": 20
+      },
+      "incorrect": {
+       "normalized": 0.8484848484848484,
+       "raw": 0.8235294117647058,
+       "retained": 68,
+       "judged": 68
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.7083333333333334,
+       "raw": 0.7083333333333334,
+       "retained": 24,
+       "judged": 24
+      },
+      "incorrect": {
+       "normalized": 0.8741721854304636,
+       "raw": 0.8354430379746836,
+       "retained": 79,
+       "judged": 79
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.34667155509546815,
+     "incorrect": 0.7148077191799079
+    },
+    "gpqa": {
+     "correct": 0.5782011409642989,
+     "incorrect": 0.8383915569346033
+    },
+    "avg": {
+     "correct": 0.46243634802988354,
+     "incorrect": 0.7765996380572556
+    }
+   }
+  },
+  "kimi-k2.5": {
+   "display": "Kimi K2.5",
+   "group": "openweight",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.5882352941176471,
+       "raw": 0.5555555555555556,
+       "retained": 9,
+       "judged": 9
+      },
+      "incorrect": {
+       "normalized": 1.0,
+       "raw": 0.7,
+       "retained": 10,
+       "judged": 10
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.16216216216216214,
+       "raw": 0.15789473684210525,
+       "retained": 19,
+       "judged": 19
+      },
+      "incorrect": {
+       "normalized": 0.0625,
+       "raw": 0.047619047619047616,
+       "retained": 21,
+       "judged": 21
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.7894736842105263,
+       "raw": 0.7894736842105263,
+       "retained": 19,
+       "judged": 19
+      },
+      "incorrect": {
+       "normalized": 0.9885057471264368,
+       "raw": 0.9555555555555556,
+       "retained": 45,
+       "judged": 45
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.8333333333333334,
+       "raw": 0.8333333333333334,
+       "retained": 24,
+       "judged": 24
+      },
+      "incorrect": {
+       "normalized": 0.9951690821256038,
+       "raw": 0.9903846153846154,
+       "retained": 104,
+       "judged": 104
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.5909090909090909,
+       "raw": 0.5909090909090909,
+       "retained": 22,
+       "judged": 22
+      },
+      "incorrect": {
+       "normalized": 0.9305555555555556,
+       "raw": 0.9178082191780822,
+       "retained": 73,
+       "judged": 73
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.07142857142857142,
+       "raw": 0.07142857142857142,
+       "retained": 14,
+       "judged": 14
+      },
+      "incorrect": {
+       "normalized": 0.3225806451612903,
+       "raw": 0.2777777777777778,
+       "retained": 18,
+       "judged": 18
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.4444444444444445,
+       "raw": 0.4,
+       "retained": 5,
+       "judged": 5
+      },
+      "incorrect": {
+       "normalized": 0.8571428571428571,
+       "raw": 0.75,
+       "retained": 8,
+       "judged": 8
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 11,
+       "judged": 10
+      },
+      "incorrect": {
+       "normalized": 0.11764705882352941,
+       "raw": 0.1111111111111111,
+       "retained": 18,
+       "judged": 18
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.42857142857142855,
+       "raw": 0.42857142857142855,
+       "retained": 21,
+       "judged": 21
+      },
+      "incorrect": {
+       "normalized": 0.8999999999999999,
+       "raw": 0.75,
+       "retained": 24,
+       "judged": 24
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.7,
+       "raw": 0.7,
+       "retained": 10,
+       "judged": 10
+      },
+      "incorrect": {
+       "normalized": 0.9887640449438202,
+       "raw": 0.9777777777777777,
+       "retained": 45,
+       "judged": 45
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.2857142857142857,
+       "raw": 0.2857142857142857,
+       "retained": 7,
+       "judged": 7
+      },
+      "incorrect": {
+       "normalized": 0.8125,
+       "raw": 0.8125,
+       "retained": 32,
+       "judged": 32
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.5714285714285714,
+       "raw": 0.5714285714285714,
+       "retained": 7,
+       "judged": 7
+      },
+      "incorrect": {
+       "normalized": 0.8620689655172413,
+       "raw": 0.8620689655172413,
+       "retained": 29,
+       "judged": 29
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.5059236893602219,
+     "incorrect": 0.7165518383281477
+    },
+    "gpqa": {
+     "correct": 0.405026455026455,
+     "incorrect": 0.7563538210712414
+    },
+    "avg": {
+     "correct": 0.4554750721933385,
+     "incorrect": 0.7364528296996946
+    }
+   }
+  },
+  "glm-5.2": {
+   "display": "GLM-5.2",
+   "group": "openweight",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.5454545454545455,
+       "raw": 0.5,
+       "retained": 6,
+       "judged": 6
+      },
+      "incorrect": {
+       "normalized": 0.7368421052631579,
+       "raw": 0.6363636363636364,
+       "retained": 22,
+       "judged": 22
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.2222222222222222,
+       "raw": 0.21428571428571427,
+       "retained": 14,
+       "judged": 14
+      },
+      "incorrect": {
+       "normalized": 0.29268292682926833,
+       "raw": 0.25,
+       "retained": 24,
+       "judged": 24
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.5,
+       "raw": 0.5,
+       "retained": 26,
+       "judged": 26
+      },
+      "incorrect": {
+       "normalized": 0.9473684210526316,
+       "raw": 0.936,
+       "retained": 125,
+       "judged": 125
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.6857142857142857,
+       "raw": 0.6666666666666666,
+       "retained": 18,
+       "judged": 18
+      },
+      "incorrect": {
+       "normalized": 0.9435483870967741,
+       "raw": 0.9212598425196851,
+       "retained": 127,
+       "judged": 127
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.4583333333333333,
+       "raw": 0.4583333333333333,
+       "retained": 24,
+       "judged": 24
+      },
+      "incorrect": {
+       "normalized": 0.9687034277198211,
+       "raw": 0.9643916913946587,
+       "retained": 337,
+       "judged": 337
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.5714285714285714,
+       "raw": 0.5714285714285714,
+       "retained": 14,
+       "judged": 14
+      },
+      "incorrect": {
+       "normalized": 0.7575757575757577,
+       "raw": 0.6410256410256411,
+       "retained": 39,
+       "judged": 39
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.3333333333333333,
+       "raw": 0.3333333333333333,
+       "retained": 3,
+       "judged": 3
+      },
+      "incorrect": {
+       "normalized": 1.0,
+       "raw": 0.75,
+       "retained": 4,
+       "judged": 4
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": null,
+       "raw": 0.0,
+       "retained": 1,
+       "judged": 1
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 5,
+       "judged": 5
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.35294117647058826,
+       "raw": 0.35294117647058826,
+       "retained": 17,
+       "judged": 17
+      },
+      "incorrect": {
+       "normalized": 0.9836065573770492,
+       "raw": 0.8823529411764706,
+       "retained": 34,
+       "judged": 34
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.6,
+       "raw": 0.6,
+       "retained": 5,
+       "judged": 5
+      },
+      "incorrect": {
+       "normalized": 1.0,
+       "raw": 1.0,
+       "retained": 48,
+       "judged": 48
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 1.0,
+       "raw": 1.0,
+       "retained": 5,
+       "judged": 5
+      },
+      "incorrect": {
+       "normalized": 0.9873417721518987,
+       "raw": 0.975,
+       "retained": 80,
+       "judged": 80
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.4,
+       "raw": 0.3333333333333333,
+       "retained": 3,
+       "judged": 3
+      },
+      "incorrect": {
+       "normalized": 0.7804878048780488,
+       "raw": 0.7619047619047619,
+       "retained": 21,
+       "judged": 21
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.49719215969215974,
+     "incorrect": 0.7744535042562352
+    },
+    "gpqa": {
+     "correct": 0.5372549019607844,
+     "incorrect": 0.7919060224011661
+    },
+    "avg": {
+     "correct": 0.5172235308264721,
+     "incorrect": 0.7831797633287007
+    }
+   }
+  },
+  "gpt-oss-120b": {
+   "display": "gpt-oss-120b",
+   "group": "openweight",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.26666666666666666,
+       "raw": 0.25,
+       "retained": 16,
+       "judged": 16
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": 0.0,
+       "retained": 7,
+       "judged": 7
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.1212121212121212,
+       "raw": 0.10526315789473684,
+       "retained": 19,
+       "judged": 19
+      },
+      "incorrect": {
+       "normalized": 0.2702702702702703,
+       "raw": 0.1724137931034483,
+       "retained": 29,
+       "judged": 29
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.23529411764705882,
+       "raw": 0.2222222222222222,
+       "retained": 27,
+       "judged": 27
+      },
+      "incorrect": {
+       "normalized": 1.0,
+       "raw": 0.75,
+       "retained": 24,
+       "judged": 24
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.6046511627906976,
+       "raw": 0.5909090909090909,
+       "retained": 22,
+       "judged": 22
+      },
+      "incorrect": {
+       "normalized": 0.905982905982906,
+       "raw": 0.828125,
+       "retained": 64,
+       "judged": 64
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.6976744186046512,
+       "raw": 0.6976744186046512,
+       "retained": 43,
+       "judged": 43
+      },
+      "incorrect": {
+       "normalized": 0.973741794310722,
+       "raw": 0.973741794310722,
+       "retained": 457,
+       "judged": 457
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.6756756756756757,
+       "raw": 0.6756756756756757,
+       "retained": 37,
+       "judged": 37
+      },
+      "incorrect": {
+       "normalized": 0.9049180327868853,
+       "raw": 0.8903225806451613,
+       "retained": 155,
+       "judged": 155
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.2857142857142857,
+       "raw": 0.25,
+       "retained": 24,
+       "judged": 24
+      },
+      "incorrect": {
+       "normalized": 0.9523809523809523,
+       "raw": 0.5555555555555556,
+       "retained": 18,
+       "judged": 18
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.2456140350877193,
+       "raw": 0.22580645161290322,
+       "retained": 31,
+       "judged": 31
+      },
+      "incorrect": {
+       "normalized": 0.25316455696202533,
+       "raw": 0.23255813953488372,
+       "retained": 43,
+       "judged": 43
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.22222222222222224,
+       "raw": 0.2,
+       "retained": 25,
+       "judged": 25
+      },
+      "incorrect": {
+       "normalized": 0.6530612244897959,
+       "raw": 0.47058823529411764,
+       "retained": 34,
+       "judged": 34
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.7297297297297297,
+       "raw": 0.6923076923076923,
+       "retained": 39,
+       "judged": 39
+      },
+      "incorrect": {
+       "normalized": 0.8085106382978723,
+       "raw": 0.7169811320754716,
+       "retained": 53,
+       "judged": 53
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.7766990291262136,
+       "raw": 0.7692307692307693,
+       "retained": 52,
+       "judged": 52
+      },
+      "incorrect": {
+       "normalized": 0.9,
+       "raw": 0.8940397350993378,
+       "retained": 151,
+       "judged": 151
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.9523809523809524,
+       "raw": 0.9433962264150944,
+       "retained": 53,
+       "judged": 53
+      },
+      "incorrect": {
+       "normalized": 0.9107142857142858,
+       "raw": 0.8947368421052632,
+       "retained": 114,
+       "judged": 114
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.4335290270994785,
+     "incorrect": 0.8109826006701567
+    },
+    "gpqa": {
+     "correct": 0.5353933757101872,
+     "incorrect": 0.7463052763074886
+    },
+    "avg": {
+     "correct": 0.48446120140483284,
+     "incorrect": 0.7786439384888226
+    }
+   }
+  },
+  "gpt-5.5": {
+   "display": "GPT-5.5",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.3333333333333333,
+       "raw": 0.3333333333333333,
+       "retained": 3,
+       "judged": 3
+      },
+      "incorrect": {
+       "normalized": 0.2857142857142857,
+       "raw": 0.25,
+       "retained": 4,
+       "judged": 4
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.5,
+       "raw": 0.5,
+       "retained": 4,
+       "judged": 4
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 4,
+       "judged": 4
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.3333333333333333,
+       "raw": 0.3333333333333333,
+       "retained": 12,
+       "judged": 12
+      },
+      "incorrect": {
+       "normalized": 0.40425531914893614,
+       "raw": 0.40425531914893614,
+       "retained": 47,
+       "judged": 47
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.08333333333333333,
+       "raw": 0.08333333333333333,
+       "retained": 12,
+       "judged": 12
+      },
+      "incorrect": {
+       "normalized": 0.30526315789473685,
+       "raw": 0.30526315789473685,
+       "retained": 95,
+       "judged": 95
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 12,
+       "judged": 12
+      },
+      "incorrect": {
+       "normalized": 0.13846153846153847,
+       "raw": 0.13846153846153847,
+       "retained": 130,
+       "judged": 130
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 4,
+       "judged": 4
+      },
+      "incorrect": {
+       "normalized": 0.16,
+       "raw": 0.15384615384615385,
+       "retained": 13,
+       "judged": 13
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.4615384615384615,
+       "raw": 0.42857142857142855,
+       "retained": 7,
+       "judged": 7
+      },
+      "incorrect": {
+       "normalized": 0.5714285714285714,
+       "raw": 0.3333333333333333,
+       "retained": 6,
+       "judged": 6
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.13333333333333333,
+       "raw": 0.125,
+       "retained": 8,
+       "judged": 8
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 9,
+       "judged": 9
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.11764705882352941,
+       "raw": 0.11764705882352941,
+       "retained": 17,
+       "judged": 17
+      },
+      "incorrect": {
+       "normalized": 0.4210526315789474,
+       "raw": 0.4155844155844156,
+       "retained": 77,
+       "judged": 77
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.11764705882352941,
+       "raw": 0.11764705882352941,
+       "retained": 17,
+       "judged": 17
+      },
+      "incorrect": {
+       "normalized": 0.4429530201342282,
+       "raw": 0.4429530201342282,
+       "retained": 149,
+       "judged": 149
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 17,
+       "judged": 17
+      },
+      "incorrect": {
+       "normalized": 0.2896174863387978,
+       "raw": 0.2896174863387978,
+       "retained": 183,
+       "judged": 183
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.08333333333333333,
+       "raw": 0.08333333333333333,
+       "retained": 12,
+       "judged": 12
+      },
+      "incorrect": {
+       "normalized": 0.09756097560975609,
+       "raw": 0.09090909090909091,
+       "retained": 22,
+       "judged": 22
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.20833333333333334,
+     "incorrect": 0.2156157168699162
+    },
+    "gpqa": {
+     "correct": 0.15224987430869782,
+     "incorrect": 0.3037687808483835
+    },
+    "avg": {
+     "correct": 0.18029160382101558,
+     "incorrect": 0.2596922488591499
+    }
+   }
+  },
+  "gemini-3.1-pro": {
+   "display": "Gemini 3.1 Pro",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.3333333333333333,
+       "raw": 0.3333333333333333,
+       "retained": 3,
+       "judged": 3
+      },
+      "incorrect": {
+       "normalized": 0.6666666666666666,
+       "raw": 0.5,
+       "retained": 2,
+       "judged": 2
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 5,
+       "judged": 5
+      },
+      "incorrect": {
+       "normalized": 0.22222222222222224,
+       "raw": 0.2,
+       "retained": 5,
+       "judged": 5
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.7692307692307693,
+       "raw": 0.7692307692307693,
+       "retained": 13,
+       "judged": 13
+      },
+      "incorrect": {
+       "normalized": 0.9921259842519685,
+       "raw": 0.984375,
+       "retained": 64,
+       "judged": 64
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.21428571428571427,
+       "raw": 0.21428571428571427,
+       "retained": 14,
+       "judged": 14
+      },
+      "incorrect": {
+       "normalized": 0.47619047619047616,
+       "raw": 0.45454545454545453,
+       "retained": 33,
+       "judged": 33
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.23076923076923078,
+       "raw": 0.23076923076923078,
+       "retained": 13,
+       "judged": 13
+      },
+      "incorrect": {
+       "normalized": 0.5490196078431373,
+       "raw": 0.5384615384615384,
+       "retained": 26,
+       "judged": 26
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.25,
+       "raw": 0.25,
+       "retained": 8,
+       "judged": 8
+      },
+      "incorrect": {
+       "normalized": 0.5333333333333333,
+       "raw": 0.5,
+       "retained": 8,
+       "judged": 8
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 6,
+       "judged": 6
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 4,
+       "judged": 4
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 9,
+       "judged": 9
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 5,
+       "judged": 5
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.4375,
+       "raw": 0.4375,
+       "retained": 17,
+       "judged": 16
+      },
+      "incorrect": {
+       "normalized": 0.8421052631578947,
+       "raw": 0.8333333333333334,
+       "retained": 96,
+       "judged": 96
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.2,
+       "raw": 0.2,
+       "retained": 15,
+       "judged": 15
+      },
+      "incorrect": {
+       "normalized": 0.6167400881057269,
+       "raw": 0.6140350877192983,
+       "retained": 114,
+       "judged": 114
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 15,
+       "judged": 15
+      },
+      "incorrect": {
+       "normalized": 0.4807692307692308,
+       "raw": 0.4807692307692308,
+       "retained": 104,
+       "judged": 104
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.4166666666666667,
+       "raw": 0.4166666666666667,
+       "retained": 12,
+       "judged": 12
+      },
+      "incorrect": {
+       "normalized": 0.5333333333333333,
+       "raw": 0.5217391304347826,
+       "retained": 46,
+       "judged": 46
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.2996031746031746,
+     "incorrect": 0.573259715084634
+    },
+    "gpqa": {
+     "correct": 0.17569444444444446,
+     "incorrect": 0.41215798589436425
+    },
+    "avg": {
+     "correct": 0.2376488095238095,
+     "incorrect": 0.49270885048949914
+    }
+   }
+  },
+  "gpt-5": {
+   "display": "GPT-5",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.25,
+       "raw": 0.25,
+       "retained": 4,
+       "judged": 4
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": 0.0,
+       "retained": 1,
+       "judged": 1
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 3,
+       "judged": 3
+      },
+      "incorrect": {
+       "normalized": 1.0,
+       "raw": 0.3333333333333333,
+       "retained": 3,
+       "judged": 3
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.2,
+       "raw": 0.2,
+       "retained": 10,
+       "judged": 10
+      },
+      "incorrect": {
+       "normalized": 0.7272727272727273,
+       "raw": 0.6153846153846154,
+       "retained": 13,
+       "judged": 13
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.3333333333333333,
+       "raw": 0.3333333333333333,
+       "retained": 9,
+       "judged": 9
+      },
+      "incorrect": {
+       "normalized": 0.5584415584415584,
+       "raw": 0.5584415584415584,
+       "retained": 77,
+       "judged": 77
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.4166666666666667,
+       "raw": 0.4166666666666667,
+       "retained": 12,
+       "judged": 12
+      },
+      "incorrect": {
+       "normalized": 0.5102040816326531,
+       "raw": 0.5102040816326531,
+       "retained": 98,
+       "judged": 98
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 5,
+       "judged": 5
+      },
+      "incorrect": {
+       "normalized": 1.0,
+       "raw": 0.6666666666666666,
+       "retained": 3,
+       "judged": 3
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.1,
+       "raw": 0.07692307692307693,
+       "retained": 13,
+       "judged": 13
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": 0.16666666666666666,
+       "retained": 6,
+       "judged": 6
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.058823529411764705,
+       "raw": 0.05263157894736842,
+       "retained": 19,
+       "judged": 19
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": 0.16666666666666666,
+       "retained": 6,
+       "judged": 6
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.4255319148936171,
+       "raw": 0.4166666666666667,
+       "retained": 24,
+       "judged": 24
+      },
+      "incorrect": {
+       "normalized": 0.8333333333333334,
+       "raw": 0.6,
+       "retained": 25,
+       "judged": 25
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.1935483870967742,
+       "raw": 0.1935483870967742,
+       "retained": 31,
+       "judged": 31
+      },
+      "incorrect": {
+       "normalized": 0.6328125,
+       "raw": 0.6328125,
+       "retained": 128,
+       "judged": 128
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.25806451612903225,
+       "raw": 0.25806451612903225,
+       "retained": 31,
+       "judged": 31
+      },
+      "incorrect": {
+       "normalized": 0.6222222222222222,
+       "raw": 0.6222222222222222,
+       "retained": 135,
+       "judged": 135
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.21739130434782608,
+       "raw": 0.21739130434782608,
+       "retained": 23,
+       "judged": 23
+      },
+      "incorrect": {
+       "normalized": 0.27586206896551724,
+       "raw": 0.18181818181818182,
+       "retained": 22,
+       "judged": 22
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.19999999999999998,
+     "incorrect": 0.7591836734693878
+    },
+    "gpqa": {
+     "correct": 0.20889327531316904,
+     "incorrect": 0.5910575311302682
+    },
+    "avg": {
+     "correct": 0.2044466376565845,
+     "incorrect": 0.675120602299828
+    }
+   }
+  },
+  "gpt-5-mini": {
+   "display": "GPT-5 Mini",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.2857142857142857,
+       "raw": 0.25,
+       "retained": 4,
+       "judged": 4
+      },
+      "incorrect": {
+       "normalized": 0.3333333333333333,
+       "raw": 0.25,
+       "retained": 8,
+       "judged": 8
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 7,
+       "judged": 7
+      },
+      "incorrect": {
+       "normalized": 0.16216216216216214,
+       "raw": 0.14285714285714285,
+       "retained": 21,
+       "judged": 21
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.14814814814814814,
+       "raw": 0.14285714285714285,
+       "retained": 14,
+       "judged": 14
+      },
+      "incorrect": {
+       "normalized": 0.25,
+       "raw": 0.23076923076923078,
+       "retained": 26,
+       "judged": 26
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.38461538461538464,
+       "raw": 0.38461538461538464,
+       "retained": 13,
+       "judged": 13
+      },
+      "incorrect": {
+       "normalized": 0.35185185185185186,
+       "raw": 0.34545454545454546,
+       "retained": 55,
+       "judged": 55
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.1,
+       "raw": 0.1,
+       "retained": 20,
+       "judged": 20
+      },
+      "incorrect": {
+       "normalized": 0.3137254901960784,
+       "raw": 0.3137254901960784,
+       "retained": 204,
+       "judged": 204
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.17391304347826086,
+       "raw": 0.16666666666666666,
+       "retained": 12,
+       "judged": 12
+      },
+      "incorrect": {
+       "normalized": 0.29508196721311475,
+       "raw": 0.2903225806451613,
+       "retained": 31,
+       "judged": 31
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.5185185185185185,
+       "raw": 0.4375,
+       "retained": 16,
+       "judged": 16
+      },
+      "incorrect": {
+       "normalized": 0.33333333333333337,
+       "raw": 0.21428571428571427,
+       "retained": 14,
+       "judged": 14
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.04081632653061225,
+       "raw": 0.04,
+       "retained": 25,
+       "judged": 25
+      },
+      "incorrect": {
+       "normalized": 0.041666666666666664,
+       "raw": 0.034482758620689655,
+       "retained": 29,
+       "judged": 29
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.2058823529411765,
+       "raw": 0.2,
+       "retained": 35,
+       "judged": 35
+      },
+      "incorrect": {
+       "normalized": 0.2978723404255319,
+       "raw": 0.25925925925925924,
+       "retained": 27,
+       "judged": 27
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.4126984126984127,
+       "raw": 0.40625,
+       "retained": 32,
+       "judged": 32
+      },
+      "incorrect": {
+       "normalized": 0.4948453608247423,
+       "raw": 0.47058823529411764,
+       "retained": 51,
+       "judged": 51
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.21951219512195122,
+       "raw": 0.21951219512195122,
+       "retained": 41,
+       "judged": 41
+      },
+      "incorrect": {
+       "normalized": 0.5063897115501643,
+       "raw": 0.5031847133757962,
+       "retained": 158,
+       "judged": 157
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.25806451612903225,
+       "raw": 0.25806451612903225,
+       "retained": 31,
+       "judged": 31
+      },
+      "incorrect": {
+       "normalized": 0.31707317073170727,
+       "raw": 0.3023255813953488,
+       "retained": 43,
+       "judged": 43
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.18206514365934656,
+     "incorrect": 0.2843591341260901
+    },
+    "gpqa": {
+     "correct": 0.27591538698995055,
+     "incorrect": 0.331863430588691
+    },
+    "avg": {
+     "correct": 0.22899026532464856,
+     "incorrect": 0.30811128235739055
+    }
+   }
+  },
+  "gpt-5-nano": {
+   "display": "GPT-5 Nano",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.18181818181818182,
+       "raw": 0.16666666666666666,
+       "retained": 6,
+       "judged": 6
+      },
+      "incorrect": {
+       "normalized": 1.0,
+       "raw": 0.2,
+       "retained": 5,
+       "judged": 5
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.4,
+       "raw": 0.38461538461538464,
+       "retained": 13,
+       "judged": 13
+      },
+      "incorrect": {
+       "normalized": 0.29629629629629634,
+       "raw": 0.23529411764705882,
+       "retained": 17,
+       "judged": 17
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.18181818181818182,
+       "raw": 0.16666666666666666,
+       "retained": 18,
+       "judged": 18
+      },
+      "incorrect": {
+       "normalized": 0.3636363636363636,
+       "raw": 0.26666666666666666,
+       "retained": 15,
+       "judged": 15
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.25,
+       "raw": 0.25,
+       "retained": 20,
+       "judged": 20
+      },
+      "incorrect": {
+       "normalized": 0.6493506493506493,
+       "raw": 0.6097560975609756,
+       "retained": 41,
+       "judged": 41
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.52,
+       "raw": 0.52,
+       "retained": 25,
+       "judged": 25
+      },
+      "incorrect": {
+       "normalized": 0.6460176991150443,
+       "raw": 0.6403508771929824,
+       "retained": 114,
+       "judged": 114
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.38095238095238093,
+       "raw": 0.38095238095238093,
+       "retained": 21,
+       "judged": 21
+      },
+      "incorrect": {
+       "normalized": 0.4421052631578947,
+       "raw": 0.42,
+       "retained": 50,
+       "judged": 50
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.31818181818181823,
+       "raw": 0.2916666666666667,
+       "retained": 24,
+       "judged": 24
+      },
+      "incorrect": {
+       "normalized": 0.5555555555555556,
+       "raw": 0.2777777777777778,
+       "retained": 18,
+       "judged": 18
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.16438356164383564,
+       "raw": 0.15384615384615385,
+       "retained": 39,
+       "judged": 39
+      },
+      "incorrect": {
+       "normalized": 0.25000000000000006,
+       "raw": 0.17647058823529413,
+       "retained": 34,
+       "judged": 34
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.18181818181818182,
+       "raw": 0.16279069767441862,
+       "retained": 43,
+       "judged": 43
+      },
+      "incorrect": {
+       "normalized": 0.5365853658536585,
+       "raw": 0.3548387096774194,
+       "retained": 31,
+       "judged": 31
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.3921568627450981,
+       "raw": 0.37735849056603776,
+       "retained": 53,
+       "judged": 53
+      },
+      "incorrect": {
+       "normalized": 0.5694444444444444,
+       "raw": 0.5466666666666666,
+       "retained": 75,
+       "judged": 75
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.2982456140350877,
+       "raw": 0.2982456140350877,
+       "retained": 57,
+       "judged": 57
+      },
+      "incorrect": {
+       "normalized": 0.5726141078838174,
+       "raw": 0.5702479338842975,
+       "retained": 121,
+       "judged": 121
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.4854368932038835,
+       "raw": 0.4807692307692308,
+       "retained": 52,
+       "judged": 52
+      },
+      "incorrect": {
+       "normalized": 0.5789473684210527,
+       "raw": 0.55,
+       "retained": 80,
+       "judged": 80
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.3190981240981241,
+     "incorrect": 0.5662343785927081
+    },
+    "gpqa": {
+     "correct": 0.3067038219379842,
+     "incorrect": 0.5105244736930881
+    },
+    "avg": {
+     "correct": 0.31290097301805414,
+     "incorrect": 0.538379426142898
+    }
+   }
+  },
+  "gpt-5.1": {
+   "display": "GPT-5.1",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 3,
+       "judged": 3
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": 0.0,
+       "retained": 1,
+       "judged": 1
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.125,
+       "raw": 0.125,
+       "retained": 8,
+       "judged": 8
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": 0.0,
+       "retained": 1,
+       "judged": 1
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.2727272727272727,
+       "raw": 0.2727272727272727,
+       "retained": 11,
+       "judged": 11
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 8,
+       "judged": 8
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.05555555555555555,
+       "raw": 0.05555555555555555,
+       "retained": 18,
+       "judged": 18
+      },
+      "incorrect": {
+       "normalized": 0.19095477386934673,
+       "raw": 0.19,
+       "retained": 100,
+       "judged": 100
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.058823529411764705,
+       "raw": 0.058823529411764705,
+       "retained": 17,
+       "judged": 17
+      },
+      "incorrect": {
+       "normalized": 0.17647058823529413,
+       "raw": 0.17647058823529413,
+       "retained": 85,
+       "judged": 85
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 7,
+       "judged": 7
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 4,
+       "judged": 4
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.2162162162162162,
+       "raw": 0.21052631578947367,
+       "retained": 19,
+       "judged": 19
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": 0.2,
+       "retained": 5,
+       "judged": 5
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.09523809523809525,
+       "raw": 0.07692307692307693,
+       "retained": 13,
+       "judged": 13
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": 0.5,
+       "retained": 2,
+       "judged": 2
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.22857142857142856,
+       "raw": 0.2222222222222222,
+       "retained": 36,
+       "judged": 36
+      },
+      "incorrect": {
+       "normalized": 0.3714285714285714,
+       "raw": 0.28888888888888886,
+       "retained": 45,
+       "judged": 45
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.15625,
+       "raw": 0.15625,
+       "retained": 32,
+       "judged": 32
+      },
+      "incorrect": {
+       "normalized": 0.3161764705882353,
+       "raw": 0.3161764705882353,
+       "retained": 136,
+       "judged": 136
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.24242424242424243,
+       "raw": 0.24242424242424243,
+       "retained": 33,
+       "judged": 33
+      },
+      "incorrect": {
+       "normalized": 0.3053435114503817,
+       "raw": 0.3053435114503817,
+       "retained": 131,
+       "judged": 131
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.08888888888888888,
+       "raw": 0.08695652173913043,
+       "retained": 23,
+       "judged": 23
+      },
+      "incorrect": {
+       "normalized": 0.26666666666666666,
+       "raw": 0.2,
+       "retained": 30,
+       "judged": 30
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.0853510596157655,
+     "incorrect": 0.09185634052616021
+    },
+    "gpqa": {
+     "correct": 0.17126481188981188,
+     "incorrect": 0.31490380503346377
+    },
+    "avg": {
+     "correct": 0.1283079357527887,
+     "incorrect": 0.203380072779812
+    }
+   }
+  },
+  "gpt-5.2": {
+   "display": "GPT-5.2",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.39999999999999997,
+       "raw": 0.3333333333333333,
+       "retained": 3,
+       "judged": 3
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 2,
+       "judged": 2
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 5,
+       "judged": 5
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 3,
+       "judged": 3
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 8,
+       "judged": 8
+      },
+      "incorrect": {
+       "normalized": 0.125,
+       "raw": 0.11764705882352941,
+       "retained": 17,
+       "judged": 17
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.14285714285714285,
+       "raw": 0.14285714285714285,
+       "retained": 14,
+       "judged": 14
+      },
+      "incorrect": {
+       "normalized": 0.1595744680851064,
+       "raw": 0.1595744680851064,
+       "retained": 94,
+       "judged": 94
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.07142857142857142,
+       "raw": 0.07142857142857142,
+       "retained": 14,
+       "judged": 14
+      },
+      "incorrect": {
+       "normalized": 0.04669260700389105,
+       "raw": 0.046511627906976744,
+       "retained": 129,
+       "judged": 129
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 8,
+       "judged": 8
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 17,
+       "judged": 17
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.125,
+       "raw": 0.1111111111111111,
+       "retained": 9,
+       "judged": 9
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": 0.125,
+       "retained": 8,
+       "judged": 8
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 8,
+       "judged": 8
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 7,
+       "judged": 7
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.13953488372093023,
+       "raw": 0.13636363636363635,
+       "retained": 22,
+       "judged": 22
+      },
+      "incorrect": {
+       "normalized": 0.3466666666666666,
+       "raw": 0.3023255813953488,
+       "retained": 43,
+       "judged": 43
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.13043478260869565,
+       "raw": 0.13043478260869565,
+       "retained": 23,
+       "judged": 23
+      },
+      "incorrect": {
+       "normalized": 0.3595505617977528,
+       "raw": 0.3582089552238806,
+       "retained": 134,
+       "judged": 134
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.13043478260869565,
+       "raw": 0.13043478260869565,
+       "retained": 23,
+       "judged": 23
+      },
+      "incorrect": {
+       "normalized": 0.2822085889570552,
+       "raw": 0.2822085889570552,
+       "retained": 163,
+       "judged": 163
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.10256410256410257,
+       "raw": 0.1,
+       "retained": 20,
+       "judged": 20
+      },
+      "incorrect": {
+       "normalized": 0.11214953271028037,
+       "raw": 0.10344827586206896,
+       "retained": 58,
+       "judged": 58
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.10238095238095236,
+     "incorrect": 0.05521117918149957
+    },
+    "gpqa": {
+     "correct": 0.10466142525040402,
+     "incorrect": 0.220115070026351
+    },
+    "avg": {
+     "correct": 0.10352118881567819,
+     "incorrect": 0.1376631246039253
+    }
+   }
+  },
+  "gpt-5.4": {
+   "display": "GPT-5.4",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 3,
+       "judged": 3
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": 0.0,
+       "retained": 2,
+       "judged": 2
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 4,
+       "judged": 4
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 3,
+       "judged": 3
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.13333333333333333,
+       "raw": 0.125,
+       "retained": 8,
+       "judged": 8
+      },
+      "incorrect": {
+       "normalized": 0.18461538461538463,
+       "raw": 0.17647058823529413,
+       "retained": 34,
+       "judged": 34
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.21428571428571427,
+       "raw": 0.21428571428571427,
+       "retained": 14,
+       "judged": 14
+      },
+      "incorrect": {
+       "normalized": 0.19801980198019803,
+       "raw": 0.19801980198019803,
+       "retained": 101,
+       "judged": 101
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.0625,
+       "raw": 0.0625,
+       "retained": 16,
+       "judged": 16
+      },
+      "incorrect": {
+       "normalized": 0.18932038834951456,
+       "raw": 0.18932038834951456,
+       "retained": 206,
+       "judged": 206
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 9,
+       "judged": 9
+      },
+      "incorrect": {
+       "normalized": 0.11111111111111112,
+       "raw": 0.1,
+       "retained": 10,
+       "judged": 10
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.10526315789473685,
+       "raw": 0.09090909090909091,
+       "retained": 11,
+       "judged": 11
+      },
+      "incorrect": {
+       "normalized": 0.4,
+       "raw": 0.14285714285714285,
+       "retained": 7,
+       "judged": 7
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 12,
+       "judged": 12
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 8,
+       "judged": 8
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.09523809523809523,
+       "raw": 0.09523809523809523,
+       "retained": 21,
+       "judged": 21
+      },
+      "incorrect": {
+       "normalized": 0.4590163934426229,
+       "raw": 0.4117647058823529,
+       "retained": 34,
+       "judged": 34
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.08695652173913043,
+       "raw": 0.08695652173913043,
+       "retained": 23,
+       "judged": 23
+      },
+      "incorrect": {
+       "normalized": 0.4444444444444444,
+       "raw": 0.4444444444444444,
+       "retained": 135,
+       "judged": 135
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.17391304347826086,
+       "raw": 0.17391304347826086,
+       "retained": 23,
+       "judged": 23
+      },
+      "incorrect": {
+       "normalized": 0.38461538461538464,
+       "raw": 0.38461538461538464,
+       "retained": 182,
+       "judged": 182
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.05714285714285714,
+       "raw": 0.05555555555555555,
+       "retained": 18,
+       "judged": 18
+      },
+      "incorrect": {
+       "normalized": 0.2978723404255319,
+       "raw": 0.25,
+       "retained": 28,
+       "judged": 28
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.0683531746031746,
+     "incorrect": 0.13661333721124166
+    },
+    "gpqa": {
+     "correct": 0.08641894591551341,
+     "incorrect": 0.33099142715466395
+    },
+    "avg": {
+     "correct": 0.077386060259344,
+     "incorrect": 0.2338023821829528
+    }
+   }
+  },
+  "gpt-5.6-luna": {
+   "display": "GPT-5.6 Luna",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.2727272727272727,
+       "raw": 0.2727272727272727,
+       "retained": 11,
+       "judged": 11
+      },
+      "incorrect": {
+       "normalized": 0.2222222222222222,
+       "raw": 0.125,
+       "retained": 8,
+       "judged": 8
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 8,
+       "judged": 8
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 14,
+       "judged": 14
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.21428571428571427,
+       "raw": 0.21428571428571427,
+       "retained": 14,
+       "judged": 14
+      },
+      "incorrect": {
+       "normalized": 0.22222222222222224,
+       "raw": 0.2,
+       "retained": 25,
+       "judged": 25
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.15789473684210525,
+       "raw": 0.15789473684210525,
+       "retained": 19,
+       "judged": 19
+      },
+      "incorrect": {
+       "normalized": 0.34418604651162793,
+       "raw": 0.3425925925925926,
+       "retained": 108,
+       "judged": 108
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.15,
+       "raw": 0.15,
+       "retained": 20,
+       "judged": 20
+      },
+      "incorrect": {
+       "normalized": 0.2608695652173913,
+       "raw": 0.2608695652173913,
+       "retained": 184,
+       "judged": 184
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.15789473684210525,
+       "raw": 0.15789473684210525,
+       "retained": 19,
+       "judged": 19
+      },
+      "incorrect": {
+       "normalized": 0.18487394957983191,
+       "raw": 0.18333333333333332,
+       "retained": 60,
+       "judged": 60
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 18,
+       "judged": 18
+      },
+      "incorrect": {
+       "normalized": 0.22222222222222224,
+       "raw": 0.14285714285714285,
+       "retained": 14,
+       "judged": 14
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.06666666666666667,
+       "raw": 0.0625,
+       "retained": 16,
+       "judged": 16
+      },
+      "incorrect": {
+       "normalized": 0.05714285714285714,
+       "raw": 0.043478260869565216,
+       "retained": 23,
+       "judged": 23
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 30,
+       "judged": 30
+      },
+      "incorrect": {
+       "normalized": 0.3148148148148148,
+       "raw": 0.288135593220339,
+       "retained": 59,
+       "judged": 59
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 27,
+       "judged": 27
+      },
+      "incorrect": {
+       "normalized": 0.38513513513513514,
+       "raw": 0.38513513513513514,
+       "retained": 148,
+       "judged": 148
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.2222222222222222,
+       "raw": 0.2222222222222222,
+       "retained": 27,
+       "judged": 27
+      },
+      "incorrect": {
+       "normalized": 0.2608695652173913,
+       "raw": 0.2608695652173913,
+       "retained": 184,
+       "judged": 184
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 27,
+       "judged": 27
+      },
+      "incorrect": {
+       "normalized": 0.16190476190476188,
+       "raw": 0.1588785046728972,
+       "retained": 107,
+       "judged": 107
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.15880041011619958,
+     "incorrect": 0.20572900095888258
+    },
+    "gpqa": {
+     "correct": 0.04814814814814814,
+     "incorrect": 0.2336815594061971
+    },
+    "avg": {
+     "correct": 0.10347427913217386,
+     "incorrect": 0.21970528018253982
+    }
+   }
+  },
+  "gpt-5.6-sol": {
+   "display": "GPT-5.6 Sol",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.2857142857142857,
+       "raw": 0.25,
+       "retained": 4,
+       "judged": 4
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 4,
+       "judged": 4
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 5,
+       "judged": 5
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 6,
+       "judged": 6
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.2222222222222222,
+       "raw": 0.2222222222222222,
+       "retained": 9,
+       "judged": 9
+      },
+      "incorrect": {
+       "normalized": 0.15555555555555556,
+       "raw": 0.15555555555555556,
+       "retained": 45,
+       "judged": 45
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.07692307692307693,
+       "raw": 0.07692307692307693,
+       "retained": 13,
+       "judged": 13
+      },
+      "incorrect": {
+       "normalized": 0.22857142857142856,
+       "raw": 0.22857142857142856,
+       "retained": 105,
+       "judged": 105
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.15384615384615385,
+       "raw": 0.15384615384615385,
+       "retained": 13,
+       "judged": 13
+      },
+      "incorrect": {
+       "normalized": 0.21428571428571427,
+       "raw": 0.21428571428571427,
+       "retained": 140,
+       "judged": 140
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 5,
+       "judged": 5
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 14,
+       "judged": 14
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.19999999999999998,
+       "raw": 0.16666666666666666,
+       "retained": 6,
+       "judged": 6
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 5,
+       "judged": 5
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 7,
+       "judged": 7
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 6,
+       "judged": 6
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.07142857142857142,
+       "raw": 0.07142857142857142,
+       "retained": 15,
+       "judged": 14
+      },
+      "incorrect": {
+       "normalized": 0.30487804878048785,
+       "raw": 0.30120481927710846,
+       "retained": 83,
+       "judged": 83
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.08333333333333333,
+       "raw": 0.08333333333333333,
+       "retained": 12,
+       "judged": 12
+      },
+      "incorrect": {
+       "normalized": 0.2605633802816901,
+       "raw": 0.2605633802816901,
+       "retained": 143,
+       "judged": 142
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 12,
+       "judged": 12
+      },
+      "incorrect": {
+       "normalized": 0.18085106382978725,
+       "raw": 0.18085106382978725,
+       "retained": 188,
+       "judged": 188
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 11,
+       "judged": 11
+      },
+      "incorrect": {
+       "normalized": 0.14457831325301204,
+       "raw": 0.13636363636363635,
+       "retained": 44,
+       "judged": 44
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.12311762311762313,
+     "incorrect": 0.09973544973544973
+    },
+    "gpqa": {
+     "correct": 0.05912698412698412,
+     "incorrect": 0.14847846769082954
+    },
+    "avg": {
+     "correct": 0.09112230362230363,
+     "incorrect": 0.12410695871313963
+    }
+   }
+  },
+  "gpt-5.6-terra": {
+   "display": "GPT-5.6 Terra",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 2,
+       "judged": 2
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 6,
+       "judged": 6
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 4,
+       "judged": 4
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 10,
+       "judged": 10
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 11,
+       "judged": 11
+      },
+      "incorrect": {
+       "normalized": 0.058823529411764705,
+       "raw": 0.058823529411764705,
+       "retained": 34,
+       "judged": 34
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 11,
+       "judged": 11
+      },
+      "incorrect": {
+       "normalized": 0.2837370242214533,
+       "raw": 0.2827586206896552,
+       "retained": 145,
+       "judged": 145
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.09090909090909091,
+       "raw": 0.09090909090909091,
+       "retained": 11,
+       "judged": 11
+      },
+      "incorrect": {
+       "normalized": 0.13855421686746988,
+       "raw": 0.13855421686746988,
+       "retained": 166,
+       "judged": 166
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 8,
+       "judged": 8
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 28,
+       "judged": 28
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.05714285714285714,
+       "raw": 0.05555555555555555,
+       "retained": 18,
+       "judged": 18
+      },
+      "incorrect": {
+       "normalized": 0.14285714285714285,
+       "raw": 0.08333333333333333,
+       "retained": 12,
+       "judged": 12
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 18,
+       "judged": 18
+      },
+      "incorrect": {
+       "normalized": 0.4444444444444444,
+       "raw": 0.2,
+       "retained": 10,
+       "judged": 10
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.10909090909090909,
+       "raw": 0.10714285714285714,
+       "retained": 28,
+       "judged": 28
+      },
+      "incorrect": {
+       "normalized": 0.19780219780219782,
+       "raw": 0.17647058823529413,
+       "retained": 51,
+       "judged": 51
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.1111111111111111,
+       "raw": 0.1111111111111111,
+       "retained": 27,
+       "judged": 27
+      },
+      "incorrect": {
+       "normalized": 0.21114369501466274,
+       "raw": 0.21052631578947367,
+       "retained": 171,
+       "judged": 171
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.037037037037037035,
+       "raw": 0.037037037037037035,
+       "retained": 27,
+       "judged": 27
+      },
+      "incorrect": {
+       "normalized": 0.14893617021276595,
+       "raw": 0.14893617021276595,
+       "retained": 188,
+       "judged": 188
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.038461538461538464,
+       "raw": 0.038461538461538464,
+       "retained": 26,
+       "judged": 26
+      },
+      "incorrect": {
+       "normalized": 0.018867924528301886,
+       "raw": 0.017241379310344827,
+       "retained": 58,
+       "judged": 58
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.015151515151515152,
+     "incorrect": 0.08018579508344799
+    },
+    "gpqa": {
+     "correct": 0.05880724214057547,
+     "incorrect": 0.19400859580991928
+    },
+    "avg": {
+     "correct": 0.03697937864604531,
+     "incorrect": 0.13709719544668364
+    }
+   }
+  },
+  "gemini-3.1-flash-lite": {
+   "display": "Gemini 3.1 Flash-Lite",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.1,
+       "raw": 0.1,
+       "retained": 10,
+       "judged": 10
+      },
+      "incorrect": {
+       "normalized": 0.8,
+       "raw": 0.25,
+       "retained": 8,
+       "judged": 8
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 18,
+       "judged": 18
+      },
+      "incorrect": {
+       "normalized": 0.023809523809523808,
+       "raw": 0.022727272727272728,
+       "retained": 44,
+       "judged": 44
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.25,
+       "raw": 0.25,
+       "retained": 16,
+       "judged": 16
+      },
+      "incorrect": {
+       "normalized": 0.8358208955223881,
+       "raw": 0.7567567567567568,
+       "retained": 37,
+       "judged": 37
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.26666666666666666,
+       "raw": 0.26666666666666666,
+       "retained": 15,
+       "judged": 15
+      },
+      "incorrect": {
+       "normalized": 0.6407766990291262,
+       "raw": 0.6226415094339622,
+       "retained": 53,
+       "judged": 53
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.3181818181818182,
+       "raw": 0.3181818181818182,
+       "retained": 22,
+       "judged": 22
+      },
+      "incorrect": {
+       "normalized": 0.7692307692307693,
+       "raw": 0.7692307692307693,
+       "retained": 182,
+       "judged": 182
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.35294117647058826,
+       "raw": 0.35294117647058826,
+       "retained": 17,
+       "judged": 17
+      },
+      "incorrect": {
+       "normalized": 0.7499999999999999,
+       "raw": 0.7358490566037735,
+       "retained": 53,
+       "judged": 53
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.07547169811320754,
+       "raw": 0.07407407407407407,
+       "retained": 27,
+       "judged": 27
+      },
+      "incorrect": {
+       "normalized": 0.125,
+       "raw": 0.08695652173913043,
+       "retained": 23,
+       "judged": 23
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 35,
+       "judged": 35
+      },
+      "incorrect": {
+       "normalized": 0.08333333333333333,
+       "raw": 0.078125,
+       "retained": 64,
+       "judged": 64
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.40506329113924056,
+       "raw": 0.3902439024390244,
+       "retained": 41,
+       "judged": 41
+      },
+      "incorrect": {
+       "normalized": 0.6621621621621622,
+       "raw": 0.6363636363636364,
+       "retained": 77,
+       "judged": 77
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.27027027027027023,
+       "raw": 0.2631578947368421,
+       "retained": 38,
+       "judged": 38
+      },
+      "incorrect": {
+       "normalized": 0.5066666666666666,
+       "raw": 0.48717948717948717,
+       "retained": 78,
+       "judged": 78
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.18604651162790697,
+       "raw": 0.18604651162790697,
+       "retained": 43,
+       "judged": 43
+      },
+      "incorrect": {
+       "normalized": 0.56,
+       "raw": 0.56,
+       "retained": 150,
+       "judged": 150
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.6153846153846154,
+       "raw": 0.6153846153846154,
+       "retained": 39,
+       "judged": 39
+      },
+      "incorrect": {
+       "normalized": 0.8571428571428572,
+       "raw": 0.8503937007874016,
+       "retained": 127,
+       "judged": 127
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.21463161021984553,
+     "incorrect": 0.6366063145986346
+    },
+    "gpqa": {
+     "correct": 0.2587060644225401,
+     "incorrect": 0.4657175032175032
+    },
+    "avg": {
+     "correct": 0.23666883732119282,
+     "incorrect": 0.5511619089080689
+    }
+   }
+  },
+  "gemini-3.5-flash": {
+   "display": "Gemini 3.5 Flash",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 4,
+       "judged": 4
+      },
+      "incorrect": {
+       "normalized": null,
+       "raw": 0.5,
+       "retained": 2,
+       "judged": 2
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.125,
+       "raw": 0.125,
+       "retained": 8,
+       "judged": 8
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 5,
+       "judged": 5
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.5,
+       "raw": 0.5,
+       "retained": 8,
+       "judged": 8
+      },
+      "incorrect": {
+       "normalized": 1.0,
+       "raw": 0.8888888888888888,
+       "retained": 9,
+       "judged": 9
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.21428571428571427,
+       "raw": 0.21428571428571427,
+       "retained": 14,
+       "judged": 14
+      },
+      "incorrect": {
+       "normalized": 0.8757062146892656,
+       "raw": 0.8757062146892656,
+       "retained": 177,
+       "judged": 177
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.3333333333333333,
+       "raw": 0.3333333333333333,
+       "retained": 15,
+       "judged": 15
+      },
+      "incorrect": {
+       "normalized": 0.9053254437869822,
+       "raw": 0.9053254437869822,
+       "retained": 169,
+       "judged": 169
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.25,
+       "raw": 0.25,
+       "retained": 8,
+       "judged": 8
+      },
+      "incorrect": {
+       "normalized": 0.6666666666666666,
+       "raw": 0.5714285714285714,
+       "retained": 7,
+       "judged": 7
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.2105263157894737,
+       "raw": 0.2,
+       "retained": 10,
+       "judged": 10
+      },
+      "incorrect": {
+       "normalized": 0.24999999999999997,
+       "raw": 0.16666666666666666,
+       "retained": 6,
+       "judged": 6
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.09090909090909091,
+       "raw": 0.09090909090909091,
+       "retained": 11,
+       "judged": 11
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 10,
+       "judged": 10
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.6666666666666666,
+       "raw": 0.6666666666666666,
+       "retained": 12,
+       "judged": 12
+      },
+      "incorrect": {
+       "normalized": 0.7076923076923076,
+       "raw": 0.6388888888888888,
+       "retained": 36,
+       "judged": 36
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 17,
+       "judged": 17
+      },
+      "incorrect": {
+       "normalized": 0.7002967359050445,
+       "raw": 0.6982248520710059,
+       "retained": 169,
+       "judged": 169
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.23529411764705882,
+       "raw": 0.23529411764705882,
+       "retained": 17,
+       "judged": 17
+      },
+      "incorrect": {
+       "normalized": 0.8011049723756906,
+       "raw": 0.8011049723756906,
+       "retained": 181,
+       "judged": 181
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.3333333333333333,
+       "raw": 0.3333333333333333,
+       "retained": 15,
+       "judged": 15
+      },
+      "incorrect": {
+       "normalized": 0.38461538461538464,
+       "raw": 0.375,
+       "retained": 40,
+       "judged": 40
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.23710317460317462,
+     "incorrect": 0.6895396650285829
+    },
+    "gpqa": {
+     "correct": 0.2561215873909372,
+     "incorrect": 0.4739515667647379
+    },
+    "avg": {
+     "correct": 0.2466123809970559,
+     "incorrect": 0.5817456158966604
+    }
+   }
+  },
+  "gemini-3.6-flash": {
+   "display": "Gemini 3.6 Flash",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.2222222222222222,
+       "raw": 0.2222222222222222,
+       "retained": 9,
+       "judged": 9
+      },
+      "incorrect": {
+       "normalized": 1.0,
+       "raw": 0.6666666666666666,
+       "retained": 3,
+       "judged": 3
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 11,
+       "judged": 11
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 4,
+       "judged": 4
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.5384615384615384,
+       "raw": 0.5384615384615384,
+       "retained": 13,
+       "judged": 13
+      },
+      "incorrect": {
+       "normalized": 0.9992283950617283,
+       "raw": 0.9722222222222222,
+       "retained": 37,
+       "judged": 36
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.3888888888888889,
+       "raw": 0.3888888888888889,
+       "retained": 18,
+       "judged": 18
+      },
+      "incorrect": {
+       "normalized": 0.8668941979522184,
+       "raw": 0.8639455782312925,
+       "retained": 147,
+       "judged": 147
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.3333333333333333,
+       "raw": 0.3333333333333333,
+       "retained": 18,
+       "judged": 18
+      },
+      "incorrect": {
+       "normalized": 0.9267015706806283,
+       "raw": 0.9267015706806283,
+       "retained": 191,
+       "judged": 191
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.1,
+       "raw": 0.1,
+       "retained": 10,
+       "judged": 10
+      },
+      "incorrect": {
+       "normalized": 0.5714285714285714,
+       "raw": 0.5,
+       "retained": 4,
+       "judged": 4
+      }
+     }
+    },
+    "gpqa": {
+     "suggestion": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 5,
+       "judged": 5
+      },
+      "incorrect": {
+       "normalized": 0.2857142857142857,
+       "raw": 0.125,
+       "retained": 8,
+       "judged": 8
+      }
+     },
+     "posthoc": {
+      "correct": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 7,
+       "judged": 7
+      },
+      "incorrect": {
+       "normalized": 0.0,
+       "raw": 0.0,
+       "retained": 10,
+       "judged": 10
+      }
+     },
+     "fewshot_symbol": {
+      "correct": {
+       "normalized": 0.5263157894736842,
+       "raw": 0.5263157894736842,
+       "retained": 19,
+       "judged": 19
+      },
+      "incorrect": {
+       "normalized": 0.9024390243902439,
+       "raw": 0.8809523809523809,
+       "retained": 84,
+       "judged": 84
+      }
+     },
+     "metadata": {
+      "correct": {
+       "normalized": 0.45454545454545453,
+       "raw": 0.45454545454545453,
+       "retained": 11,
+       "judged": 11
+      },
+      "incorrect": {
+       "normalized": 0.8193548387096774,
+       "raw": 0.8141025641025641,
+       "retained": 156,
+       "judged": 156
+      }
+     },
+     "grader_hacking": {
+      "correct": {
+       "normalized": 0.09090909090909091,
+       "raw": 0.09090909090909091,
+       "retained": 11,
+       "judged": 11
+      },
+      "incorrect": {
+       "normalized": 0.7914438502673797,
+       "raw": 0.7914438502673797,
+       "retained": 187,
+       "judged": 187
+      }
+     },
+     "unethical_information": {
+      "correct": {
+       "normalized": 0.4,
+       "raw": 0.4,
+       "retained": 5,
+       "judged": 5
+      },
+      "incorrect": {
+       "normalized": 0.3225806451612903,
+       "raw": 0.2631578947368421,
+       "retained": 19,
+       "judged": 19
+      }
+     }
+    }
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": 0.2638176638176638,
+     "incorrect": 0.7273754558538578
+    },
+    "gpqa": {
+     "correct": 0.2452950558213716,
+     "incorrect": 0.5202554407071461
+    },
+    "avg": {
+     "correct": 0.2545563598195177,
+     "incorrect": 0.623815448280502
+    }
+   }
+  }
+ }
+}

@@ -27,6 +27,18 @@ from lib.tables import write_table
 
 ALL_TYPES = TIER1_PAPER_TYPES + TIER2_TYPES
 OUT_PATH = Path("results/faithfulness_tables.json")
+
+
+def retarget(stems: dict, variant: str | None) -> dict:
+    """Point the judge_* entries at a judge variant's verdict files (transcripts unchanged)."""
+    if not variant:
+        return stems
+    out = dict(stems)
+    for k in ("judge_tier1", "judge_tier2"):
+        if k in out:
+            name = Path(out[k]).name
+            out[k] = str(Path(out[k]).parent / name.replace("judge_", f"judge_{variant}_", 1))
+    return out
 ARMS = {"correct": "True", "incorrect": "False"}
 
 
@@ -67,6 +79,9 @@ def mean(xs):
 
 def main() -> None:
     parser = argparse.ArgumentParser()
+    parser.add_argument("--judge-variant", default=None,
+                        help="read a judge variant's verdicts (e.g. neutral_opus48) and write "
+                             "results/faithfulness_tables_<variant>.json instead")
     parser.add_argument("--allow-incomplete", action="store_true",
                         help="write the table even if some models' inputs are missing")
     args = parser.parse_args()
@@ -74,7 +89,8 @@ def main() -> None:
     models, missing = {}, []
     for m in lineup():
         gpqa = grid_files(m.gpqa_tag)
-        sources = {"mmlu": m.mmlu_stems, "gpqa": gpqa}
+        sources = {"mmlu": retarget(m.mmlu_stems, args.judge_variant),
+                   "gpqa": retarget(gpqa, args.judge_variant)}
         rec = {"display": m.display, "group": m.group, "per_type": {}, "mean_normalized": {}}
         dataset_means = {}
         for ds, stems in sources.items():
@@ -116,7 +132,9 @@ def main() -> None:
         },
         "models": models,
     }
-    write_table(OUT_PATH, out, missing, allow_incomplete=args.allow_incomplete)
+    out_path = (OUT_PATH if not args.judge_variant
+                else OUT_PATH.with_name(f"{OUT_PATH.stem}_{args.judge_variant}.json"))
+    write_table(out_path, out, missing, allow_incomplete=args.allow_incomplete)
 
 
 if __name__ == "__main__":

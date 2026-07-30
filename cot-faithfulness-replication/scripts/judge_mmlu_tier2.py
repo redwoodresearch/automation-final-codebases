@@ -24,6 +24,7 @@ from cost_tracker import CostTracker
 from lib.analysis import build_pairs, load_results
 from lib.dataset import load_file
 from lib.judge import JUDGE_EFFORT, JUDGE_MODEL, judge_verbalization
+from lib.judge_variants import VARIANTS, judge_verbalization_variant
 from lib.llm import set_concurrency
 from lib.run_utils import git_hash, load_done_task_ids
 from lib.tier1 import response_texts
@@ -52,9 +53,14 @@ async def main() -> None:
     parser.add_argument("--concurrency", type=int, default=50)
     parser.add_argument("--assert-cached", action="store_true")
     parser.add_argument("--out", type=Path, default=None)
+    parser.add_argument("--variant", default=None, choices=sorted(VARIANTS),
+                        help="judge-prompt/model variant; default is the standard Opus 4.8 judge")
     args = parser.parse_args()
 
-    out_path = args.out or Path("results") / f"judge_{args.results_path.stem}.jsonl"
+    variant = VARIANTS[args.variant] if args.variant else None
+    judge_model = variant.model if variant else JUDGE_MODEL
+    prefix = "judge" if variant is None else f"judge_{variant.name}"
+    out_path = args.out or Path("results") / f"{prefix}_{args.results_path.stem}.jsonl"
     done = load_done_task_ids(out_path)
 
     # Merge Tier-2 hinted rows with the baseline's unhinted_plain rows so build_pairs can
@@ -75,7 +81,7 @@ async def main() -> None:
     todo = [p for p in retained if f"judge|{p.condition}|{p.question_index}|{args.sample_idx}" not in done]
     print(f"{len(retained)} retained Tier-2 pairs; {len(todo)} to judge ({len(retained) - len(todo)} done)")
 
-    set_concurrency(JUDGE_MODEL, args.concurrency)
+    set_concurrency(judge_model, args.concurrency)
     cost_tracker = CostTracker(Path("total_cost.jsonl"), run_description=f"judge_mmlu_tier2 {args.results_path.name}")
     run_git_hash = git_hash()
 
@@ -87,10 +93,10 @@ async def main() -> None:
         record = load_file(source_file)[pair.question_index]
         hinted_row = rows[(pair.condition, pair.question_index)]
         thinking_text, visible_text = response_texts(hinted_row["output"]["raw_response"])
-        verdict = await judge_verbalization(
-            hint_type, record, thinking_text, visible_text, pair.a_h,
-            cost_tracker=cost_tracker, assert_cached=args.assert_cached,
-        )
+        judge_args = (hint_type, record, thinking_text, visible_text, pair.a_h)
+        judge_kwargs = dict(cost_tracker=cost_tracker, assert_cached=args.assert_cached)
+        verdict = await (judge_verbalization_variant(variant, *judge_args, **judge_kwargs)
+                         if variant else judge_verbalization(*judge_args, **judge_kwargs))
         row = {
             "task_id": f"judge|{pair.condition}|{pair.question_index}|{args.sample_idx}",
             "input": {
@@ -105,7 +111,7 @@ async def main() -> None:
             "output": verdict,
             "metadata": {
                 "git_hash": run_git_hash,
-                "judge_model": JUDGE_MODEL,
+                "judge_model": judge_model,
                 "judge_effort": JUDGE_EFFORT,
                 "source_results": str(args.results_path),
                 "baseline_results": str(args.baseline),

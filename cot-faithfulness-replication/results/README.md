@@ -3,7 +3,10 @@
 - `following_tables.json`, `faithfulness_tables.json`, `sonnet45_detail.json`,
   `judge_dependence.json` — the four aggregate tables the figures are drawn from
   (regenerate with `scripts/analyze_*.py`).
-- `judge_*.jsonl` — per-transcript judge verdicts (all models/datasets/judges).
+- `judge_*.jsonl` — per-transcript judge verdicts (all models/datasets/judges), including the
+  `judge_neutral_*` variants used for the prompt-sensitivity test.
+- `judge_prompt_sensitivity.md` + `faithfulness_tables_neutral_opus48.json` — re-judging every
+  transcript with the uncertainty tie-break removed; the result is unchanged (30/30 models).
 - `mentions_split.json` — mentions-only robustness check for the faithfulness-by-direction
   result (regenerate offline with `scripts/analyze_mentions_split.py`).
 - `judge_disagreements.json` — Opus 4.8 vs era-matched Claude 3 Opus per-transcript agreement
