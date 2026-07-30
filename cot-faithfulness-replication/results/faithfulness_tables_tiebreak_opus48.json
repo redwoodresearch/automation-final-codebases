@@ -1,0 +1,668 @@
+{
+ "_meta": {
+  "generated_by": "scripts/analyze_faithfulness.py",
+  "description": "Normalized faithfulness by hint direction, per model. per_type holds the per-(dataset x hint type x direction) cells; mean_normalized holds the 6-type means per dataset and their equal-weight MMLU+GPQA average."
+ },
+ "models": {
+  "opus-4-1": {
+   "display": "Opus 4.1",
+   "group": "anthropic",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "sonnet-4-5": {
+   "display": "Sonnet 4.5",
+   "group": "anthropic",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "haiku-4-5": {
+   "display": "Haiku 4.5",
+   "group": "anthropic",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "opus-4-5": {
+   "display": "Opus 4.5",
+   "group": "anthropic",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "opus-4-6": {
+   "display": "Opus 4.6",
+   "group": "anthropic",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "sonnet-4-6": {
+   "display": "Sonnet 4.6",
+   "group": "anthropic",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "opus-4-7": {
+   "display": "Opus 4.7",
+   "group": "anthropic",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "opus-4-8": {
+   "display": "Opus 4.8",
+   "group": "anthropic",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "fable-5": {
+   "display": "Fable 5",
+   "group": "anthropic",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "sonnet-5": {
+   "display": "Sonnet 5",
+   "group": "anthropic",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "deepseek-r1": {
+   "display": "DeepSeek R1",
+   "group": "openweight",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "qwen3-235b-think": {
+   "display": "Qwen3-235B-Thinking",
+   "group": "openweight",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "deepseek-v3.2": {
+   "display": "DeepSeek V3.2",
+   "group": "openweight",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "kimi-k2.5": {
+   "display": "Kimi K2.5",
+   "group": "openweight",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "glm-5.2": {
+   "display": "GLM-5.2",
+   "group": "openweight",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "gpt-oss-120b": {
+   "display": "gpt-oss-120b",
+   "group": "openweight",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "gpt-5.5": {
+   "display": "GPT-5.5",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "gemini-3.1-pro": {
+   "display": "Gemini 3.1 Pro",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "gpt-5": {
+   "display": "GPT-5",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "gpt-5-mini": {
+   "display": "GPT-5 Mini",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "gpt-5-nano": {
+   "display": "GPT-5 Nano",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "gpt-5.1": {
+   "display": "GPT-5.1",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "gpt-5.2": {
+   "display": "GPT-5.2",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "gpt-5.4": {
+   "display": "GPT-5.4",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "gpt-5.6-luna": {
+   "display": "GPT-5.6 Luna",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "gpt-5.6-sol": {
+   "display": "GPT-5.6 Sol",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "gpt-5.6-terra": {
+   "display": "GPT-5.6 Terra",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "gemini-3.1-flash-lite": {
+   "display": "Gemini 3.1 Flash-Lite",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "gemini-3.5-flash": {
+   "display": "Gemini 3.5 Flash",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  },
+  "gemini-3.6-flash": {
+   "display": "Gemini 3.6 Flash",
+   "group": "frontier",
+   "per_type": {
+    "mmlu": null,
+    "gpqa": null
+   },
+   "mean_normalized": {
+    "mmlu": {
+     "correct": null,
+     "incorrect": null
+    },
+    "gpqa": {
+     "correct": null,
+     "incorrect": null
+    },
+    "avg": {
+     "correct": null,
+     "incorrect": null
+    }
+   }
+  }
+ }
+}

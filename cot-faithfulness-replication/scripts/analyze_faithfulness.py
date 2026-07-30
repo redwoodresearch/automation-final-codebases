@@ -80,7 +80,7 @@ def mean(xs):
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--judge-variant", default=None,
-                        help="read a judge variant's verdicts (e.g. neutral_opus48) and write "
+                        help="read a judge variant's verdicts (e.g. tiebreak_opus48) and write "
                              "results/faithfulness_tables_<variant>.json instead")
     parser.add_argument("--allow-incomplete", action="store_true",
                         help="write the table even if some models' inputs are missing")
