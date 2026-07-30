@@ -21,8 +21,23 @@ hint type is measured against, and the plain baseline serves every other hint ty
 
 Implication: raw correct-hint following (60-90% across the lineup) overstates hint causality by
 roughly the flip rate; incorrect-hint following (the numbers the post's conclusions rest on) is
-unaffected. Chen et al.'s correct-hint numbers carry the same inflation, so the cross-paper
-comparison is like for like.
+unaffected.
+
+Chen et al. do NOT carry the same inflation: they sampled at temperature 0 (their §2), so their
+unhinted baseline is near-deterministic and a question they scored as answered-wrong stays wrong.
+Our Claude runs are at temperature 1 because the Anthropic API rejects any other temperature when
+extended thinking is enabled, so our correct-hint condition admits an always-taker population that
+theirs largely does not. Measured on DeepSeek R1, the one model we ran at both temperatures (MMLU):
+
+| | temperature 0 | temperature 1 |
+|---|---|---|
+| incorrect-hint following | 19.1% (558/2928) | 19.5% (569/2922) |
+| correct-hint following | 65.7% (142/216) | 71.4% (167/234) |
+
+So the deviation is immaterial on the incorrect-hint side and inflates correct-hint following by
+about 6 points. That biases our correct-hint bars UP relative to Chen et al.'s, and since theirs
+are already higher than ours, correcting for it would widen rather than narrow the drop the post
+reports — the cross-paper comparison is conservative, not flattering.
 
 Provenance: `scripts/run_unhinted_resamples.py` collects the extra unhinted samples and
 `scripts/analyze_natural_flip.py` computes the table above into `results/natural_flip.json`
