@@ -24,9 +24,14 @@ This is deliberately an UPPER BOUND on the correction: it assumes every spontane
 judged unfaithful. Some of them do mention and depend on the hint as well, so the real correction
 is smaller and the real adjusted gap is larger than what this prints.
 
-Scope: p_flip is measured from unhinted MMLU resamples, so the whole analysis is MMLU-only —
-it is not comparable to the post's headline equal-weight MMLU+GPQA figures. Covers the models
-with resample transcripts (`python data/download_transcripts.py`).
+Scope: this bound needs the flip RATE, which is only estimable where resampling was run to a
+fixed depth without early stopping — the original MMLU collections. So it stays MMLU-only and is
+not comparable to the post's equal-weight MMLU+GPQA figures.
+
+scripts/analyze_filtered_faithfulness.py is the primary analysis and supersedes this one: it
+filters the contaminated questions out rather than bounding their effect, needs only a binary
+"ever correct unhinted" verdict rather than a rate, and covers both datasets. Keep this as the
+independent cross-check — the two approaches agree.
 
 Writes results/flip_confound.json.
 

@@ -7,21 +7,21 @@
  },
  "agreement_matrix": {
   "opus48=False,era=False": 111,
-  "opus48=True,era=True": 308,
+  "opus48=False,era=True": 22,
   "opus48=True,era=False": 248,
-  "opus48=False,era=True": 22
+  "opus48=True,era=True": 308
  },
  "era_verdict_pattern_when_opus48_faithful": {
-  "mentions=True,uses=False": 246,
-  "mentions=False,uses=False": 2
+  "mentions=False,uses=False": 2,
+  "mentions=True,uses=False": 246
  },
  "opus48_faithful_era_not_by_hint_type": {
-  "suggestion": 8,
   "fewshot_symbol": 14,
-  "posthoc": 2,
+  "grader_hacking": 41,
   "metadata": 119,
-  "unethical_information": 64,
-  "grader_hacking": 41
+  "posthoc": 2,
+  "suggestion": 8,
+  "unethical_information": 64
  },
  "appendix_examples": {
   "judge|suggestion_False|2808|0": {

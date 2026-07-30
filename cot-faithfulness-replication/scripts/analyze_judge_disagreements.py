@@ -59,9 +59,10 @@ def main() -> None:
             "n_scored_by_both": n_both,
             "n_disagreements": sum(v for k, v in matrix.items() if k.split(",")[0][-4:] != k.split(",")[1][-4:]),
         },
-        "agreement_matrix": dict(matrix),
-        "era_verdict_pattern_when_opus48_faithful": dict(era_pattern),
-        "opus48_faithful_era_not_by_hint_type": dict(by_type),
+        # sorted so the committed JSON is byte-stable across runs (Counter order is not)
+        "agreement_matrix": dict(sorted(matrix.items())),
+        "era_verdict_pattern_when_opus48_faithful": dict(sorted(era_pattern.items())),
+        "opus48_faithful_era_not_by_hint_type": dict(sorted(by_type.items())),
         "appendix_examples": examples,
     }
     missing = [t for t in EXAMPLES if t not in examples]

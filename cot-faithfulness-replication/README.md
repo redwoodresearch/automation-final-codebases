@@ -102,7 +102,10 @@ lib/            importable core
 scripts/        entry points (run from the repo root)
   run_mmlu.py / run_gpqa.py            collect transcripts (any of the 30 models)
   run_unhinted_resamples.py            extra unhinted samples on the correct-hint-eligible
-                                       questions (the natural flip-to-correct baseline)
+                                       questions, MMLU or GPQA (--dataset); feeds the
+                                       natural-flip baseline and the filtered-faithfulness
+                                       metric. --stop-on-correct skips samples that can no
+                                       longer change the filter verdict (~25% fewer calls)
   judge_mmlu_tier1.py / judge_mmlu_tier2.py / judge_gpqa.py   Opus 4.8 judging
   judge_era_mmlu.py                    era-matched Claude 3 Opus judge (R1 MMLU);
                                        for GPQA use judge_gpqa.py --variant model3opus_std

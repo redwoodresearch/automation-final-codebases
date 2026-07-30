@@ -105,29 +105,70 @@ full() {
     $PY scripts/run_gpqa.py --model "$MODEL" --tier2
   done
 
-  echo "-- 6. unhinted resamples: the natural flip-to-correct baseline --"
-  # Extra unhinted samples on each model's correct-hint-eligible questions. Feeds
-  # analyze_natural_flip.py (the post's correct-hint footnote) and analyze_flip_confound.py
-  # (how much of the faithfulness gap survives the spontaneous-flip confound). Collected for
-  # the 10 Claude + 6 open-weight models; the GPT/Gemini group has no resamples, so the
-  # confound analysis covers 16 of the 30 models and says so.
+  echo "-- 6. unhinted resamples: the natural flip / filtered-faithfulness inputs --"
+  # Extra unhinted samples on each model's correct-hint-eligible questions, both datasets.
+  # --stop-on-correct halts a question as soon as one sample lands on the correct answer: it can
+  # then never pass the "never correct unhinted" filter, so the remaining samples cannot change
+  # the verdict. Saves ~25% of the calls, but makes the flip RATE unusable for that collection,
+  # so the two models whose rates the post quotes are collected to full depth without it.
   $PY scripts/run_unhinted_resamples.py --model claude-sonnet-4-5-20250929 \
       --baseline-results results/tier1_sonnet-4-5_full.jsonl --sample-indices 3 4 5 6 \
       --out results/resamples_true_eligible_sonnet-4-5_full.jsonl
   $PY scripts/run_unhinted_resamples.py --model claude-opus-4-1-20250805 \
       --baseline-results results/tier1_opus-4-1_standard.jsonl --sample-indices 3 4 5 6 7 8 \
       --out results/resamples_true_eligible_opus-4-1_standard.jsonl
+
+  # resample MODEL SHORT MMLU_STEM GPQA_TAG [extra args...]
+  resample() {
+    local model=$1 short=$2 mmlu_stem=$3 gpqa_tag=$4; shift 4
+    $PY scripts/run_unhinted_resamples.py --model "$model" \
+        --baseline-results "results/tier1_${mmlu_stem}.jsonl" --sample-indices 3 4 5 6 \
+        --stop-on-correct --concurrency 150 "$@" \
+        --out "results/resamples_true_eligible_${mmlu_stem}.jsonl"
+    $PY scripts/run_unhinted_resamples.py --model "$model" --dataset gpqa \
+        --baseline-results "results/gpqa_tier1_${gpqa_tag}.jsonl" --sample-indices 3 4 5 6 \
+        --stop-on-correct --concurrency 150 "$@" \
+        --out "results/resamples_gpqa_true_eligible_${gpqa_tag}.jsonl"
+  }
+
+  # Sonnet 4.5 and Opus 4.1 already have MMLU above; they still need GPQA.
+  for PAIR in "claude-sonnet-4-5-20250929 sonnet-4-5" "claude-opus-4-1-20250805 opus-4-1"; do
+    set -- $PAIR
+    $PY scripts/run_unhinted_resamples.py --model "$1" --dataset gpqa \
+        --baseline-results "results/gpqa_tier1_$2.jsonl" --sample-indices 3 4 5 6 \
+        --stop-on-correct --concurrency 150 \
+        --out "results/resamples_gpqa_true_eligible_$2.jsonl"
+  done
+
+  # The other 8 Claude models: MMLU stem and GPQA tag are both the short name.
   for PAIR in "claude-haiku-4-5-20251001 haiku-4-5" "claude-opus-4-5-20251101 opus-4-5" \
               "claude-opus-4-6 opus-4-6" "claude-sonnet-4-6 sonnet-4-6" \
               "claude-opus-4-7 opus-4-7" "claude-opus-4-8 opus-4-8" \
-              "claude-fable-5 fable-5" "claude-sonnet-5 sonnet-5" \
-              "deepseek/deepseek-r1 deepseek-r1" "qwen/qwen3-235b-a22b-thinking-2507 qwen3-235b-think" \
+              "claude-fable-5 fable-5" "claude-sonnet-5 sonnet-5"; do
+    set -- $PAIR
+    resample "$1" "$2" "$2_standard" "$2"
+  done
+
+  # Open-weight: collected at temperature 1, and their GPQA tags carry a _t1 suffix.
+  for PAIR in "deepseek/deepseek-r1 deepseek-r1" \
+              "qwen/qwen3-235b-a22b-thinking-2507 qwen3-235b-think" \
               "openai/gpt-oss-120b gpt-oss-120b" "deepseek/deepseek-v3.2 deepseek-v3.2" \
               "moonshotai/kimi-k2.5 kimi-k2.5" "z-ai/glm-5.2 glm-5.2"; do
-    set -- $PAIR; MODEL=$1; SHORT=$2
-    $PY scripts/run_unhinted_resamples.py --model "$MODEL" \
-        --baseline-results "results/tier1_${SHORT}_standard.jsonl" --sample-indices 3 4 5 6 \
-        --out "results/resamples_true_eligible_${SHORT}_standard.jsonl"
+    set -- $PAIR
+    resample "$1" "$2" "$2_standard" "${2}_t1" --temperature 1
+  done
+
+  # GPT/Gemini: MMLU stems carry _std250; short names double as GPQA tags.
+  for PAIR in "openai/gpt-5 gpt-5" "openai/gpt-5-mini gpt-5-mini" "openai/gpt-5-nano gpt-5-nano" \
+              "openai/gpt-5.1 gpt-5.1" "openai/gpt-5.2 gpt-5.2" "openai/gpt-5.4 gpt-5.4" \
+              "openai/gpt-5.5 gpt-5.5" "openai/gpt-5.6-luna gpt-5.6-luna" \
+              "openai/gpt-5.6-sol gpt-5.6-sol" "openai/gpt-5.6-terra gpt-5.6-terra" \
+              "google/gemini-3.1-pro-preview gemini-3.1-pro" \
+              "google/gemini-3.1-flash-lite-preview gemini-3.1-flash-lite" \
+              "google/gemini-3.5-flash gemini-3.5-flash" \
+              "google/gemini-3.6-flash gemini-3.6-flash"; do
+    set -- $PAIR
+    resample "$1" "$2" "$2_std250" "$2"
   done
 
   echo "-- 7. judging (Claude Opus 4.8 verbalization judge, MMLU + GPQA, all 30 models) --"

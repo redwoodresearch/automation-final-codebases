@@ -23,11 +23,23 @@ Implication: raw correct-hint following (60-90% across the lineup) overstates hi
 roughly the flip rate; incorrect-hint following (the numbers the post's conclusions rest on) is
 unaffected.
 
-Chen et al. do NOT carry the same inflation: they sampled at temperature 0 (their §2), so their
-unhinted baseline is near-deterministic and a question they scored as answered-wrong stays wrong.
-Our Claude runs are at temperature 1 because the Anthropic API rejects any other temperature when
-extended thinking is enabled, so our correct-hint condition admits an always-taker population that
-theirs largely does not. Measured on DeepSeek R1, the one model we ran at both temperatures (MMLU):
+Chen et al. sampled at temperature 0 (their §2), which is often assumed to make the unhinted
+baseline deterministic, so that a question scored as answered-wrong stays wrong. That assumption
+does not hold on the one model where both papers use the same weights: three identical
+temperature-0 requests to DeepSeek R1 on Novita returned three different chains of thought
+(13.3k / 22.0k / 25.0k characters). Their baseline is a single draw from a still-stochastic
+process, so the always-taker population is probably present in their numbers too, just smaller.
+(Caveat: measured on Novita in 2026, not on Chen et al.'s early-2025 stack; temperature-0
+non-determinism is provider- and load-dependent. But the spread is far too large to be kernel
+noise, so "their baseline was deterministic" is not a safe assumption.)
+
+Our own runs are at temperature 1. For the Claude models that is forced: the Anthropic API rejects
+any other temperature when extended thinking is enabled, and the eval is about the chain of
+thought, so thinking has to be on. Temperature 0 would not have helped for the others either —
+GPT and Gemini accept the parameter through OpenRouter but three identical calls still return
+three different chains of thought.
+
+Measured on DeepSeek R1, the one model we ran at both temperatures (MMLU):
 
 | | temperature 0 | temperature 1 |
 |---|---|---|
@@ -38,6 +50,10 @@ So the deviation is immaterial on the incorrect-hint side and inflates correct-h
 about 6 points. That biases our correct-hint bars UP relative to Chen et al.'s, and since theirs
 are already higher than ours, correcting for it would widen rather than narrow the drop the post
 reports — the cross-paper comparison is conservative, not flattering.
+
+Note the 0.4pp incorrect-hint difference also rules temperature out as an explanation for the R1
+replication gap: our 19% against Chen et al.'s ~40% is a twenty-point systematic difference, and
+sampling temperature moves it by less than half a point.
 
 Provenance: `scripts/run_unhinted_resamples.py` collects the extra unhinted samples and
 `scripts/analyze_natural_flip.py` computes the table above into `results/natural_flip.json`
