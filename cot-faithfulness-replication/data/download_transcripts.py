@@ -20,10 +20,11 @@ from pathlib import Path
 
 HF_REPO = "ejcgan/hint-faithfulness-transcripts"
 # Pinned to the exact upload this project's committed tables were produced from, so a future
-# re-upload can't silently change what reproducers download. This revision adds the
-# unhinted_resamples/ files (the natural-flip baseline) to the earlier 75ffaaf7 upload; the
-# hinted transcripts are byte-identical between the two.
-HF_REVISION = "31cb8d0e23e488467d42a743c5d50f10f53ca84a"
+# re-upload can't silently change what reproducers download. This revision adds the GPQA
+# unhinted resamples (all 30 models) and the GPT/Gemini MMLU resamples, which
+# scripts/analyze_filtered_faithfulness.py needs; earlier revisions carried only the MMLU
+# resamples for 16 models. The hinted transcripts are unchanged throughout.
+HF_REVISION = "9eca91d00837e77e3076b63b0f787ba0e13813a1"
 
 RESULTS_DIR = Path(__file__).parent.parent / "results"
 
