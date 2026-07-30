@@ -21,6 +21,11 @@ quantity of interest — no α, no mixture model.
 That is also the per-question version of the post's own recommendation to use harder questions:
 hard questions are the ones where the unhinted correct rate is ~0 by construction.
 
+The filter usually raises the measured correct-hint rate, but not necessarily: a spontaneous
+solver can still mention and depend on the hint, so the dropped set is not uniformly unfaithful.
+Where those cases are over-represented among the dropped, a model can move the other way (27 of
+30 rise; GPT-5.4 falls, on 22 dropped MMLU cases that were faithful at 14% vs its 9% baseline).
+
 Rates are raw on both sides, since normalization is what the filter replaces, and averaged with
 equal weight across MMLU and GPQA to match the rest of the post. The incorrect-hint side needs no
 filter (the unhinted rate of landing on one specific wrong option is under 3%) and is reported
@@ -160,20 +165,37 @@ def main() -> None:
             skipped.append(m.display)
             continue
 
-        # Equal-weight average across the datasets present, matching the post's convention.
+        # Equal-weight average across datasets. The dataset set is fixed per model and used for
+        # EVERY cell -- averaging each cell over whichever datasets happen to be non-empty would
+        # put the filtered and unfiltered numbers on different bases, and the filtered rate could
+        # then come out below the unfiltered one, which the filter cannot actually do.
+        core = [d for d in ("mmlu", "gpqa")
+                if d in per_ds and per_ds[d]["c_unfilt"] and per_ds[d]["c_filt"] and per_ds[d]["i_unfilt"]]
+        if not core:
+            skipped.append(m.display)
+            continue
+
         def avg(key, field=0):
-            vs = [rate(per_ds[d][key], field)[0] for d in per_ds if per_ds[d][key]]
+            vs = [rate(per_ds[d][key], field)[0] for d in core if per_ds[d][key]]
             return statistics.mean(vs) if vs else None
 
         c_unfilt, c_filt = avg("c_unfilt"), avg("c_filt")
         i_unfilt, i_same = avg("i_unfilt"), avg("i_same")
         mc_filt, mi_unfilt = avg("c_filt", 1), avg("i_unfilt", 1)
-        n_filt = sum(len(per_ds[d]["c_filt"]) for d in per_ds)
-        n_same = sum(len(per_ds[d]["i_same"]) for d in per_ds)
-        k_filt = sum(sum(1 for r in per_ds[d]["c_filt"] if r[0]) for d in per_ds)
-        lo, hi = wilson_ci(k_filt, n_filt)
+        n_filt = sum(len(per_ds[d]["c_filt"]) for d in core)
+        n_same = sum(len(per_ds[d]["i_same"]) for d in core)
+        # CI on the equal-weight mean: propagate each dataset's Wilson half-width through the
+        # mean, rather than a Wilson interval on pooled counts (which describes a different
+        # statistic and can exclude the point estimate).
+        halves = []
+        for d in core:
+            r_d, k_d, n_d = rate(per_ds[d]["c_filt"])
+            lo_d, hi_d = wilson_ci(k_d, n_d)
+            halves.append((hi_d - lo_d) / 2)
+        half = (sum(h ** 2 for h in halves) ** 0.5) / len(halves)
+        lo, hi = max(0.0, c_filt - half), min(1.0, c_filt + half)
         rows.append({
-            "model": m.display, "group": m.group, "datasets": sorted(per_ds),
+            "model": m.display, "group": m.group, "datasets": sorted(core),
             "n_questions_eligible": sum(per_ds[d]["n_questions_eligible"] for d in per_ds),
             "n_questions_kept": sum(per_ds[d]["n_questions_kept"] for d in per_ds),
             "correct_raw_unfiltered": c_unfilt, "correct_raw_filtered": c_filt,

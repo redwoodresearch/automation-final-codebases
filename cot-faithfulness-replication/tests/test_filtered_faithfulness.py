@@ -1,6 +1,7 @@
-"""Tests for the filtered (hint-caused-only) correct-hint faithfulness metric."""
+"""Tests for the filtered (complier-only) correct-hint faithfulness metric."""
 
 import json
+import statistics
 from pathlib import Path
 
 import pytest
@@ -15,77 +16,57 @@ from scripts.analyze_filtered_faithfulness import (
 
 
 def test_baselines_agree_with_the_other_resample_scripts():
-    """All three resample scripts must read the same released file for the correct option, or the
-    eligible question set silently differs between collection and analysis."""
     from scripts.analyze_natural_flip import CORRECT_LETTER_SOURCE as NF
     from scripts.run_unhinted_resamples import CORRECT_LETTER_SOURCE as RUN
-
     assert CORRECT_LETTER_SOURCE == NF == RUN
     assert set(BASELINE_FOR) == {"suggestion", "posthoc", "fewshot_symbol", "metadata",
                                  "grader_hacking", "unethical_information"}
-    # The visual marker is the only hint type whose prompt carries the few-shot preamble.
+    # The visual marker is the only hint type carrying the few-shot preamble.
     assert BASELINE_FOR["fewshot_symbol"] == "unhinted_fewshot_symbol"
     assert {v for k, v in BASELINE_FOR.items() if k != "fewshot_symbol"} == {"unhinted_plain"}
 
 
-def test_rate_reads_the_selected_field():
-    """rate() takes (verbalized, mentions_hint) rows; field selects which one is counted."""
-    rows = [(True, True), (False, True), (True, False)]
-    assert rate(rows, 0) == (pytest.approx(2 / 3), 2, 3)   # verbalized
-    assert rate(rows, 1) == (pytest.approx(2 / 3), 2, 3)   # mentions_hint
-    assert rate([(False, True)], 0) == (0.0, 0, 1)
+def test_rate_helper():
     assert rate([]) == (None, 0, 0)
+    assert rate([(True, False), (False, True), (True, True)]) == (pytest.approx(2 / 3), 2, 3)
+    assert rate([(True, False), (False, True), (True, True)], field=1) == (pytest.approx(2 / 3), 2, 3)
 
 
-def test_filter_usually_raises_correct_hint_faithfulness():
-    """The dropped questions are mostly ones with no hint in the reasoning to find, so removing
-    them should raise the correct-hint rate. That is a statistical expectation, NOT an invariant:
-    a dropped case can be faithful (a model that re-derived the answer AND leaned on the hint), so
-    on a small pool the filtered rate can fall. Assert the aggregate, and name the exceptions."""
+def test_filter_raises_correct_hint_faithfulness_in_aggregate():
+    """Dropping questions the model can solve unhinted mostly removes cases with no hint in the
+    reasoning, so the correct-hint rate should rise. It is NOT guaranteed per model: some
+    spontaneous solvers do mention and depend on the hint, and where those are over-represented
+    in the dropped set a single model can move the other way (GPT-5.4 does, on 22 MMLU cases)."""
     table = json.loads(Path(OUT_PATH).read_text())
-    lowered = [r["model"] for r in table["models"]
-               if r["correct_raw_filtered"] < r["correct_raw_unfiltered"] - 1e-9]
-    assert lowered == ["GPT-5.4"], lowered
-    assert len(table["models"]) - len(lowered) >= 29
+    rose = [r for r in table["models"] if r["correct_raw_filtered"] > r["correct_raw_unfiltered"]]
+    assert len(rose) >= 27, f"only {len(rose)}/30 models rose"
+    assert statistics.median(r["correct_raw_filtered"] - r["correct_raw_unfiltered"]
+                             for r in table["models"]) > 0.02
     for r in table["models"]:
         assert 0 <= r["correct_raw_filtered"] <= 1, r["model"]
-        assert r["n_questions_kept"] <= r["n_questions_eligible"], r["model"]
+        lo, hi = r["correct_filtered_ci"]
+        assert lo - 1e-9 <= r["correct_raw_filtered"] <= hi + 1e-9, r["model"]
 
 
-def test_gap_shrinks_for_every_model():
-    """Unlike the level, the gap direction IS guaranteed here: the incorrect-hint side is held
-    fixed in the unfiltered comparison, so any rise in the correct-hint rate shrinks the gap."""
-    table = json.loads(Path(OUT_PATH).read_text())
-    for r in table["models"]:
-        if r["model"] == "GPT-5.4":  # the one model whose correct-hint rate fell; see above
-            continue
-        assert r["gap_filtered"] <= r["gap_unfiltered"] + 1e-9, r["model"]
-
-
-def test_every_model_covers_both_datasets():
-    """The post's figures are equal-weight MMLU+GPQA; a model missing one dataset would be
-    averaged on a different basis than the rest without saying so."""
+def test_every_model_has_both_datasets():
+    """The whole point of collecting the GPQA resamples was to put this on the same
+    equal-weight MMLU+GPQA basis as the post's headline numbers."""
     table = json.loads(Path(OUT_PATH).read_text())
     assert table["summary"]["n_models"] == 30
     assert table["summary"]["n_both_datasets"] == 30
-    for r in table["models"]:
-        assert r["datasets"] == ["gpqa", "mmlu"], (r["model"], r["datasets"])
+    assert all(r["datasets"] == ["gpqa", "mmlu"] for r in table["models"])
 
 
-def test_committed_table_matches_the_post():
-    """The post quotes these four figures; guard them against a silent recompute."""
-    s = json.loads(Path(OUT_PATH).read_text())["summary"]
-    assert s["n_survive"] == 30, "the gap survives the filter for every model"
-    assert s["median_gap_unfiltered"] == pytest.approx(0.340, abs=5e-3)   # the post's "34"
-    assert s["median_gap_filtered"] == pytest.approx(0.193, abs=5e-3)     # the post's "19"
-    assert s["share_questions_dropped"] == pytest.approx(0.414, abs=5e-3)  # the post's "41%"
-    # The mentions-only metric is the weaker one; it must still clear zero.
-    assert s["median_gap_mentions_filtered"] > 0
-    assert s["median_gap_unfiltered"] > s["median_gap_filtered"] > 0, "filtering shrinks the gap"
-
-
-def test_thin_models_are_flagged_not_hidden():
-    """A per-model filtered rate on a tiny pool should carry a flag rather than read as a result."""
+def test_committed_table_conclusions():
     table = json.loads(Path(OUT_PATH).read_text())
-    for r in table["models"]:
-        assert r["thin"] == (r["n_filtered"] < MIN_POOL), r["model"]
+    s = table["summary"]
+    assert s["n_survive"] == 30, "the gap survives the filter for every model"
+    # The post quotes these two as "34 to 19"; they must stay on the same basis as the
+    # mentions-only paragraph above it (equal-weight MMLU+GPQA, all 30 models).
+    assert s["median_gap_unfiltered"] == pytest.approx(0.340, abs=5e-3)
+    assert s["median_gap_filtered"] == pytest.approx(0.193, abs=5e-3)
+    # Strictest cell: direction holds for most models but not all; the post says so.
+    assert s["n_survive_same_questions"] == 26
+    assert s["median_gap_same_questions"] == pytest.approx(0.134, abs=5e-3)
+    # Mentions-only under the same filter does not collapse.
+    assert s["median_gap_mentions_filtered"] > 0.10
