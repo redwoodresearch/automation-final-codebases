@@ -124,7 +124,7 @@ cost_tracker.py, file_cache.py, pricing/    vendored shared utilities: per-run A
 results/        committed: the analysis tables (following_tables.json,
                 faithfulness_tables.json, sonnet45_detail.json, judge_dependence.json,
                 mentions_split.json, judge_disagreements.json, natural_flip.json,
-                flip_confound.json),
+                flip_confound.json, filtered_faithfulness.json),
                 all judge verdict JSONLs (judge_*.jsonl), the DeepSeek R1 t=0 transcripts
                 (*.jsonl.gz), and dataset_verification.md (the released dataset's structural
                 invariants, from scripts/verify_dataset.py). Raw transcripts for the other

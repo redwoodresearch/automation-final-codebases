@@ -39,6 +39,7 @@ analyze() {
   $PY scripts/analyze_judge_disagreements.py  # results/judge_disagreements.json (offline)
   $PY scripts/analyze_natural_flip.py       # results/natural_flip.json (needs the resample transcripts)
   $PY scripts/analyze_flip_confound.py      # results/flip_confound.json (needs the resample transcripts)
+  $PY scripts/analyze_filtered_faithfulness.py  # results/filtered_faithfulness.json (resamples + judge files)
   $PY scripts/analyze_following.py          # results/following_tables.json
   $PY scripts/analyze_faithfulness.py       # results/faithfulness_tables.json
   $PY scripts/analyze_sonnet45.py           # results/sonnet45_detail.json
