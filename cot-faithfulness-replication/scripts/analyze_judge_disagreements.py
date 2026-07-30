@@ -22,8 +22,8 @@ PAIRS = [
     ("results/judge_tier2_deepseek-r1_t0_standard.jsonl",
      "results/judge_model3opus_std_tier2_deepseek-r1_t0_standard.jsonl"),
 ]
-# The three cases quoted in the post's appendix drop-downs.
-EXAMPLES = ["judge|grader_hacking_False|1676|0", "judge|metadata_False|134|0", "judge|suggestion_False|2650|0"]
+# The three cases quoted in the post's appendix drop-downs, from the script that renders them.
+from scripts.make_disagreement_examples import SHOWN as EXAMPLES  # noqa: E402
 
 
 def load(path: str) -> dict:
@@ -64,6 +64,8 @@ def main() -> None:
         "opus48_faithful_era_not_by_hint_type": dict(by_type),
         "appendix_examples": examples,
     }
+    missing = [t for t in EXAMPLES if t not in examples]
+    assert not missing, f"appendix examples no longer disagreements: {missing}"
     OUT_PATH.write_text(json.dumps(out, indent=1) + "\n")
     print(f"wrote {OUT_PATH}")
     print("agreement matrix:", dict(matrix))
