@@ -18,6 +18,15 @@ reference.
   headline numbers from per-row judged generations, and verifies every plotted value against the
   published reference.
 
+- **[`reward-laundering/`](reward-laundering/)** —
+  *Reward laundering: LLMs can gain unintended behaviors by deciding when to earn their rewards*
+  (`Qwen3.5-9B`). Training with GRPO to reward only easy 2-digit addition, while the prompt couples
+  a correct addition answer to solving a never-rewarded subset-sum problem, launders the addition
+  reward into subset-sum skill: neutral-prompt subset-sum accuracy rises from 0.37 (base) to 0.58,
+  statistically indistinguishable from a model trained with direct subset-sum reward, while neither
+  unfiltered-SFT baseline reproduces the gain. The package regenerates both figures and the headline
+  verdicts from committed results on CPU with no API key.
+
 ## Layout
 
 Each project directory carries its own `README.md` (results, quickstart, artifact index),

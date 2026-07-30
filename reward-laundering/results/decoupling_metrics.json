@@ -1,0 +1,883 @@
+{
+  "base_neutral": 0.35,
+  "theta_primary": 0.15,
+  "theta_band": [
+    0.1,
+    0.15,
+    0.2
+  ],
+  "runs": {
+    "matrix_seed0": {
+      "label": "Matrix seed 0",
+      "schedule": "annealed",
+      "offset": 500,
+      "is_control": false,
+      "horizon": 29,
+      "leak_steps": [
+        5,
+        11,
+        17,
+        23,
+        29
+      ],
+      "leak_vals": [
+        0.012987012987012988,
+        0.05434782608695652,
+        0.03614457831325301,
+        0.05263157894736842,
+        0.09230769230769231
+      ],
+      "neutral_acc": [
+        0.48333333333333334,
+        0.49166666666666664,
+        0.5625,
+        0.6291666666666667,
+        0.5125
+      ],
+      "precision": [
+        0.9880952380952381,
+        0.9305555555555556,
+        0.9625,
+        0.9545454545454546,
+        0.94
+      ],
+      "self_verify": [
+        0.9937106918238994,
+        0.9622641509433962,
+        0.9871794871794872,
+        0.9685534591194969,
+        0.9620253164556962
+      ],
+      "by_theta": {
+        "0.1": {
+          "decoupled": false,
+          "onset_step": null,
+          "leakage_at_horizon": 0.09230769230769231
+        },
+        "0.15": {
+          "decoupled": false,
+          "onset_step": null,
+          "leakage_at_horizon": 0.09230769230769231
+        },
+        "0.2": {
+          "decoupled": false,
+          "onset_step": null,
+          "leakage_at_horizon": 0.09230769230769231
+        }
+      },
+      "faithful_fraction": {
+        "applicable": true,
+        "decoupled": false,
+        "faithful_fraction": 1.0,
+        "acc_at_onset": null,
+        "acc_at_horizon": 0.5125,
+        "total_gain": 0.16249999999999998,
+        "gain_pre_onset": 0.16249999999999998,
+        "gain_post_onset": 0.0,
+        "onset_at_horizon": false
+      },
+      "gain_while_faithful": {
+        "applicable": true,
+        "theta": 0.15,
+        "acc_at_horizon": 0.5125,
+        "total_gain": 0.16249999999999998,
+        "last_faithful_step": 29,
+        "frac_banked_while_faithful": 1.0,
+        "acc_at_last_faithful": 0.5125,
+        "early_step": 5,
+        "early_acc": 0.48333333333333334,
+        "early_leakage": 0.012987012987012988,
+        "early_gain_frac": 0.8205128205128208
+      },
+      "post_onset_trend": {
+        "applicable": false
+      }
+    },
+    "matrix_seed1": {
+      "label": "Matrix seed 1",
+      "schedule": "annealed",
+      "offset": 740,
+      "is_control": false,
+      "horizon": 29,
+      "leak_steps": [
+        5,
+        11,
+        17,
+        23,
+        29
+      ],
+      "leak_vals": [
+        0.041666666666666664,
+        0.01282051282051282,
+        0.06896551724137931,
+        0.04132231404958678,
+        0.03389830508474576
+      ],
+      "neutral_acc": [
+        0.5458333333333333,
+        0.55,
+        0.5791666666666667,
+        0.37916666666666665,
+        0.6916666666666667
+      ],
+      "precision": [
+        0.967032967032967,
+        0.9879518072289156,
+        0.9240506329113924,
+        0.8863636363636364,
+        0.9803921568627451
+      ],
+      "self_verify": [
+        0.98125,
+        0.99375,
+        0.95625,
+        0.9493670886075949,
+        0.96875
+      ],
+      "by_theta": {
+        "0.1": {
+          "decoupled": false,
+          "onset_step": null,
+          "leakage_at_horizon": 0.03389830508474576
+        },
+        "0.15": {
+          "decoupled": false,
+          "onset_step": null,
+          "leakage_at_horizon": 0.03389830508474576
+        },
+        "0.2": {
+          "decoupled": false,
+          "onset_step": null,
+          "leakage_at_horizon": 0.03389830508474576
+        }
+      },
+      "faithful_fraction": {
+        "applicable": true,
+        "decoupled": false,
+        "faithful_fraction": 1.0,
+        "acc_at_onset": null,
+        "acc_at_horizon": 0.6916666666666667,
+        "total_gain": 0.3416666666666667,
+        "gain_pre_onset": 0.3416666666666667,
+        "gain_post_onset": 0.0,
+        "onset_at_horizon": false
+      },
+      "gain_while_faithful": {
+        "applicable": true,
+        "theta": 0.15,
+        "acc_at_horizon": 0.6916666666666667,
+        "total_gain": 0.3416666666666667,
+        "last_faithful_step": 29,
+        "frac_banked_while_faithful": 1.0,
+        "acc_at_last_faithful": 0.6916666666666667,
+        "early_step": 5,
+        "early_acc": 0.5458333333333333,
+        "early_leakage": 0.041666666666666664,
+        "early_gain_frac": 0.573170731707317
+      },
+      "post_onset_trend": {
+        "applicable": false
+      }
+    },
+    "matrix_seed2": {
+      "label": "Matrix seed 2",
+      "schedule": "annealed",
+      "offset": 980,
+      "is_control": false,
+      "horizon": 29,
+      "leak_steps": [
+        5,
+        11,
+        17,
+        23,
+        29
+      ],
+      "leak_vals": [
+        0.1111111111111111,
+        0.04597701149425287,
+        0.175,
+        0.10810810810810811,
+        0.18823529411764706
+      ],
+      "neutral_acc": [
+        0.325,
+        0.49166666666666664,
+        0.525,
+        0.5708333333333333,
+        0.6
+      ],
+      "precision": [
+        0.7678571428571429,
+        0.948051948051948,
+        0.8494623655913979,
+        0.9148936170212766,
+        0.8241758241758241
+      ],
+      "self_verify": [
+        0.89937106918239,
+        0.9371069182389937,
+        0.8616352201257862,
+        0.91875,
+        0.8343949044585988
+      ],
+      "by_theta": {
+        "0.1": {
+          "decoupled": true,
+          "onset_step": 17,
+          "leakage_at_horizon": 0.18823529411764706
+        },
+        "0.15": {
+          "decoupled": true,
+          "onset_step": 29,
+          "leakage_at_horizon": 0.18823529411764706
+        },
+        "0.2": {
+          "decoupled": false,
+          "onset_step": null,
+          "leakage_at_horizon": 0.18823529411764706
+        }
+      },
+      "faithful_fraction": {
+        "applicable": true,
+        "decoupled": true,
+        "faithful_fraction": 1.0,
+        "acc_at_onset": 0.6,
+        "acc_at_horizon": 0.6,
+        "total_gain": 0.25,
+        "gain_pre_onset": 0.25,
+        "gain_post_onset": 0.0,
+        "onset_at_horizon": true
+      },
+      "gain_while_faithful": {
+        "applicable": true,
+        "theta": 0.15,
+        "acc_at_horizon": 0.6,
+        "total_gain": 0.25,
+        "last_faithful_step": 23,
+        "frac_banked_while_faithful": 0.8833333333333333,
+        "acc_at_last_faithful": 0.5708333333333333,
+        "early_step": 5,
+        "early_acc": 0.325,
+        "early_leakage": 0.1111111111111111,
+        "early_gain_frac": 0.0
+      },
+      "post_onset_trend": {
+        "applicable": false,
+        "reason": "onset at/after last checkpoint"
+      }
+    },
+    "matrix_seed3": {
+      "label": "Matrix seed 3",
+      "schedule": "annealed",
+      "offset": 1220,
+      "is_control": false,
+      "horizon": 29,
+      "leak_steps": [
+        5,
+        11,
+        17,
+        23,
+        29
+      ],
+      "leak_vals": [
+        0.012195121951219513,
+        0.15,
+        0.12195121951219512,
+        0.14814814814814814,
+        0.25925925925925924
+      ],
+      "neutral_acc": [
+        0.525,
+        0.5333333333333333,
+        0.5375,
+        0.5541666666666667,
+        0.6125
+      ],
+      "precision": [
+        0.9873417721518988,
+        0.8695652173913043,
+        0.8863636363636364,
+        0.8666666666666667,
+        0.7857142857142857
+      ],
+      "self_verify": [
+        0.9808917197452229,
+        0.9113924050632911,
+        0.9119496855345912,
+        0.8980891719745223,
+        0.8354430379746836
+      ],
+      "by_theta": {
+        "0.1": {
+          "decoupled": true,
+          "onset_step": 11,
+          "leakage_at_horizon": 0.25925925925925924
+        },
+        "0.15": {
+          "decoupled": true,
+          "onset_step": 29,
+          "leakage_at_horizon": 0.25925925925925924
+        },
+        "0.2": {
+          "decoupled": true,
+          "onset_step": 29,
+          "leakage_at_horizon": 0.25925925925925924
+        }
+      },
+      "faithful_fraction": {
+        "applicable": true,
+        "decoupled": true,
+        "faithful_fraction": 1.0,
+        "acc_at_onset": 0.6125,
+        "acc_at_horizon": 0.6125,
+        "total_gain": 0.26250000000000007,
+        "gain_pre_onset": 0.26250000000000007,
+        "gain_post_onset": 0.0,
+        "onset_at_horizon": true
+      },
+      "gain_while_faithful": {
+        "applicable": true,
+        "theta": 0.15,
+        "acc_at_horizon": 0.6125,
+        "total_gain": 0.26250000000000007,
+        "last_faithful_step": 23,
+        "frac_banked_while_faithful": 0.7777777777777778,
+        "acc_at_last_faithful": 0.5541666666666667,
+        "early_step": 5,
+        "early_acc": 0.525,
+        "early_leakage": 0.012195121951219513,
+        "early_gain_frac": 0.6666666666666666
+      },
+      "post_onset_trend": {
+        "applicable": false,
+        "reason": "onset at/after last checkpoint"
+      }
+    },
+    "matrix_seed4": {
+      "label": "Matrix seed 4",
+      "schedule": "annealed",
+      "offset": 1460,
+      "is_control": false,
+      "horizon": 29,
+      "leak_steps": [
+        5,
+        11,
+        17,
+        23,
+        29
+      ],
+      "leak_vals": [
+        0.011494252873563218,
+        0.011235955056179775,
+        0.03225806451612903,
+        0.02531645569620253,
+        0.039473684210526314
+      ],
+      "neutral_acc": [
+        0.45,
+        0.575,
+        0.6041666666666666,
+        0.6041666666666666,
+        0.6541666666666667
+      ],
+      "precision": [
+        0.9863013698630136,
+        0.9861111111111112,
+        0.9552238805970149,
+        0.9743589743589743,
+        0.9655172413793104
+      ],
+      "self_verify": [
+        0.9872611464968153,
+        0.99375,
+        0.9746835443037974,
+        0.9620253164556962,
+        0.9937106918238994
+      ],
+      "by_theta": {
+        "0.1": {
+          "decoupled": false,
+          "onset_step": null,
+          "leakage_at_horizon": 0.039473684210526314
+        },
+        "0.15": {
+          "decoupled": false,
+          "onset_step": null,
+          "leakage_at_horizon": 0.039473684210526314
+        },
+        "0.2": {
+          "decoupled": false,
+          "onset_step": null,
+          "leakage_at_horizon": 0.039473684210526314
+        }
+      },
+      "faithful_fraction": {
+        "applicable": true,
+        "decoupled": false,
+        "faithful_fraction": 1.0,
+        "acc_at_onset": null,
+        "acc_at_horizon": 0.6541666666666667,
+        "total_gain": 0.3041666666666667,
+        "gain_pre_onset": 0.3041666666666667,
+        "gain_post_onset": 0.0,
+        "onset_at_horizon": false
+      },
+      "gain_while_faithful": {
+        "applicable": true,
+        "theta": 0.15,
+        "acc_at_horizon": 0.6541666666666667,
+        "total_gain": 0.3041666666666667,
+        "last_faithful_step": 29,
+        "frac_banked_while_faithful": 1.0,
+        "acc_at_last_faithful": 0.6541666666666667,
+        "early_step": 5,
+        "early_acc": 0.45,
+        "early_leakage": 0.011494252873563218,
+        "early_gain_frac": 0.3287671232876713
+      },
+      "post_onset_trend": {
+        "applicable": false
+      }
+    },
+    "erosion_b_s3": {
+      "label": "Erosion B, seed-3 slice",
+      "schedule": "live-floor",
+      "offset": 1220,
+      "is_control": false,
+      "horizon": 35,
+      "leak_steps": [
+        5,
+        11,
+        17,
+        23,
+        29,
+        35
+      ],
+      "leak_vals": [
+        0.039603960396039604,
+        0.0989010989010989,
+        0.1728395061728395,
+        0.23809523809523808,
+        0.4807692307692308,
+        0.6666666666666666
+      ],
+      "neutral_acc": [
+        0.44583333333333336,
+        0.5291666666666667,
+        0.4708333333333333,
+        0.6208333333333333,
+        0.6291666666666667,
+        0.6916666666666667
+      ],
+      "precision": [
+        0.9354838709677419,
+        0.8831168831168831,
+        0.8461538461538461,
+        0.8636363636363636,
+        0.8106060606060606,
+        0.7605633802816901
+      ],
+      "self_verify": [
+        0.9620253164556962,
+        0.910828025477707,
+        0.8387096774193549,
+        0.8662420382165605,
+        0.79375,
+        0.775
+      ],
+      "by_theta": {
+        "0.1": {
+          "decoupled": true,
+          "onset_step": 17,
+          "leakage_at_horizon": 0.6666666666666666
+        },
+        "0.15": {
+          "decoupled": true,
+          "onset_step": 17,
+          "leakage_at_horizon": 0.6666666666666666
+        },
+        "0.2": {
+          "decoupled": true,
+          "onset_step": 23,
+          "leakage_at_horizon": 0.6666666666666666
+        }
+      },
+      "faithful_fraction": {
+        "applicable": true,
+        "decoupled": true,
+        "faithful_fraction": 0.3536585365853659,
+        "acc_at_onset": 0.4708333333333333,
+        "acc_at_horizon": 0.6916666666666667,
+        "total_gain": 0.3416666666666667,
+        "gain_pre_onset": 0.12083333333333335,
+        "gain_post_onset": 0.22083333333333333,
+        "onset_at_horizon": false
+      },
+      "gain_while_faithful": {
+        "applicable": true,
+        "theta": 0.15,
+        "acc_at_horizon": 0.6916666666666667,
+        "total_gain": 0.3416666666666667,
+        "last_faithful_step": 11,
+        "frac_banked_while_faithful": 0.524390243902439,
+        "acc_at_last_faithful": 0.5291666666666667,
+        "early_step": 5,
+        "early_acc": 0.44583333333333336,
+        "early_leakage": 0.039603960396039604,
+        "early_gain_frac": 0.2804878048780489
+      },
+      "post_onset_trend": {
+        "applicable": true,
+        "acc_at_onset": 0.4708333333333333,
+        "acc_at_horizon": 0.6916666666666667,
+        "delta_post_onset": 0.22083333333333333,
+        "verdict": "rising",
+        "steps": [
+          17,
+          23,
+          29,
+          35
+        ]
+      }
+    },
+    "erosion_b_s1": {
+      "label": "Erosion B, seed-1 slice",
+      "schedule": "live-floor",
+      "offset": 740,
+      "is_control": false,
+      "horizon": 35,
+      "leak_steps": [
+        5,
+        11,
+        17,
+        23,
+        29,
+        35
+      ],
+      "leak_vals": [
+        0.0297029702970297,
+        0.034482758620689655,
+        0.07692307692307693,
+        0.1780821917808219,
+        0.18478260869565216,
+        0.21359223300970873
+      ],
+      "neutral_acc": [
+        0.4666666666666667,
+        0.5791666666666667,
+        0.5125,
+        0.6458333333333334,
+        0.5875,
+        0.5416666666666666
+      ],
+      "precision": [
+        0.9508196721311475,
+        0.9605263157894737,
+        0.9066666666666666,
+        0.8686868686868687,
+        0.7951807228915663,
+        0.7215189873417721
+      ],
+      "self_verify": [
+        0.9683544303797469,
+        0.93125,
+        0.9177215189873418,
+        0.8930817610062893,
+        0.8397435897435898,
+        0.8
+      ],
+      "by_theta": {
+        "0.1": {
+          "decoupled": true,
+          "onset_step": 23,
+          "leakage_at_horizon": 0.21359223300970873
+        },
+        "0.15": {
+          "decoupled": true,
+          "onset_step": 23,
+          "leakage_at_horizon": 0.21359223300970873
+        },
+        "0.2": {
+          "decoupled": true,
+          "onset_step": 35,
+          "leakage_at_horizon": 0.21359223300970873
+        }
+      },
+      "faithful_fraction": {
+        "applicable": true,
+        "decoupled": true,
+        "faithful_fraction": 1.0,
+        "acc_at_onset": 0.6458333333333334,
+        "acc_at_horizon": 0.5416666666666666,
+        "total_gain": 0.19166666666666665,
+        "gain_pre_onset": 0.2958333333333334,
+        "gain_post_onset": -0.10416666666666674,
+        "onset_at_horizon": false
+      },
+      "gain_while_faithful": {
+        "applicable": true,
+        "theta": 0.15,
+        "acc_at_horizon": 0.5416666666666666,
+        "total_gain": 0.19166666666666665,
+        "last_faithful_step": 17,
+        "frac_banked_while_faithful": 0.8478260869565217,
+        "acc_at_last_faithful": 0.5125,
+        "early_step": 5,
+        "early_acc": 0.4666666666666667,
+        "early_leakage": 0.0297029702970297,
+        "early_gain_frac": 0.6086956521739132
+      },
+      "post_onset_trend": {
+        "applicable": true,
+        "acc_at_onset": 0.6458333333333334,
+        "acc_at_horizon": 0.5416666666666666,
+        "delta_post_onset": -0.10416666666666674,
+        "verdict": "reversing",
+        "steps": [
+          23,
+          29,
+          35
+        ]
+      }
+    },
+    "erosion_d_s3": {
+      "label": "Erosion D control, seed-3 slice",
+      "schedule": "live-floor",
+      "offset": 1220,
+      "is_control": true,
+      "horizon": 35,
+      "leak_steps": [
+        5,
+        11,
+        17,
+        23,
+        29,
+        35
+      ],
+      "leak_vals": [
+        0.008849557522123894,
+        0.03597122302158273,
+        0.027972027972027972,
+        0.034013605442176874,
+        0.014084507042253521,
+        0.04225352112676056
+      ],
+      "neutral_acc": [
+        0.275,
+        0.1875,
+        0.14166666666666666,
+        0.14583333333333334,
+        0.13333333333333333,
+        0.125
+      ],
+      "precision": [
+        0.9791666666666666,
+        0.8076923076923077,
+        0.8,
+        0.7222222222222222,
+        0.8947368421052632,
+        0.7391304347826086
+      ],
+      "self_verify": [
+        0.99375,
+        0.9685534591194969,
+        0.9554140127388535,
+        0.9044585987261147,
+        0.9358974358974359,
+        0.9556962025316456
+      ],
+      "by_theta": {
+        "0.1": {
+          "decoupled": false,
+          "onset_step": null,
+          "leakage_at_horizon": 0.04225352112676056
+        },
+        "0.15": {
+          "decoupled": false,
+          "onset_step": null,
+          "leakage_at_horizon": 0.04225352112676056
+        },
+        "0.2": {
+          "decoupled": false,
+          "onset_step": null,
+          "leakage_at_horizon": 0.04225352112676056
+        }
+      },
+      "faithful_fraction": {
+        "applicable": true,
+        "decoupled": false,
+        "faithful_fraction": 1.0,
+        "acc_at_onset": null,
+        "acc_at_horizon": 0.125,
+        "total_gain": -0.22499999999999998,
+        "gain_pre_onset": -0.22499999999999998,
+        "gain_post_onset": 0.0,
+        "onset_at_horizon": false
+      },
+      "gain_while_faithful": {
+        "applicable": true,
+        "theta": 0.15,
+        "acc_at_horizon": 0.125,
+        "total_gain": -0.22499999999999998,
+        "last_faithful_step": 35,
+        "frac_banked_while_faithful": 1.0,
+        "acc_at_last_faithful": 0.125,
+        "early_step": 5,
+        "early_acc": 0.275,
+        "early_leakage": 0.008849557522123894,
+        "early_gain_frac": 0.33333333333333315
+      },
+      "post_onset_trend": {
+        "applicable": false
+      }
+    },
+    "constlr_b_s0": {
+      "label": "Constant-LR B, seed-0 slice (offset 500)",
+      "schedule": "constant",
+      "offset": 500,
+      "is_control": false,
+      "horizon": 39,
+      "leak_steps": [
+        2,
+        5,
+        8,
+        11,
+        14,
+        17,
+        20,
+        23,
+        26,
+        29,
+        32,
+        35,
+        38,
+        39
+      ],
+      "leak_vals": [
+        0.0,
+        0.028037383177570093,
+        0.018691588785046728,
+        0.07446808510638298,
+        0.16666666666666666,
+        0.2716049382716049,
+        0.42857142857142855,
+        0.5526315789473685,
+        0.8309859154929577,
+        0.8933333333333333,
+        0.9871794871794872,
+        0.9090909090909091,
+        0.9591836734693877,
+        0.9583333333333334
+      ],
+      "neutral_acc": [
+        0.36666666666666664,
+        0.4166666666666667,
+        0.5083333333333333,
+        0.525,
+        0.6,
+        0.6166666666666667,
+        0.6083333333333333,
+        0.6666666666666666,
+        0.6333333333333333,
+        0.6083333333333333,
+        0.55,
+        0.525,
+        0.43333333333333335,
+        0.5083333333333333
+      ],
+      "precision": [
+        1.0,
+        0.9464285714285714,
+        0.9636363636363636,
+        0.9041095890410958,
+        0.8235294117647058,
+        0.7821782178217822,
+        0.7155172413793104,
+        0.6666666666666666,
+        0.5986394557823129,
+        0.5592105263157895,
+        0.5157232704402516,
+        0.5424836601307189,
+        0.3974358974358974,
+        0.41025641025641024
+      ],
+      "self_verify": [
+        0.9874213836477987,
+        0.9810126582278481,
+        0.9748427672955975,
+        0.925,
+        0.9056603773584906,
+        0.85,
+        0.76875,
+        0.70625,
+        0.6163522012578616,
+        0.5875,
+        0.51875,
+        0.5253164556962026,
+        0.389937106918239,
+        0.4
+      ],
+      "by_theta": {
+        "0.1": {
+          "decoupled": true,
+          "onset_step": 14,
+          "leakage_at_horizon": 0.9583333333333334
+        },
+        "0.15": {
+          "decoupled": true,
+          "onset_step": 14,
+          "leakage_at_horizon": 0.9583333333333334
+        },
+        "0.2": {
+          "decoupled": true,
+          "onset_step": 17,
+          "leakage_at_horizon": 0.9583333333333334
+        }
+      },
+      "faithful_fraction": {
+        "applicable": true,
+        "decoupled": true,
+        "faithful_fraction": 1.0,
+        "acc_at_onset": 0.6,
+        "acc_at_horizon": 0.5083333333333333,
+        "total_gain": 0.15833333333333333,
+        "gain_pre_onset": 0.25,
+        "gain_post_onset": -0.09166666666666667,
+        "onset_at_horizon": false
+      },
+      "gain_while_faithful": {
+        "applicable": true,
+        "theta": 0.15,
+        "acc_at_horizon": 0.5083333333333333,
+        "total_gain": 0.15833333333333333,
+        "last_faithful_step": 11,
+        "frac_banked_while_faithful": 1.0,
+        "acc_at_last_faithful": 0.525,
+        "early_step": 2,
+        "early_acc": 0.36666666666666664,
+        "early_leakage": 0.0,
+        "early_gain_frac": 0.10526315789473682
+      },
+      "post_onset_trend": {
+        "applicable": true,
+        "acc_at_onset": 0.6,
+        "acc_at_horizon": 0.5083333333333333,
+        "delta_post_onset": -0.09166666666666667,
+        "verdict": "reversing",
+        "steps": [
+          14,
+          17,
+          20,
+          23,
+          26,
+          29,
+          32,
+          35,
+          38,
+          39
+        ]
+      }
+    }
+  },
+  "onset_note": "Onset resolvable only to the 6-step eval cadence; from existing runs it is a coarse read. Finer cadence (deferred constant-LR arm) needed for a real onset distribution."
+}

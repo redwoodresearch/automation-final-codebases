@@ -1,0 +1,9 @@
+# Minimal dependencies for Tier-1 reproduction (pure analysis: regenerate the
+# figures + decision-rule table from the committed result artifacts).
+# No Tinker, torch, or transformers needed — Tier 1 does no sampling.
+# Install: uv venv .venv && .venv/bin/pip install -r requirements-analysis.txt
+attrs==26.1.0
+matplotlib==3.11.0
+numpy==2.4.6
+pandas==3.0.3
+pytest==9.1.1

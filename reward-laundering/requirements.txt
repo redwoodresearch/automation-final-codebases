@@ -1,0 +1,13 @@
+# tinker-cookbook installed from git: pip install git+https://github.com/thinking-machines-lab/tinker-cookbook.git
+aiofiles==25.1.0
+anthropic==0.115.1
+attrs==26.1.0
+matplotlib==3.11.0
+numpy==2.4.6
+openai==2.44.0
+pandas==3.0.3
+pytest==9.1.1
+tinker==0.22.7
+tinker_cookbook @ git+https://github.com/thinking-machines-lab/tinker-cookbook.git@9f4852f7d4f09217331b2e93cd6e95f582ac1a2c
+torch==2.12.1
+transformers==5.5.4

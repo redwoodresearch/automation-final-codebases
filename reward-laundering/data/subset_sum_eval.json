@@ -1,0 +1,10388 @@
+{
+  "meta": {
+    "count": 400,
+    "difficulty": {
+      "name": "n12_v3digit_k5to7",
+      "n": 12,
+      "value_lo": 100,
+      "value_hi": 999,
+      "k_lo": 5,
+      "k_hi": 7
+    }
+  },
+  "instances": [
+    {
+      "values": [
+        834,
+        228,
+        788,
+        904,
+        227,
+        199,
+        397,
+        311,
+        225,
+        412,
+        427,
+        293
+      ],
+      "target": 3471,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        3,
+        8,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        370,
+        147,
+        309,
+        504,
+        952,
+        685,
+        787,
+        402,
+        669,
+        956,
+        473,
+        666
+      ],
+      "target": 3459,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        5,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        676,
+        523,
+        723,
+        982,
+        700,
+        684,
+        789,
+        911,
+        222,
+        411,
+        808,
+        663
+      ],
+      "target": 3712,
+      "hidden_subset_indices_0based": [
+        0,
+        5,
+        7,
+        8,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        886,
+        148,
+        312,
+        602,
+        792,
+        837,
+        247,
+        370,
+        245,
+        652,
+        277,
+        849
+      ],
+      "target": 3290,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        4,
+        7,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        536,
+        243,
+        824,
+        270,
+        653,
+        947,
+        442,
+        950,
+        185,
+        949,
+        313,
+        831
+      ],
+      "target": 3428,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        3,
+        5,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        339,
+        735,
+        218,
+        502,
+        170,
+        970,
+        640,
+        718,
+        172,
+        120,
+        303,
+        403
+      ],
+      "target": 2442,
+      "hidden_subset_indices_0based": [
+        0,
+        4,
+        6,
+        7,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        465,
+        387,
+        365,
+        688,
+        125,
+        134,
+        540,
+        406,
+        190,
+        227,
+        595,
+        995
+      ],
+      "target": 2672,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        713,
+        535,
+        861,
+        993,
+        190,
+        720,
+        582,
+        856,
+        912,
+        655,
+        136,
+        650
+      ],
+      "target": 4333,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        925,
+        161,
+        931,
+        727,
+        509,
+        602,
+        112,
+        599,
+        378,
+        214,
+        491,
+        674
+      ],
+      "target": 3762,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        5,
+        7,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        743,
+        537,
+        712,
+        566,
+        511,
+        967,
+        260,
+        448,
+        106,
+        987,
+        651,
+        927
+      ],
+      "target": 4005,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        806,
+        619,
+        330,
+        518,
+        811,
+        205,
+        125,
+        362,
+        546,
+        651,
+        479,
+        472
+      ],
+      "target": 2250,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        5,
+        7,
+        8
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        164,
+        311,
+        131,
+        958,
+        139,
+        795,
+        755,
+        309,
+        383,
+        717,
+        556,
+        479
+      ],
+      "target": 3195,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        986,
+        765,
+        826,
+        404,
+        667,
+        928,
+        468,
+        565,
+        531,
+        768,
+        451,
+        654
+      ],
+      "target": 4771,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        151,
+        802,
+        870,
+        542,
+        642,
+        730,
+        356,
+        319,
+        115,
+        726,
+        135,
+        427
+      ],
+      "target": 3515,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        8
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        230,
+        471,
+        814,
+        764,
+        536,
+        797,
+        387,
+        519,
+        754,
+        418,
+        796,
+        156
+      ],
+      "target": 3647,
+      "hidden_subset_indices_0based": [
+        3,
+        4,
+        5,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        495,
+        838,
+        314,
+        160,
+        760,
+        918,
+        214,
+        863,
+        144,
+        793,
+        108,
+        549
+      ],
+      "target": 3948,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        4,
+        5,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        958,
+        630,
+        774,
+        984,
+        367,
+        482,
+        126,
+        301,
+        706,
+        144,
+        967,
+        195
+      ],
+      "target": 1763,
+      "hidden_subset_indices_0based": [
+        2,
+        4,
+        6,
+        7,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        885,
+        172,
+        454,
+        607,
+        201,
+        932,
+        729,
+        393,
+        421,
+        263,
+        386,
+        756
+      ],
+      "target": 1785,
+      "hidden_subset_indices_0based": [
+        1,
+        4,
+        7,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        847,
+        558,
+        943,
+        921,
+        588,
+        597,
+        555,
+        110,
+        627,
+        946,
+        347,
+        486
+      ],
+      "target": 4462,
+      "hidden_subset_indices_0based": [
+        2,
+        4,
+        5,
+        6,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        419,
+        492,
+        408,
+        824,
+        864,
+        802,
+        553,
+        485,
+        839,
+        453,
+        320,
+        697
+      ],
+      "target": 2857,
+      "hidden_subset_indices_0based": [
+        5,
+        6,
+        7,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        561,
+        788,
+        307,
+        575,
+        506,
+        815,
+        180,
+        874,
+        761,
+        608,
+        191,
+        729
+      ],
+      "target": 4034,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        927,
+        182,
+        721,
+        848,
+        693,
+        674,
+        414,
+        969,
+        795,
+        647,
+        750,
+        785
+      ],
+      "target": 4889,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        4,
+        7,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        416,
+        474,
+        468,
+        995,
+        573,
+        367,
+        688,
+        175,
+        525,
+        206,
+        104,
+        931
+      ],
+      "target": 2359,
+      "hidden_subset_indices_0based": [
+        1,
+        4,
+        7,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        254,
+        326,
+        830,
+        457,
+        747,
+        378,
+        407,
+        425,
+        699,
+        453,
+        965,
+        675
+      ],
+      "target": 3891,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        222,
+        573,
+        974,
+        937,
+        329,
+        159,
+        599,
+        500,
+        344,
+        875,
+        418,
+        722
+      ],
+      "target": 4157,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        981,
+        636,
+        840,
+        273,
+        344,
+        763,
+        463,
+        158,
+        713,
+        446,
+        133,
+        819
+      ],
+      "target": 3270,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        3,
+        6,
+        8
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        282,
+        997,
+        784,
+        380,
+        106,
+        481,
+        719,
+        875,
+        244,
+        470,
+        610,
+        779
+      ],
+      "target": 3106,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        7,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        294,
+        650,
+        262,
+        236,
+        182,
+        493,
+        882,
+        780,
+        473,
+        894,
+        357,
+        595
+      ],
+      "target": 4217,
+      "hidden_subset_indices_0based": [
+        3,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        428,
+        915,
+        870,
+        145,
+        755,
+        961,
+        355,
+        764,
+        691,
+        770,
+        905,
+        265
+      ],
+      "target": 4565,
+      "hidden_subset_indices_0based": [
+        1,
+        4,
+        5,
+        7,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        378,
+        246,
+        917,
+        445,
+        584,
+        825,
+        358,
+        305,
+        399,
+        779,
+        959,
+        860
+      ],
+      "target": 3066,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        7,
+        8,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        101,
+        908,
+        648,
+        178,
+        769,
+        492,
+        663,
+        358,
+        972,
+        194,
+        902,
+        956
+      ],
+      "target": 3585,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        386,
+        861,
+        242,
+        716,
+        282,
+        950,
+        452,
+        250,
+        535,
+        875,
+        962,
+        569
+      ],
+      "target": 3195,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        603,
+        719,
+        813,
+        188,
+        735,
+        329,
+        532,
+        514,
+        252,
+        352,
+        363,
+        933
+      ],
+      "target": 3878,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        606,
+        763,
+        518,
+        234,
+        572,
+        278,
+        318,
+        969,
+        632,
+        812,
+        342,
+        943
+      ],
+      "target": 3551,
+      "hidden_subset_indices_0based": [
+        2,
+        5,
+        7,
+        8,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        310,
+        443,
+        222,
+        785,
+        726,
+        498,
+        656,
+        566,
+        642,
+        652,
+        453,
+        676
+      ],
+      "target": 2348,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        5,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        122,
+        510,
+        993,
+        112,
+        536,
+        722,
+        479,
+        780,
+        837,
+        509,
+        717,
+        836
+      ],
+      "target": 3555,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        6,
+        7,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        226,
+        781,
+        386,
+        338,
+        285,
+        743,
+        156,
+        667,
+        957,
+        928,
+        545,
+        396
+      ],
+      "target": 4316,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        310,
+        963,
+        137,
+        660,
+        711,
+        258,
+        668,
+        339,
+        970,
+        337,
+        568,
+        317
+      ],
+      "target": 2739,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        6,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        557,
+        154,
+        369,
+        879,
+        796,
+        941,
+        162,
+        829,
+        227,
+        409,
+        375,
+        316
+      ],
+      "target": 3109,
+      "hidden_subset_indices_0based": [
+        4,
+        5,
+        7,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        205,
+        953,
+        272,
+        115,
+        883,
+        819,
+        694,
+        701,
+        758,
+        414,
+        888,
+        145
+      ],
+      "target": 3858,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        786,
+        173,
+        837,
+        511,
+        757,
+        440,
+        944,
+        217,
+        725,
+        871,
+        247,
+        365
+      ],
+      "target": 4061,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        210,
+        790,
+        102,
+        431,
+        718,
+        155,
+        518,
+        497,
+        522,
+        573,
+        680,
+        305
+      ],
+      "target": 2414,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        3,
+        6,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        711,
+        653,
+        608,
+        245,
+        499,
+        328,
+        105,
+        324,
+        799,
+        256,
+        262,
+        664
+      ],
+      "target": 2077,
+      "hidden_subset_indices_0based": [
+        4,
+        5,
+        7,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        357,
+        940,
+        443,
+        655,
+        865,
+        542,
+        535,
+        782,
+        560,
+        761,
+        584,
+        441
+      ],
+      "target": 2878,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        5,
+        6,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        966,
+        873,
+        393,
+        282,
+        965,
+        414,
+        120,
+        295,
+        951,
+        738,
+        271,
+        792
+      ],
+      "target": 3262,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        5,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        887,
+        828,
+        521,
+        197,
+        378,
+        316,
+        219,
+        149,
+        514,
+        461,
+        724,
+        271
+      ],
+      "target": 3704,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        414,
+        137,
+        238,
+        187,
+        498,
+        411,
+        424,
+        438,
+        204,
+        881,
+        524,
+        984
+      ],
+      "target": 2509,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        307,
+        829,
+        748,
+        473,
+        999,
+        954,
+        571,
+        879,
+        811,
+        836,
+        301,
+        761
+      ],
+      "target": 4233,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        5,
+        6,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        731,
+        549,
+        251,
+        387,
+        902,
+        380,
+        119,
+        571,
+        227,
+        245,
+        395,
+        420
+      ],
+      "target": 2779,
+      "hidden_subset_indices_0based": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        758,
+        485,
+        768,
+        923,
+        594,
+        526,
+        505,
+        780,
+        729,
+        433,
+        576,
+        395
+      ],
+      "target": 4693,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        939,
+        497,
+        519,
+        995,
+        250,
+        223,
+        715,
+        721,
+        180,
+        770,
+        885,
+        387
+      ],
+      "target": 4138,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        474,
+        334,
+        760,
+        266,
+        558,
+        923,
+        476,
+        654,
+        591,
+        124,
+        692,
+        284
+      ],
+      "target": 2725,
+      "hidden_subset_indices_0based": [
+        2,
+        4,
+        8,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        538,
+        256,
+        213,
+        122,
+        812,
+        797,
+        689,
+        616,
+        819,
+        472,
+        686,
+        476
+      ],
+      "target": 2695,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        4,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        920,
+        681,
+        854,
+        174,
+        957,
+        540,
+        646,
+        680,
+        418,
+        209,
+        302,
+        368
+      ],
+      "target": 3175,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        778,
+        226,
+        696,
+        476,
+        821,
+        533,
+        803,
+        599,
+        967,
+        673,
+        203,
+        875
+      ],
+      "target": 3055,
+      "hidden_subset_indices_0based": [
+        1,
+        4,
+        5,
+        7,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        765,
+        555,
+        987,
+        300,
+        460,
+        451,
+        574,
+        212,
+        694,
+        432,
+        686,
+        856
+      ],
+      "target": 2893,
+      "hidden_subset_indices_0based": [
+        4,
+        5,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        712,
+        228,
+        730,
+        361,
+        529,
+        670,
+        333,
+        842,
+        677,
+        184,
+        617,
+        326
+      ],
+      "target": 2400,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        6,
+        8,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        295,
+        955,
+        370,
+        538,
+        964,
+        331,
+        811,
+        208,
+        752,
+        403,
+        922,
+        415
+      ],
+      "target": 2689,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        3,
+        5,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        756,
+        709,
+        678,
+        612,
+        123,
+        256,
+        100,
+        471,
+        383,
+        974,
+        851,
+        695
+      ],
+      "target": 3194,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        436,
+        333,
+        373,
+        613,
+        938,
+        797,
+        598,
+        999,
+        108,
+        985,
+        664,
+        539
+      ],
+      "target": 2826,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        3,
+        5,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        161,
+        448,
+        237,
+        404,
+        880,
+        262,
+        373,
+        913,
+        282,
+        370,
+        470,
+        260
+      ],
+      "target": 2003,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        368,
+        598,
+        126,
+        962,
+        636,
+        356,
+        420,
+        562,
+        199,
+        280,
+        228,
+        583
+      ],
+      "target": 3141,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        773,
+        776,
+        177,
+        704,
+        940,
+        713,
+        666,
+        609,
+        787,
+        104,
+        218,
+        682
+      ],
+      "target": 4615,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        5,
+        6,
+        8,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        999,
+        668,
+        959,
+        573,
+        384,
+        619,
+        980,
+        239,
+        317,
+        923,
+        574,
+        366
+      ],
+      "target": 3851,
+      "hidden_subset_indices_0based": [
+        2,
+        4,
+        6,
+        7,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        941,
+        643,
+        425,
+        834,
+        686,
+        249,
+        373,
+        684,
+        106,
+        581,
+        789,
+        760
+      ],
+      "target": 3562,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        3,
+        5,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        539,
+        796,
+        884,
+        607,
+        149,
+        305,
+        656,
+        720,
+        895,
+        889,
+        335,
+        465
+      ],
+      "target": 3229,
+      "hidden_subset_indices_0based": [
+        2,
+        6,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        413,
+        912,
+        119,
+        370,
+        379,
+        230,
+        452,
+        767,
+        591,
+        785,
+        583,
+        731
+      ],
+      "target": 2271,
+      "hidden_subset_indices_0based": [
+        2,
+        3,
+        5,
+        7,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        195,
+        368,
+        224,
+        233,
+        874,
+        255,
+        930,
+        273,
+        415,
+        756,
+        312,
+        399
+      ],
+      "target": 2544,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        4,
+        6,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        646,
+        558,
+        350,
+        388,
+        688,
+        556,
+        461,
+        526,
+        190,
+        852,
+        304,
+        408
+      ],
+      "target": 4016,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        4,
+        5,
+        7,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        342,
+        103,
+        508,
+        465,
+        295,
+        265,
+        124,
+        195,
+        913,
+        278,
+        984,
+        180
+      ],
+      "target": 1121,
+      "hidden_subset_indices_0based": [
+        1,
+        4,
+        5,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        782,
+        910,
+        366,
+        683,
+        163,
+        167,
+        642,
+        505,
+        673,
+        669,
+        582,
+        193
+      ],
+      "target": 1697,
+      "hidden_subset_indices_0based": [
+        4,
+        5,
+        7,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        883,
+        698,
+        144,
+        147,
+        259,
+        791,
+        577,
+        471,
+        335,
+        376,
+        104,
+        501
+      ],
+      "target": 3009,
+      "hidden_subset_indices_0based": [
+        0,
+        4,
+        5,
+        7,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        502,
+        194,
+        424,
+        610,
+        936,
+        169,
+        655,
+        342,
+        512,
+        840,
+        152,
+        764
+      ],
+      "target": 2920,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        330,
+        778,
+        304,
+        245,
+        654,
+        310,
+        435,
+        962,
+        234,
+        191,
+        558,
+        451
+      ],
+      "target": 1369,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        5,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        616,
+        220,
+        906,
+        491,
+        856,
+        662,
+        267,
+        794,
+        569,
+        412,
+        622,
+        260
+      ],
+      "target": 3797,
+      "hidden_subset_indices_0based": [
+        2,
+        4,
+        7,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        572,
+        354,
+        444,
+        224,
+        911,
+        948,
+        802,
+        882,
+        256,
+        529,
+        851,
+        950
+      ],
+      "target": 4567,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        5,
+        6,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        655,
+        868,
+        448,
+        244,
+        359,
+        559,
+        611,
+        117,
+        145,
+        114,
+        242,
+        601
+      ],
+      "target": 1968,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        3,
+        4,
+        7,
+        8
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        594,
+        479,
+        276,
+        722,
+        793,
+        882,
+        958,
+        817,
+        218,
+        104,
+        697,
+        884
+      ],
+      "target": 3693,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        4,
+        5,
+        7
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        647,
+        969,
+        610,
+        657,
+        444,
+        429,
+        206,
+        820,
+        478,
+        456,
+        389,
+        355
+      ],
+      "target": 3857,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        4,
+        7,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        340,
+        687,
+        587,
+        459,
+        413,
+        689,
+        969,
+        965,
+        785,
+        777,
+        370,
+        208
+      ],
+      "target": 3753,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        3,
+        4,
+        6,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        955,
+        236,
+        936,
+        156,
+        851,
+        329,
+        459,
+        300,
+        890,
+        877,
+        322,
+        617
+      ],
+      "target": 2979,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        7,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        808,
+        953,
+        156,
+        463,
+        549,
+        290,
+        438,
+        618,
+        387,
+        723,
+        286,
+        663
+      ],
+      "target": 2932,
+      "hidden_subset_indices_0based": [
+        0,
+        5,
+        6,
+        8,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        906,
+        971,
+        645,
+        955,
+        953,
+        856,
+        844,
+        443,
+        399,
+        477,
+        284,
+        409
+      ],
+      "target": 2891,
+      "hidden_subset_indices_0based": [
+        3,
+        6,
+        8,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        974,
+        789,
+        197,
+        874,
+        558,
+        740,
+        486,
+        434,
+        377,
+        138,
+        534,
+        627
+      ],
+      "target": 3507,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        5,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        891,
+        111,
+        810,
+        960,
+        850,
+        978,
+        283,
+        789,
+        119,
+        114,
+        886,
+        441
+      ],
+      "target": 2812,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        724,
+        121,
+        777,
+        398,
+        857,
+        110,
+        669,
+        829,
+        164,
+        117,
+        194,
+        133
+      ],
+      "target": 2865,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        3,
+        6,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        901,
+        932,
+        444,
+        661,
+        499,
+        769,
+        343,
+        538,
+        952,
+        252,
+        638,
+        730
+      ],
+      "target": 4365,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        5,
+        7,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        225,
+        285,
+        229,
+        405,
+        140,
+        434,
+        680,
+        722,
+        195,
+        296,
+        274,
+        531
+      ],
+      "target": 2148,
+      "hidden_subset_indices_0based": [
+        2,
+        5,
+        6,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        353,
+        557,
+        300,
+        860,
+        941,
+        278,
+        764,
+        507,
+        472,
+        347,
+        746,
+        748
+      ],
+      "target": 2950,
+      "hidden_subset_indices_0based": [
+        3,
+        6,
+        7,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        343,
+        881,
+        420,
+        240,
+        606,
+        626,
+        374,
+        337,
+        765,
+        370,
+        769,
+        614
+      ],
+      "target": 3112,
+      "hidden_subset_indices_0based": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        337,
+        509,
+        367,
+        354,
+        204,
+        928,
+        288,
+        368,
+        307,
+        278,
+        358,
+        673
+      ],
+      "target": 1996,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        6,
+        7,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        365,
+        688,
+        901,
+        585,
+        974,
+        762,
+        905,
+        730,
+        781,
+        830,
+        794,
+        857
+      ],
+      "target": 4262,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        4,
+        6,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        348,
+        218,
+        304,
+        433,
+        399,
+        313,
+        931,
+        649,
+        166,
+        360,
+        631,
+        100
+      ],
+      "target": 2113,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        4,
+        5,
+        7,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        124,
+        846,
+        272,
+        464,
+        366,
+        712,
+        751,
+        421,
+        287,
+        781,
+        486,
+        596
+      ],
+      "target": 2781,
+      "hidden_subset_indices_0based": [
+        4,
+        6,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        903,
+        878,
+        294,
+        103,
+        129,
+        384,
+        549,
+        978,
+        480,
+        132,
+        647,
+        107
+      ],
+      "target": 1729,
+      "hidden_subset_indices_0based": [
+        2,
+        6,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        604,
+        239,
+        216,
+        566,
+        245,
+        687,
+        275,
+        311,
+        960,
+        282,
+        412,
+        318
+      ],
+      "target": 2291,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        541,
+        741,
+        478,
+        458,
+        129,
+        836,
+        589,
+        681,
+        258,
+        869,
+        103,
+        628
+      ],
+      "target": 2019,
+      "hidden_subset_indices_0based": [
+        2,
+        4,
+        7,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        977,
+        212,
+        311,
+        721,
+        675,
+        692,
+        959,
+        779,
+        606,
+        801,
+        691,
+        909
+      ],
+      "target": 4555,
+      "hidden_subset_indices_0based": [
+        2,
+        4,
+        5,
+        7,
+        8,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        637,
+        985,
+        104,
+        624,
+        160,
+        542,
+        159,
+        567,
+        365,
+        400,
+        210,
+        519
+      ],
+      "target": 3334,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        758,
+        186,
+        460,
+        686,
+        586,
+        447,
+        528,
+        209,
+        746,
+        599,
+        338,
+        715
+      ],
+      "target": 3405,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        5,
+        7,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        877,
+        753,
+        206,
+        719,
+        690,
+        467,
+        548,
+        858,
+        797,
+        995,
+        706,
+        991
+      ],
+      "target": 3456,
+      "hidden_subset_indices_0based": [
+        2,
+        5,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        987,
+        573,
+        163,
+        691,
+        158,
+        483,
+        578,
+        221,
+        846,
+        934,
+        107,
+        434
+      ],
+      "target": 4272,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        345,
+        796,
+        969,
+        809,
+        955,
+        313,
+        725,
+        850,
+        986,
+        653,
+        983,
+        954
+      ],
+      "target": 3162,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        5,
+        6,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        607,
+        266,
+        722,
+        339,
+        283,
+        827,
+        302,
+        411,
+        454,
+        829,
+        225,
+        461
+      ],
+      "target": 2922,
+      "hidden_subset_indices_0based": [
+        2,
+        4,
+        5,
+        7,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        603,
+        472,
+        419,
+        731,
+        496,
+        479,
+        191,
+        456,
+        823,
+        610,
+        126,
+        487
+      ],
+      "target": 3579,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        5,
+        7,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        790,
+        628,
+        533,
+        792,
+        538,
+        461,
+        289,
+        650,
+        236,
+        752,
+        811,
+        839
+      ],
+      "target": 3660,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        4,
+        8,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        806,
+        592,
+        420,
+        363,
+        943,
+        169,
+        588,
+        924,
+        755,
+        264,
+        974,
+        342
+      ],
+      "target": 4253,
+      "hidden_subset_indices_0based": [
+        0,
+        4,
+        7,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        392,
+        160,
+        583,
+        289,
+        590,
+        585,
+        317,
+        599,
+        351,
+        287,
+        614,
+        523
+      ],
+      "target": 2930,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        286,
+        371,
+        572,
+        411,
+        723,
+        194,
+        203,
+        557,
+        614,
+        101,
+        169,
+        943
+      ],
+      "target": 3813,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        4,
+        5,
+        7,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        290,
+        586,
+        504,
+        625,
+        179,
+        219,
+        352,
+        120,
+        186,
+        552,
+        728,
+        281
+      ],
+      "target": 2362,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        696,
+        730,
+        137,
+        746,
+        710,
+        625,
+        622,
+        309,
+        643,
+        293,
+        513,
+        697
+      ],
+      "target": 3620,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        5,
+        7,
+        8,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        466,
+        337,
+        520,
+        319,
+        978,
+        935,
+        963,
+        663,
+        278,
+        712,
+        265,
+        922
+      ],
+      "target": 3235,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        5,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        131,
+        695,
+        794,
+        515,
+        708,
+        246,
+        680,
+        936,
+        446,
+        691,
+        122,
+        797
+      ],
+      "target": 3506,
+      "hidden_subset_indices_0based": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        347,
+        202,
+        243,
+        159,
+        139,
+        510,
+        728,
+        650,
+        892,
+        255,
+        992,
+        797
+      ],
+      "target": 3019,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        439,
+        218,
+        671,
+        287,
+        796,
+        362,
+        134,
+        387,
+        941,
+        842,
+        444,
+        922
+      ],
+      "target": 2953,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        4,
+        6,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        443,
+        759,
+        423,
+        838,
+        363,
+        275,
+        619,
+        713,
+        249,
+        834,
+        557,
+        492
+      ],
+      "target": 4152,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        990,
+        970,
+        803,
+        995,
+        269,
+        122,
+        735,
+        834,
+        947,
+        595,
+        952,
+        104
+      ],
+      "target": 4119,
+      "hidden_subset_indices_0based": [
+        0,
+        4,
+        5,
+        6,
+        8,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        359,
+        251,
+        905,
+        414,
+        478,
+        216,
+        418,
+        760,
+        625,
+        590,
+        850,
+        740
+      ],
+      "target": 4148,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        6,
+        8,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        786,
+        686,
+        665,
+        737,
+        121,
+        409,
+        858,
+        881,
+        910,
+        976,
+        885,
+        958
+      ],
+      "target": 4293,
+      "hidden_subset_indices_0based": [
+        1,
+        6,
+        7,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        374,
+        879,
+        148,
+        603,
+        908,
+        565,
+        589,
+        468,
+        931,
+        622,
+        460,
+        530
+      ],
+      "target": 3724,
+      "hidden_subset_indices_0based": [
+        2,
+        5,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        939,
+        275,
+        647,
+        250,
+        558,
+        537,
+        547,
+        351,
+        210,
+        194,
+        378,
+        564
+      ],
+      "target": 3773,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        967,
+        710,
+        955,
+        196,
+        734,
+        742,
+        377,
+        389,
+        258,
+        145,
+        905,
+        679
+      ],
+      "target": 3248,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        7,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        786,
+        707,
+        961,
+        886,
+        685,
+        520,
+        518,
+        755,
+        879,
+        430,
+        920,
+        725
+      ],
+      "target": 4779,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        3,
+        7,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        515,
+        411,
+        888,
+        705,
+        400,
+        622,
+        875,
+        691,
+        954,
+        852,
+        785,
+        401
+      ],
+      "target": 3463,
+      "hidden_subset_indices_0based": [
+        1,
+        5,
+        7,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        847,
+        319,
+        298,
+        877,
+        694,
+        874,
+        833,
+        516,
+        559,
+        187,
+        423,
+        784
+      ],
+      "target": 2849,
+      "hidden_subset_indices_0based": [
+        0,
+        6,
+        8,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        765,
+        352,
+        656,
+        868,
+        783,
+        267,
+        927,
+        163,
+        434,
+        930,
+        195,
+        857
+      ],
+      "target": 3155,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        4,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        291,
+        362,
+        219,
+        177,
+        748,
+        404,
+        695,
+        955,
+        474,
+        990,
+        475,
+        383
+      ],
+      "target": 2094,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        4,
+        5,
+        8
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        408,
+        393,
+        322,
+        457,
+        979,
+        864,
+        688,
+        353,
+        199,
+        512,
+        262,
+        256
+      ],
+      "target": 3124,
+      "hidden_subset_indices_0based": [
+        1,
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        360,
+        648,
+        979,
+        778,
+        937,
+        777,
+        602,
+        378,
+        925,
+        786,
+        262,
+        891
+      ],
+      "target": 3356,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        5,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        964,
+        141,
+        418,
+        605,
+        977,
+        857,
+        786,
+        103,
+        130,
+        905,
+        924,
+        202
+      ],
+      "target": 2523,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        4,
+        5,
+        8
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        432,
+        413,
+        219,
+        338,
+        903,
+        795,
+        435,
+        534,
+        462,
+        598,
+        196,
+        954
+      ],
+      "target": 3981,
+      "hidden_subset_indices_0based": [
+        0,
+        4,
+        5,
+        6,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        882,
+        708,
+        748,
+        308,
+        628,
+        156,
+        994,
+        279,
+        896,
+        466,
+        346,
+        778
+      ],
+      "target": 3920,
+      "hidden_subset_indices_0based": [
+        1,
+        4,
+        6,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        978,
+        127,
+        357,
+        961,
+        505,
+        440,
+        966,
+        566,
+        827,
+        382,
+        367,
+        877
+      ],
+      "target": 4311,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        7,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        119,
+        708,
+        975,
+        806,
+        887,
+        949,
+        158,
+        759,
+        958,
+        593,
+        288,
+        547
+      ],
+      "target": 3643,
+      "hidden_subset_indices_0based": [
+        4,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        964,
+        424,
+        792,
+        572,
+        281,
+        229,
+        188,
+        664,
+        104,
+        171,
+        876,
+        376
+      ],
+      "target": 3112,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        874,
+        214,
+        358,
+        247,
+        407,
+        125,
+        615,
+        972,
+        361,
+        975,
+        697,
+        841
+      ],
+      "target": 3873,
+      "hidden_subset_indices_0based": [
+        0,
+        5,
+        8,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        410,
+        175,
+        762,
+        167,
+        742,
+        487,
+        364,
+        540,
+        416,
+        756,
+        946,
+        980
+      ],
+      "target": 3689,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        669,
+        857,
+        313,
+        366,
+        259,
+        564,
+        834,
+        679,
+        334,
+        248,
+        382,
+        797
+      ],
+      "target": 3912,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        7,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        854,
+        470,
+        684,
+        681,
+        840,
+        206,
+        678,
+        418,
+        567,
+        574,
+        357,
+        271
+      ],
+      "target": 3206,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        5,
+        7,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        785,
+        603,
+        812,
+        640,
+        916,
+        560,
+        392,
+        146,
+        377,
+        362,
+        999,
+        900
+      ],
+      "target": 4116,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        4,
+        7,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        863,
+        477,
+        589,
+        877,
+        794,
+        129,
+        453,
+        958,
+        720,
+        263,
+        826,
+        186
+      ],
+      "target": 3231,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        8
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        559,
+        277,
+        187,
+        567,
+        616,
+        994,
+        540,
+        882,
+        178,
+        408,
+        584,
+        518
+      ],
+      "target": 3460,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        883,
+        406,
+        294,
+        170,
+        418,
+        589,
+        411,
+        122,
+        339,
+        558,
+        471,
+        796
+      ],
+      "target": 3660,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        4,
+        5,
+        7,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        162,
+        174,
+        850,
+        196,
+        369,
+        425,
+        838,
+        852,
+        136,
+        368,
+        505,
+        939
+      ],
+      "target": 3197,
+      "hidden_subset_indices_0based": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        629,
+        686,
+        688,
+        821,
+        161,
+        992,
+        612,
+        589,
+        417,
+        433,
+        655,
+        734
+      ],
+      "target": 3827,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        4,
+        5,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        741,
+        284,
+        950,
+        104,
+        752,
+        420,
+        240,
+        397,
+        434,
+        896,
+        416,
+        957
+      ],
+      "target": 4333,
+      "hidden_subset_indices_0based": [
+        2,
+        3,
+        4,
+        6,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        406,
+        572,
+        788,
+        309,
+        706,
+        312,
+        271,
+        713,
+        854,
+        897,
+        648,
+        907
+      ],
+      "target": 4997,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        192,
+        938,
+        174,
+        755,
+        488,
+        446,
+        754,
+        913,
+        820,
+        720,
+        186,
+        944
+      ],
+      "target": 3843,
+      "hidden_subset_indices_0based": [
+        5,
+        7,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        270,
+        539,
+        761,
+        621,
+        865,
+        807,
+        409,
+        689,
+        747,
+        949,
+        216,
+        830
+      ],
+      "target": 3258,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        3,
+        4,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        250,
+        437,
+        922,
+        404,
+        252,
+        653,
+        444,
+        152,
+        976,
+        330,
+        750,
+        333
+      ],
+      "target": 1929,
+      "hidden_subset_indices_0based": [
+        0,
+        6,
+        7,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        279,
+        686,
+        989,
+        341,
+        378,
+        254,
+        980,
+        914,
+        267,
+        464,
+        169,
+        881
+      ],
+      "target": 3377,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        3,
+        5,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        790,
+        557,
+        158,
+        813,
+        391,
+        366,
+        554,
+        419,
+        817,
+        346,
+        314,
+        455
+      ],
+      "target": 2273,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        4,
+        5,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        456,
+        632,
+        184,
+        621,
+        424,
+        818,
+        737,
+        772,
+        149,
+        925,
+        337,
+        804
+      ],
+      "target": 3401,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        6,
+        8,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        757,
+        716,
+        670,
+        840,
+        107,
+        265,
+        679,
+        514,
+        266,
+        580,
+        308,
+        577
+      ],
+      "target": 1939,
+      "hidden_subset_indices_0based": [
+        4,
+        5,
+        6,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        157,
+        607,
+        702,
+        739,
+        838,
+        268,
+        845,
+        197,
+        985,
+        940,
+        365,
+        356
+      ],
+      "target": 2462,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        6,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        802,
+        829,
+        819,
+        622,
+        600,
+        855,
+        348,
+        911,
+        544,
+        327,
+        500,
+        135
+      ],
+      "target": 4038,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        809,
+        288,
+        893,
+        823,
+        186,
+        798,
+        335,
+        680,
+        104,
+        897,
+        234,
+        732
+      ],
+      "target": 3724,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        7,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        649,
+        412,
+        701,
+        916,
+        857,
+        143,
+        998,
+        175,
+        708,
+        764,
+        638,
+        765
+      ],
+      "target": 4938,
+      "hidden_subset_indices_0based": [
+        3,
+        4,
+        6,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        325,
+        293,
+        814,
+        263,
+        612,
+        485,
+        438,
+        530,
+        758,
+        763,
+        244,
+        103
+      ],
+      "target": 2501,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        5,
+        7,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        667,
+        467,
+        722,
+        424,
+        915,
+        713,
+        669,
+        862,
+        136,
+        568,
+        762,
+        366
+      ],
+      "target": 3344,
+      "hidden_subset_indices_0based": [
+        4,
+        6,
+        7,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        941,
+        523,
+        340,
+        400,
+        262,
+        742,
+        483,
+        157,
+        993,
+        772,
+        512,
+        246
+      ],
+      "target": 3118,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        3,
+        5,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        877,
+        544,
+        167,
+        243,
+        286,
+        156,
+        238,
+        997,
+        722,
+        640,
+        977,
+        353
+      ],
+      "target": 1684,
+      "hidden_subset_indices_0based": [
+        2,
+        4,
+        5,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        634,
+        457,
+        252,
+        665,
+        612,
+        597,
+        720,
+        516,
+        128,
+        406,
+        313,
+        645
+      ],
+      "target": 3501,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        559,
+        898,
+        438,
+        467,
+        476,
+        749,
+        842,
+        846,
+        198,
+        539,
+        910,
+        923
+      ],
+      "target": 3093,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        4,
+        5,
+        6
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        342,
+        727,
+        480,
+        198,
+        693,
+        684,
+        185,
+        460,
+        186,
+        545,
+        576,
+        643
+      ],
+      "target": 2484,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        5,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        876,
+        905,
+        329,
+        763,
+        293,
+        771,
+        709,
+        838,
+        605,
+        469,
+        731,
+        678
+      ],
+      "target": 3115,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        3,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        278,
+        246,
+        980,
+        745,
+        634,
+        390,
+        276,
+        264,
+        245,
+        871,
+        554,
+        731
+      ],
+      "target": 2760,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        4,
+        7,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        889,
+        544,
+        259,
+        287,
+        629,
+        393,
+        224,
+        793,
+        984,
+        425,
+        657,
+        814
+      ],
+      "target": 3517,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        3,
+        4,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        813,
+        668,
+        153,
+        268,
+        867,
+        958,
+        922,
+        640,
+        850,
+        804,
+        339,
+        126
+      ],
+      "target": 2679,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        3,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        303,
+        253,
+        964,
+        164,
+        116,
+        764,
+        356,
+        948,
+        490,
+        822,
+        403,
+        799
+      ],
+      "target": 3358,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        3,
+        6,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        691,
+        572,
+        937,
+        147,
+        457,
+        563,
+        966,
+        573,
+        835,
+        499,
+        864,
+        722
+      ],
+      "target": 3786,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        6,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        448,
+        357,
+        905,
+        185,
+        346,
+        812,
+        335,
+        956,
+        500,
+        313,
+        212,
+        530
+      ],
+      "target": 3144,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        553,
+        971,
+        770,
+        995,
+        566,
+        172,
+        188,
+        592,
+        208,
+        338,
+        702,
+        612
+      ],
+      "target": 3081,
+      "hidden_subset_indices_0based": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        140,
+        160,
+        893,
+        296,
+        219,
+        873,
+        322,
+        507,
+        422,
+        235,
+        331,
+        603
+      ],
+      "target": 2360,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        4,
+        5,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        135,
+        490,
+        296,
+        692,
+        836,
+        330,
+        237,
+        925,
+        203,
+        128,
+        661,
+        573
+      ],
+      "target": 3621,
+      "hidden_subset_indices_0based": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        349,
+        466,
+        206,
+        653,
+        933,
+        597,
+        161,
+        436,
+        406,
+        124,
+        566,
+        740
+      ],
+      "target": 2855,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        477,
+        183,
+        391,
+        900,
+        638,
+        302,
+        766,
+        681,
+        861,
+        784,
+        705,
+        742
+      ],
+      "target": 3022,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        4,
+        5,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        524,
+        997,
+        261,
+        180,
+        177,
+        284,
+        182,
+        955,
+        368,
+        613,
+        660,
+        136
+      ],
+      "target": 3713,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        3,
+        7,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        949,
+        342,
+        758,
+        956,
+        946,
+        383,
+        478,
+        832,
+        127,
+        699,
+        273,
+        274
+      ],
+      "target": 4347,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        8
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        286,
+        851,
+        802,
+        611,
+        926,
+        887,
+        683,
+        672,
+        697,
+        265,
+        803,
+        712
+      ],
+      "target": 2832,
+      "hidden_subset_indices_0based": [
+        0,
+        4,
+        6,
+        7,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        147,
+        404,
+        882,
+        703,
+        505,
+        759,
+        969,
+        919,
+        417,
+        213,
+        393,
+        850
+      ],
+      "target": 2808,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        6,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        826,
+        366,
+        257,
+        726,
+        487,
+        833,
+        335,
+        842,
+        715,
+        989,
+        664,
+        542
+      ],
+      "target": 4012,
+      "hidden_subset_indices_0based": [
+        0,
+        4,
+        5,
+        6,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        278,
+        418,
+        717,
+        273,
+        365,
+        339,
+        636,
+        347,
+        624,
+        196,
+        962,
+        420
+      ],
+      "target": 3014,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        5,
+        6,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        767,
+        757,
+        570,
+        430,
+        813,
+        241,
+        812,
+        138,
+        900,
+        540,
+        439,
+        636
+      ],
+      "target": 2015,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        5,
+        7,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        928,
+        582,
+        261,
+        606,
+        795,
+        171,
+        741,
+        361,
+        887,
+        515,
+        248,
+        300
+      ],
+      "target": 3599,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        3,
+        6,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        622,
+        902,
+        227,
+        804,
+        947,
+        398,
+        661,
+        264,
+        384,
+        802,
+        247,
+        479
+      ],
+      "target": 3198,
+      "hidden_subset_indices_0based": [
+        2,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        665,
+        382,
+        633,
+        702,
+        221,
+        673,
+        647,
+        107,
+        803,
+        721,
+        526,
+        534
+      ],
+      "target": 3238,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        399,
+        776,
+        377,
+        807,
+        402,
+        425,
+        813,
+        892,
+        557,
+        505,
+        258,
+        903
+      ],
+      "target": 2346,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        3,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        101,
+        762,
+        669,
+        638,
+        378,
+        304,
+        744,
+        856,
+        917,
+        876,
+        837,
+        483
+      ],
+      "target": 3458,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        5,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        146,
+        114,
+        151,
+        732,
+        875,
+        344,
+        948,
+        774,
+        865,
+        789,
+        651,
+        644
+      ],
+      "target": 3319,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        3,
+        7,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        349,
+        344,
+        594,
+        584,
+        910,
+        264,
+        351,
+        815,
+        808,
+        360,
+        528,
+        328
+      ],
+      "target": 3650,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        4,
+        6,
+        8,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        110,
+        140,
+        994,
+        493,
+        953,
+        391,
+        832,
+        840,
+        772,
+        405,
+        941,
+        755
+      ],
+      "target": 3180,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        5,
+        7,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        789,
+        396,
+        630,
+        753,
+        343,
+        849,
+        328,
+        136,
+        591,
+        910,
+        975,
+        773
+      ],
+      "target": 3943,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        7,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        537,
+        323,
+        988,
+        437,
+        311,
+        546,
+        464,
+        567,
+        250,
+        147,
+        865,
+        248
+      ],
+      "target": 2993,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        3,
+        6,
+        7
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        907,
+        673,
+        731,
+        993,
+        793,
+        238,
+        263,
+        476,
+        573,
+        466,
+        316,
+        798
+      ],
+      "target": 3459,
+      "hidden_subset_indices_0based": [
+        0,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        344,
+        640,
+        296,
+        737,
+        194,
+        790,
+        131,
+        290,
+        371,
+        208,
+        102,
+        197
+      ],
+      "target": 2387,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        4,
+        5,
+        7,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        321,
+        440,
+        928,
+        447,
+        244,
+        649,
+        811,
+        132,
+        187,
+        744,
+        965,
+        941
+      ],
+      "target": 2975,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        4,
+        6,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        808,
+        176,
+        715,
+        659,
+        543,
+        618,
+        515,
+        536,
+        605,
+        658,
+        229,
+        464
+      ],
+      "target": 3272,
+      "hidden_subset_indices_0based": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        179,
+        990,
+        988,
+        751,
+        817,
+        713,
+        413,
+        118,
+        329,
+        398,
+        357,
+        642
+      ],
+      "target": 2507,
+      "hidden_subset_indices_0based": [
+        1,
+        5,
+        7,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        167,
+        178,
+        909,
+        780,
+        128,
+        781,
+        570,
+        352,
+        432,
+        528,
+        976,
+        165
+      ],
+      "target": 2855,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        468,
+        423,
+        523,
+        571,
+        181,
+        581,
+        741,
+        625,
+        106,
+        777,
+        370,
+        122
+      ],
+      "target": 2770,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        226,
+        571,
+        595,
+        452,
+        667,
+        235,
+        776,
+        957,
+        488,
+        305,
+        327,
+        736
+      ],
+      "target": 3162,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        6,
+        7,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        489,
+        561,
+        634,
+        532,
+        562,
+        553,
+        280,
+        197,
+        621,
+        771,
+        288,
+        867
+      ],
+      "target": 2294,
+      "hidden_subset_indices_0based": [
+        2,
+        4,
+        6,
+        7,
+        8
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        257,
+        450,
+        328,
+        713,
+        512,
+        416,
+        598,
+        796,
+        921,
+        304,
+        561,
+        844
+      ],
+      "target": 2384,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        4,
+        6,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        729,
+        176,
+        888,
+        821,
+        499,
+        197,
+        981,
+        819,
+        261,
+        694,
+        333,
+        625
+      ],
+      "target": 3521,
+      "hidden_subset_indices_0based": [
+        2,
+        6,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        613,
+        150,
+        668,
+        591,
+        363,
+        678,
+        172,
+        750,
+        225,
+        825,
+        488,
+        559
+      ],
+      "target": 2488,
+      "hidden_subset_indices_0based": [
+        3,
+        4,
+        7,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        704,
+        993,
+        652,
+        537,
+        111,
+        480,
+        825,
+        872,
+        816,
+        726,
+        618,
+        551
+      ],
+      "target": 3935,
+      "hidden_subset_indices_0based": [
+        3,
+        5,
+        6,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        798,
+        456,
+        135,
+        700,
+        789,
+        392,
+        711,
+        880,
+        227,
+        725,
+        735,
+        369
+      ],
+      "target": 4320,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        3,
+        5,
+        7,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        713,
+        349,
+        482,
+        151,
+        304,
+        104,
+        209,
+        744,
+        957,
+        769,
+        144,
+        372
+      ],
+      "target": 2230,
+      "hidden_subset_indices_0based": [
+        1,
+        4,
+        5,
+        8,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        603,
+        179,
+        733,
+        947,
+        864,
+        386,
+        458,
+        539,
+        785,
+        630,
+        839,
+        395
+      ],
+      "target": 3010,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        4,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        994,
+        370,
+        988,
+        327,
+        315,
+        478,
+        421,
+        866,
+        669,
+        446,
+        127,
+        173
+      ],
+      "target": 3099,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        5,
+        6,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        192,
+        908,
+        291,
+        437,
+        990,
+        617,
+        255,
+        958,
+        459,
+        873,
+        512,
+        621
+      ],
+      "target": 4084,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        4,
+        8,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        955,
+        969,
+        426,
+        424,
+        406,
+        497,
+        886,
+        106,
+        431,
+        937,
+        935,
+        903
+      ],
+      "target": 4092,
+      "hidden_subset_indices_0based": [
+        6,
+        8,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        362,
+        385,
+        207,
+        488,
+        917,
+        395,
+        708,
+        896,
+        583,
+        844,
+        946,
+        953
+      ],
+      "target": 2057,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        5,
+        6
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        644,
+        246,
+        662,
+        770,
+        686,
+        183,
+        344,
+        439,
+        972,
+        177,
+        324,
+        933
+      ],
+      "target": 3867,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        5,
+        7,
+        8,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        512,
+        133,
+        780,
+        735,
+        949,
+        199,
+        106,
+        504,
+        641,
+        622,
+        561,
+        255
+      ],
+      "target": 3227,
+      "hidden_subset_indices_0based": [
+        4,
+        5,
+        8,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        467,
+        644,
+        383,
+        198,
+        256,
+        812,
+        824,
+        759,
+        888,
+        969,
+        478,
+        623
+      ],
+      "target": 4068,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        4,
+        5,
+        8,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        551,
+        309,
+        459,
+        326,
+        256,
+        649,
+        503,
+        377,
+        571,
+        282,
+        803,
+        499
+      ],
+      "target": 3222,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        5,
+        6,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        699,
+        120,
+        196,
+        681,
+        639,
+        646,
+        700,
+        768,
+        903,
+        271,
+        457,
+        492
+      ],
+      "target": 3200,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        5,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        680,
+        753,
+        489,
+        341,
+        240,
+        212,
+        545,
+        903,
+        597,
+        369,
+        493,
+        227
+      ],
+      "target": 3513,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        445,
+        798,
+        442,
+        968,
+        202,
+        108,
+        156,
+        216,
+        132,
+        980,
+        640,
+        952
+      ],
+      "target": 3216,
+      "hidden_subset_indices_0based": [
+        2,
+        4,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        611,
+        379,
+        109,
+        638,
+        201,
+        572,
+        986,
+        863,
+        868,
+        847,
+        334,
+        253
+      ],
+      "target": 3696,
+      "hidden_subset_indices_0based": [
+        2,
+        3,
+        6,
+        7,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        250,
+        426,
+        899,
+        887,
+        714,
+        729,
+        650,
+        829,
+        377,
+        390,
+        117,
+        309
+      ],
+      "target": 2359,
+      "hidden_subset_indices_0based": [
+        4,
+        7,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        155,
+        892,
+        544,
+        740,
+        482,
+        103,
+        273,
+        636,
+        648,
+        147,
+        553,
+        548
+      ],
+      "target": 2988,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        3,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        935,
+        995,
+        459,
+        535,
+        352,
+        824,
+        576,
+        441,
+        716,
+        140,
+        318,
+        103
+      ],
+      "target": 3874,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        5,
+        6,
+        7,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        194,
+        522,
+        497,
+        700,
+        343,
+        327,
+        179,
+        757,
+        550,
+        268,
+        879,
+        324
+      ],
+      "target": 2577,
+      "hidden_subset_indices_0based": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        427,
+        834,
+        803,
+        236,
+        867,
+        878,
+        506,
+        665,
+        419,
+        452,
+        218,
+        228
+      ],
+      "target": 3633,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        962,
+        607,
+        153,
+        583,
+        250,
+        217,
+        188,
+        907,
+        496,
+        322,
+        887,
+        839
+      ],
+      "target": 2336,
+      "hidden_subset_indices_0based": [
+        2,
+        3,
+        5,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        321,
+        381,
+        887,
+        103,
+        668,
+        447,
+        100,
+        324,
+        593,
+        236,
+        703,
+        586
+      ],
+      "target": 2918,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        5,
+        7,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        660,
+        173,
+        905,
+        130,
+        514,
+        482,
+        233,
+        911,
+        848,
+        377,
+        147,
+        395
+      ],
+      "target": 2783,
+      "hidden_subset_indices_0based": [
+        5,
+        7,
+        8,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        960,
+        428,
+        399,
+        371,
+        909,
+        870,
+        774,
+        853,
+        460,
+        850,
+        684,
+        342
+      ],
+      "target": 3528,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        7,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        521,
+        691,
+        856,
+        809,
+        293,
+        802,
+        504,
+        701,
+        335,
+        140,
+        870,
+        964
+      ],
+      "target": 4535,
+      "hidden_subset_indices_0based": [
+        2,
+        3,
+        7,
+        8,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        102,
+        786,
+        157,
+        379,
+        700,
+        591,
+        552,
+        124,
+        227,
+        499,
+        747,
+        751
+      ],
+      "target": 3449,
+      "hidden_subset_indices_0based": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        503,
+        340,
+        142,
+        179,
+        831,
+        599,
+        707,
+        863,
+        221,
+        354,
+        699,
+        598
+      ],
+      "target": 4380,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        4,
+        6,
+        7,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        314,
+        352,
+        317,
+        204,
+        253,
+        984,
+        422,
+        206,
+        150,
+        495,
+        114,
+        540
+      ],
+      "target": 2359,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        3,
+        5,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        845,
+        705,
+        451,
+        670,
+        481,
+        118,
+        783,
+        366,
+        778,
+        947,
+        639,
+        785
+      ],
+      "target": 3551,
+      "hidden_subset_indices_0based": [
+        3,
+        6,
+        7,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        542,
+        899,
+        207,
+        237,
+        379,
+        223,
+        370,
+        390,
+        745,
+        676,
+        845,
+        903
+      ],
+      "target": 3686,
+      "hidden_subset_indices_0based": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        416,
+        201,
+        350,
+        344,
+        799,
+        312,
+        372,
+        929,
+        292,
+        700,
+        807,
+        437
+      ],
+      "target": 3388,
+      "hidden_subset_indices_0based": [
+        0,
+        4,
+        7,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        940,
+        162,
+        595,
+        580,
+        137,
+        110,
+        366,
+        534,
+        972,
+        384,
+        190,
+        725
+      ],
+      "target": 3138,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        4,
+        5,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        817,
+        402,
+        665,
+        163,
+        357,
+        622,
+        127,
+        699,
+        460,
+        164,
+        437,
+        324
+      ],
+      "target": 3231,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        144,
+        965,
+        440,
+        616,
+        419,
+        806,
+        501,
+        779,
+        235,
+        978,
+        306,
+        959
+      ],
+      "target": 3135,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        584,
+        710,
+        198,
+        416,
+        432,
+        454,
+        148,
+        544,
+        151,
+        208,
+        799,
+        521
+      ],
+      "target": 3523,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        4,
+        5,
+        7,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        259,
+        583,
+        977,
+        625,
+        341,
+        520,
+        741,
+        828,
+        225,
+        286,
+        219,
+        449
+      ],
+      "target": 3216,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        3,
+        5,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        157,
+        236,
+        347,
+        442,
+        169,
+        665,
+        196,
+        352,
+        232,
+        739,
+        800,
+        512
+      ],
+      "target": 1105,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        4,
+        6
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        931,
+        446,
+        128,
+        887,
+        764,
+        302,
+        368,
+        894,
+        355,
+        478,
+        825,
+        492
+      ],
+      "target": 3025,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        116,
+        595,
+        371,
+        881,
+        180,
+        112,
+        924,
+        789,
+        839,
+        115,
+        292,
+        662
+      ],
+      "target": 3219,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        7,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        748,
+        716,
+        371,
+        199,
+        826,
+        272,
+        326,
+        377,
+        140,
+        991,
+        451,
+        634
+      ],
+      "target": 3125,
+      "hidden_subset_indices_0based": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        810,
+        877,
+        712,
+        333,
+        890,
+        362,
+        733,
+        317,
+        513,
+        230,
+        818,
+        161
+      ],
+      "target": 2637,
+      "hidden_subset_indices_0based": [
+        3,
+        5,
+        6,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        312,
+        300,
+        182,
+        562,
+        255,
+        400,
+        772,
+        376,
+        753,
+        124,
+        876,
+        684
+      ],
+      "target": 2985,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        450,
+        987,
+        400,
+        857,
+        600,
+        486,
+        755,
+        362,
+        982,
+        499,
+        743,
+        300
+      ],
+      "target": 4198,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        4,
+        5,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        944,
+        138,
+        454,
+        721,
+        445,
+        737,
+        955,
+        637,
+        764,
+        781,
+        733,
+        510
+      ],
+      "target": 3528,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        4,
+        7,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        363,
+        761,
+        816,
+        413,
+        800,
+        336,
+        214,
+        104,
+        570,
+        127,
+        174,
+        469
+      ],
+      "target": 3205,
+      "hidden_subset_indices_0based": [
+        2,
+        4,
+        5,
+        6,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        456,
+        909,
+        349,
+        717,
+        436,
+        750,
+        388,
+        925,
+        241,
+        505,
+        720,
+        836
+      ],
+      "target": 3287,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        4,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        908,
+        552,
+        775,
+        711,
+        315,
+        642,
+        177,
+        948,
+        998,
+        732,
+        877,
+        217
+      ],
+      "target": 2990,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        3,
+        5,
+        6
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        220,
+        128,
+        157,
+        982,
+        809,
+        373,
+        202,
+        137,
+        833,
+        271,
+        487,
+        701
+      ],
+      "target": 3431,
+      "hidden_subset_indices_0based": [
+        1,
+        4,
+        6,
+        8,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        835,
+        861,
+        869,
+        249,
+        963,
+        365,
+        187,
+        203,
+        293,
+        782,
+        704,
+        936
+      ],
+      "target": 3844,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        4,
+        5,
+        7,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        194,
+        751,
+        854,
+        664,
+        417,
+        975,
+        978,
+        162,
+        356,
+        376,
+        413,
+        921
+      ],
+      "target": 3732,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        5,
+        6,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        261,
+        172,
+        746,
+        576,
+        269,
+        403,
+        361,
+        103,
+        566,
+        325,
+        835,
+        534
+      ],
+      "target": 1904,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        3,
+        6,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        679,
+        147,
+        917,
+        631,
+        941,
+        532,
+        818,
+        343,
+        663,
+        325,
+        469,
+        548
+      ],
+      "target": 4623,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        4,
+        6,
+        7,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        930,
+        130,
+        920,
+        809,
+        801,
+        697,
+        448,
+        121,
+        871,
+        296,
+        926,
+        919
+      ],
+      "target": 2563,
+      "hidden_subset_indices_0based": [
+        1,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        309,
+        993,
+        830,
+        954,
+        525,
+        727,
+        112,
+        549,
+        866,
+        294,
+        725,
+        670
+      ],
+      "target": 3640,
+      "hidden_subset_indices_0based": [
+        2,
+        7,
+        8,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        939,
+        752,
+        197,
+        726,
+        484,
+        289,
+        139,
+        115,
+        319,
+        262,
+        173,
+        774
+      ],
+      "target": 3090,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        5,
+        6,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        297,
+        176,
+        856,
+        240,
+        843,
+        825,
+        365,
+        237,
+        758,
+        285,
+        412,
+        432
+      ],
+      "target": 3474,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        736,
+        679,
+        623,
+        290,
+        605,
+        780,
+        408,
+        955,
+        324,
+        397,
+        692,
+        156
+      ],
+      "target": 3290,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        102,
+        959,
+        320,
+        935,
+        274,
+        350,
+        921,
+        814,
+        628,
+        624,
+        613,
+        579
+      ],
+      "target": 3505,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        8,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        630,
+        432,
+        768,
+        343,
+        782,
+        882,
+        318,
+        556,
+        486,
+        634,
+        944,
+        607
+      ],
+      "target": 3306,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        4,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        220,
+        112,
+        498,
+        203,
+        158,
+        163,
+        536,
+        924,
+        412,
+        972,
+        836,
+        144
+      ],
+      "target": 2684,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        4,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        551,
+        521,
+        222,
+        618,
+        504,
+        253,
+        688,
+        374,
+        339,
+        124,
+        974,
+        916
+      ],
+      "target": 4344,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        5,
+        6,
+        7,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        979,
+        818,
+        461,
+        538,
+        547,
+        163,
+        772,
+        369,
+        876,
+        591,
+        157,
+        731
+      ],
+      "target": 4425,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        4,
+        5,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        378,
+        547,
+        501,
+        579,
+        648,
+        196,
+        257,
+        644,
+        345,
+        577,
+        851,
+        690
+      ],
+      "target": 2618,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        4,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        614,
+        956,
+        925,
+        316,
+        150,
+        538,
+        688,
+        764,
+        935,
+        874,
+        214,
+        257
+      ],
+      "target": 4141,
+      "hidden_subset_indices_0based": [
+        1,
+        4,
+        5,
+        6,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        842,
+        753,
+        175,
+        718,
+        764,
+        673,
+        362,
+        644,
+        295,
+        259,
+        200,
+        549
+      ],
+      "target": 3418,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        238,
+        361,
+        814,
+        153,
+        463,
+        642,
+        924,
+        180,
+        280,
+        990,
+        192,
+        860
+      ],
+      "target": 2901,
+      "hidden_subset_indices_0based": [
+        3,
+        5,
+        6,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        685,
+        102,
+        200,
+        482,
+        535,
+        181,
+        962,
+        676,
+        718,
+        447,
+        452,
+        297
+      ],
+      "target": 2449,
+      "hidden_subset_indices_0based": [
+        4,
+        8,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        935,
+        289,
+        317,
+        811,
+        273,
+        290,
+        623,
+        368,
+        459,
+        310,
+        616,
+        436
+      ],
+      "target": 2206,
+      "hidden_subset_indices_0based": [
+        1,
+        6,
+        7,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        539,
+        150,
+        671,
+        485,
+        654,
+        375,
+        255,
+        563,
+        293,
+        462,
+        821,
+        713
+      ],
+      "target": 2269,
+      "hidden_subset_indices_0based": [
+        3,
+        4,
+        5,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        622,
+        708,
+        887,
+        115,
+        573,
+        149,
+        316,
+        528,
+        451,
+        895,
+        550,
+        378
+      ],
+      "target": 2831,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        4,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        874,
+        648,
+        891,
+        646,
+        839,
+        725,
+        708,
+        418,
+        479,
+        195,
+        885,
+        428
+      ],
+      "target": 3970,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        3,
+        8,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        613,
+        544,
+        519,
+        617,
+        732,
+        409,
+        435,
+        970,
+        396,
+        828,
+        552,
+        637
+      ],
+      "target": 4107,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        544,
+        576,
+        126,
+        980,
+        304,
+        570,
+        726,
+        432,
+        697,
+        557,
+        863,
+        870
+      ],
+      "target": 2998,
+      "hidden_subset_indices_0based": [
+        1,
+        5,
+        7,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        339,
+        369,
+        381,
+        444,
+        245,
+        713,
+        376,
+        716,
+        538,
+        411,
+        948,
+        404
+      ],
+      "target": 2888,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        7,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        788,
+        820,
+        867,
+        684,
+        166,
+        845,
+        531,
+        736,
+        238,
+        294,
+        840,
+        733
+      ],
+      "target": 3817,
+      "hidden_subset_indices_0based": [
+        2,
+        5,
+        8,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        730,
+        899,
+        356,
+        231,
+        902,
+        471,
+        349,
+        465,
+        807,
+        198,
+        897,
+        590
+      ],
+      "target": 3701,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        569,
+        257,
+        950,
+        918,
+        677,
+        101,
+        826,
+        785,
+        859,
+        919,
+        104,
+        927
+      ],
+      "target": 4585,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        8,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        420,
+        969,
+        211,
+        649,
+        819,
+        920,
+        668,
+        418,
+        703,
+        657,
+        757,
+        188
+      ],
+      "target": 3365,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        6,
+        7,
+        8,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        217,
+        891,
+        889,
+        398,
+        857,
+        413,
+        280,
+        486,
+        318,
+        678,
+        455,
+        168
+      ],
+      "target": 2694,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        4,
+        5,
+        8
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        547,
+        689,
+        162,
+        794,
+        326,
+        712,
+        514,
+        443,
+        792,
+        700,
+        876,
+        505
+      ],
+      "target": 4193,
+      "hidden_subset_indices_0based": [
+        3,
+        5,
+        6,
+        8,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        398,
+        868,
+        892,
+        231,
+        649,
+        714,
+        971,
+        223,
+        273,
+        846,
+        928,
+        900
+      ],
+      "target": 4305,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        7,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        244,
+        876,
+        859,
+        384,
+        735,
+        292,
+        567,
+        647,
+        831,
+        697,
+        237,
+        618
+      ],
+      "target": 3827,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        4,
+        6,
+        7,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        205,
+        800,
+        540,
+        723,
+        835,
+        112,
+        186,
+        546,
+        191,
+        603,
+        734,
+        860
+      ],
+      "target": 3084,
+      "hidden_subset_indices_0based": [
+        3,
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        159,
+        105,
+        954,
+        363,
+        990,
+        471,
+        319,
+        517,
+        926,
+        252,
+        756,
+        293
+      ],
+      "target": 4251,
+      "hidden_subset_indices_0based": [
+        2,
+        4,
+        6,
+        7,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        573,
+        853,
+        119,
+        251,
+        594,
+        557,
+        819,
+        364,
+        897,
+        854,
+        109,
+        258
+      ],
+      "target": 3023,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        3,
+        6,
+        7,
+        8
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        475,
+        594,
+        641,
+        534,
+        784,
+        471,
+        791,
+        742,
+        446,
+        895,
+        521,
+        311
+      ],
+      "target": 4183,
+      "hidden_subset_indices_0based": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        468,
+        102,
+        615,
+        330,
+        944,
+        597,
+        344,
+        206,
+        434,
+        490,
+        304,
+        465
+      ],
+      "target": 2312,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        3,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        260,
+        988,
+        677,
+        491,
+        806,
+        154,
+        372,
+        168,
+        141,
+        334,
+        307,
+        658
+      ],
+      "target": 2420,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        3,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        936,
+        574,
+        377,
+        722,
+        999,
+        632,
+        486,
+        849,
+        370,
+        847,
+        665,
+        686
+      ],
+      "target": 3617,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        4,
+        5,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        775,
+        517,
+        531,
+        409,
+        943,
+        851,
+        986,
+        872,
+        418,
+        611,
+        960,
+        244
+      ],
+      "target": 3737,
+      "hidden_subset_indices_0based": [
+        3,
+        4,
+        5,
+        7,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        546,
+        558,
+        265,
+        744,
+        537,
+        169,
+        254,
+        478,
+        429,
+        541,
+        288,
+        975
+      ],
+      "target": 3609,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        233,
+        450,
+        352,
+        820,
+        795,
+        109,
+        209,
+        627,
+        265,
+        505,
+        847,
+        823
+      ],
+      "target": 1880,
+      "hidden_subset_indices_0based": [
+        1,
+        5,
+        6,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        671,
+        814,
+        748,
+        365,
+        455,
+        253,
+        206,
+        425,
+        192,
+        835,
+        757,
+        382
+      ],
+      "target": 2880,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        4,
+        8
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        248,
+        852,
+        267,
+        862,
+        883,
+        497,
+        789,
+        473,
+        376,
+        422,
+        877,
+        345
+      ],
+      "target": 3706,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        937,
+        923,
+        103,
+        204,
+        413,
+        636,
+        789,
+        669,
+        480,
+        109,
+        890,
+        319
+      ],
+      "target": 1828,
+      "hidden_subset_indices_0based": [
+        2,
+        3,
+        4,
+        6,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        193,
+        675,
+        513,
+        637,
+        908,
+        238,
+        544,
+        421,
+        482,
+        317,
+        769,
+        437
+      ],
+      "target": 2787,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        5,
+        6,
+        7,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        830,
+        432,
+        905,
+        721,
+        337,
+        844,
+        800,
+        893,
+        752,
+        672,
+        348,
+        784
+      ],
+      "target": 3807,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        4,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        651,
+        940,
+        174,
+        730,
+        214,
+        248,
+        658,
+        782,
+        549,
+        256,
+        709,
+        284
+      ],
+      "target": 3025,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        6,
+        8,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        159,
+        734,
+        770,
+        334,
+        633,
+        641,
+        135,
+        756,
+        249,
+        561,
+        581,
+        366
+      ],
+      "target": 2328,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        4,
+        5,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        238,
+        497,
+        378,
+        759,
+        381,
+        950,
+        952,
+        363,
+        735,
+        421,
+        398,
+        975
+      ],
+      "target": 3401,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        5,
+        7,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        862,
+        891,
+        107,
+        766,
+        468,
+        601,
+        896,
+        622,
+        392,
+        745,
+        975,
+        697
+      ],
+      "target": 3781,
+      "hidden_subset_indices_0based": [
+        4,
+        6,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        215,
+        781,
+        555,
+        945,
+        885,
+        350,
+        780,
+        424,
+        272,
+        804,
+        111,
+        550
+      ],
+      "target": 3926,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        997,
+        357,
+        198,
+        490,
+        486,
+        152,
+        214,
+        998,
+        264,
+        843,
+        585,
+        709
+      ],
+      "target": 3982,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        7,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        496,
+        260,
+        652,
+        231,
+        164,
+        335,
+        996,
+        969,
+        892,
+        630,
+        307,
+        236
+      ],
+      "target": 4127,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        6,
+        7,
+        8,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        235,
+        603,
+        779,
+        834,
+        979,
+        733,
+        161,
+        208,
+        622,
+        855,
+        698,
+        387
+      ],
+      "target": 2825,
+      "hidden_subset_indices_0based": [
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        455,
+        530,
+        214,
+        437,
+        569,
+        209,
+        883,
+        500,
+        848,
+        628,
+        873,
+        426
+      ],
+      "target": 2968,
+      "hidden_subset_indices_0based": [
+        2,
+        4,
+        5,
+        7,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        594,
+        750,
+        378,
+        368,
+        280,
+        482,
+        514,
+        552,
+        299,
+        187,
+        721,
+        298
+      ],
+      "target": 2029,
+      "hidden_subset_indices_0based": [
+        1,
+        4,
+        6,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        328,
+        547,
+        577,
+        301,
+        507,
+        948,
+        707,
+        912,
+        248,
+        342,
+        469,
+        283
+      ],
+      "target": 3626,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        4,
+        6,
+        7,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        555,
+        821,
+        377,
+        206,
+        228,
+        297,
+        214,
+        859,
+        383,
+        125,
+        797,
+        614
+      ],
+      "target": 1558,
+      "hidden_subset_indices_0based": [
+        2,
+        4,
+        6,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        215,
+        522,
+        314,
+        435,
+        512,
+        718,
+        109,
+        663,
+        159,
+        654,
+        593,
+        970
+      ],
+      "target": 2731,
+      "hidden_subset_indices_0based": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        103,
+        776,
+        263,
+        175,
+        241,
+        548,
+        785,
+        235,
+        454,
+        702,
+        883,
+        366
+      ],
+      "target": 3729,
+      "hidden_subset_indices_0based": [
+        1,
+        5,
+        8,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        930,
+        986,
+        528,
+        760,
+        837,
+        950,
+        147,
+        535,
+        650,
+        141,
+        996,
+        164
+      ],
+      "target": 3601,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        5,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        910,
+        934,
+        531,
+        395,
+        330,
+        948,
+        749,
+        788,
+        547,
+        514,
+        714,
+        724
+      ],
+      "target": 2710,
+      "hidden_subset_indices_0based": [
+        3,
+        4,
+        8,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        312,
+        332,
+        919,
+        233,
+        465,
+        725,
+        380,
+        646,
+        616,
+        245,
+        273,
+        902
+      ],
+      "target": 2631,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        3,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        163,
+        395,
+        636,
+        868,
+        230,
+        806,
+        882,
+        233,
+        976,
+        880,
+        392,
+        164
+      ],
+      "target": 3929,
+      "hidden_subset_indices_0based": [
+        3,
+        5,
+        6,
+        7,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        409,
+        500,
+        325,
+        427,
+        266,
+        504,
+        208,
+        306,
+        832,
+        806,
+        538,
+        732
+      ],
+      "target": 3549,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        4,
+        5,
+        7,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        289,
+        387,
+        338,
+        249,
+        209,
+        520,
+        493,
+        980,
+        848,
+        182,
+        427,
+        772
+      ],
+      "target": 2892,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        4,
+        8,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        704,
+        515,
+        735,
+        614,
+        419,
+        845,
+        204,
+        111,
+        929,
+        768,
+        683,
+        689
+      ],
+      "target": 4206,
+      "hidden_subset_indices_0based": [
+        2,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        150,
+        991,
+        759,
+        181,
+        352,
+        508,
+        883,
+        423,
+        644,
+        383,
+        505,
+        208
+      ],
+      "target": 2189,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        4,
+        7,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        295,
+        343,
+        371,
+        937,
+        256,
+        516,
+        823,
+        971,
+        515,
+        770,
+        526,
+        337
+      ],
+      "target": 3180,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        627,
+        151,
+        494,
+        400,
+        640,
+        694,
+        437,
+        624,
+        621,
+        818,
+        695,
+        946
+      ],
+      "target": 3164,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        7,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        168,
+        823,
+        758,
+        899,
+        993,
+        358,
+        496,
+        250,
+        655,
+        304,
+        141,
+        329
+      ],
+      "target": 2420,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        8,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        223,
+        199,
+        666,
+        919,
+        179,
+        452,
+        960,
+        836,
+        720,
+        496,
+        729,
+        736
+      ],
+      "target": 3175,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        394,
+        822,
+        791,
+        560,
+        235,
+        864,
+        595,
+        144,
+        110,
+        453,
+        543,
+        614
+      ],
+      "target": 3040,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        5,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        464,
+        554,
+        556,
+        553,
+        426,
+        932,
+        219,
+        995,
+        563,
+        317,
+        432,
+        561
+      ],
+      "target": 2890,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        8,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        475,
+        611,
+        599,
+        116,
+        783,
+        962,
+        106,
+        893,
+        119,
+        490,
+        899,
+        332
+      ],
+      "target": 3216,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        3,
+        4,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        724,
+        392,
+        733,
+        699,
+        290,
+        631,
+        203,
+        961,
+        234,
+        736,
+        645,
+        348
+      ],
+      "target": 2876,
+      "hidden_subset_indices_0based": [
+        0,
+        5,
+        6,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        598,
+        656,
+        709,
+        882,
+        593,
+        422,
+        733,
+        205,
+        490,
+        298,
+        711,
+        865
+      ],
+      "target": 3697,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        875,
+        888,
+        546,
+        632,
+        147,
+        782,
+        715,
+        859,
+        102,
+        705,
+        946,
+        763
+      ],
+      "target": 3657,
+      "hidden_subset_indices_0based": [
+        1,
+        4,
+        6,
+        7,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        303,
+        459,
+        667,
+        536,
+        438,
+        831,
+        452,
+        802,
+        644,
+        228,
+        652,
+        867
+      ],
+      "target": 3159,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        152,
+        790,
+        292,
+        248,
+        354,
+        727,
+        147,
+        657,
+        846,
+        362,
+        853,
+        360
+      ],
+      "target": 2871,
+      "hidden_subset_indices_0based": [
+        2,
+        4,
+        7,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        287,
+        909,
+        874,
+        347,
+        402,
+        113,
+        198,
+        560,
+        612,
+        410,
+        857,
+        718
+      ],
+      "target": 2383,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        4,
+        5,
+        8
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        957,
+        916,
+        855,
+        497,
+        844,
+        687,
+        862,
+        464,
+        104,
+        313,
+        898,
+        993
+      ],
+      "target": 3380,
+      "hidden_subset_indices_0based": [
+        0,
+        6,
+        7,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        482,
+        281,
+        658,
+        368,
+        834,
+        898,
+        711,
+        887,
+        189,
+        779,
+        973,
+        769
+      ],
+      "target": 4174,
+      "hidden_subset_indices_0based": [
+        4,
+        6,
+        7,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        501,
+        980,
+        947,
+        715,
+        479,
+        477,
+        587,
+        900,
+        288,
+        282,
+        117,
+        737
+      ],
+      "target": 3360,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        3,
+        5,
+        8,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        684,
+        142,
+        731,
+        135,
+        558,
+        832,
+        635,
+        311,
+        190,
+        546,
+        185,
+        753
+      ],
+      "target": 3251,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        4,
+        5,
+        7,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        305,
+        402,
+        746,
+        315,
+        433,
+        745,
+        702,
+        800,
+        832,
+        217,
+        103,
+        591
+      ],
+      "target": 3690,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        5,
+        6,
+        8,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        954,
+        426,
+        362,
+        715,
+        317,
+        435,
+        309,
+        181,
+        265,
+        245,
+        508,
+        857
+      ],
+      "target": 2683,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        534,
+        997,
+        917,
+        128,
+        880,
+        669,
+        600,
+        577,
+        113,
+        114,
+        970,
+        154
+      ],
+      "target": 3618,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        3,
+        5,
+        6,
+        7,
+        8
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        757,
+        160,
+        481,
+        921,
+        702,
+        737,
+        341,
+        200,
+        775,
+        946,
+        780,
+        596
+      ],
+      "target": 4061,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        5,
+        7,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        101,
+        756,
+        268,
+        456,
+        305,
+        162,
+        611,
+        818,
+        641,
+        699,
+        421,
+        964
+      ],
+      "target": 3737,
+      "hidden_subset_indices_0based": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        726,
+        536,
+        974,
+        764,
+        195,
+        888,
+        328,
+        542,
+        617,
+        488,
+        858,
+        234
+      ],
+      "target": 3992,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        4,
+        5,
+        7,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        792,
+        766,
+        510,
+        697,
+        420,
+        579,
+        770,
+        384,
+        637,
+        742,
+        474,
+        450
+      ],
+      "target": 4766,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        707,
+        277,
+        941,
+        982,
+        609,
+        124,
+        333,
+        678,
+        675,
+        294,
+        994,
+        512
+      ],
+      "target": 3155,
+      "hidden_subset_indices_0based": [
+        0,
+        4,
+        6,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        809,
+        945,
+        143,
+        706,
+        804,
+        685,
+        824,
+        596,
+        277,
+        747,
+        570,
+        825
+      ],
+      "target": 4863,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        6,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        487,
+        332,
+        575,
+        407,
+        809,
+        526,
+        376,
+        257,
+        808,
+        875,
+        465,
+        296
+      ],
+      "target": 2643,
+      "hidden_subset_indices_0based": [
+        3,
+        7,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        110,
+        664,
+        706,
+        607,
+        145,
+        861,
+        393,
+        564,
+        112,
+        656,
+        123,
+        398
+      ],
+      "target": 2442,
+      "hidden_subset_indices_0based": [
+        2,
+        6,
+        7,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        782,
+        185,
+        112,
+        707,
+        565,
+        399,
+        922,
+        746,
+        645,
+        862,
+        299,
+        226
+      ],
+      "target": 4070,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        4,
+        5,
+        7,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        865,
+        975,
+        485,
+        928,
+        177,
+        310,
+        117,
+        440,
+        461,
+        376,
+        658,
+        694
+      ],
+      "target": 3541,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        977,
+        909,
+        350,
+        693,
+        239,
+        622,
+        446,
+        523,
+        941,
+        154,
+        400,
+        517
+      ],
+      "target": 2913,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        7,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        902,
+        182,
+        483,
+        348,
+        563,
+        694,
+        956,
+        342,
+        270,
+        416,
+        171,
+        905
+      ],
+      "target": 3185,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        3,
+        5,
+        7,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        632,
+        240,
+        709,
+        686,
+        470,
+        722,
+        736,
+        743,
+        443,
+        200,
+        740,
+        362
+      ],
+      "target": 3952,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        5,
+        6,
+        8,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        350,
+        918,
+        540,
+        133,
+        264,
+        701,
+        300,
+        470,
+        860,
+        930,
+        560,
+        313
+      ],
+      "target": 3696,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7,
+        8
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        160,
+        408,
+        532,
+        788,
+        745,
+        810,
+        751,
+        724,
+        495,
+        284,
+        908,
+        323
+      ],
+      "target": 3302,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        165,
+        887,
+        697,
+        319,
+        338,
+        577,
+        551,
+        508,
+        973,
+        265,
+        335,
+        748
+      ],
+      "target": 1997,
+      "hidden_subset_indices_0based": [
+        4,
+        6,
+        7,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        497,
+        445,
+        327,
+        255,
+        860,
+        302,
+        317,
+        794,
+        769,
+        107,
+        619,
+        758
+      ],
+      "target": 2660,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        4,
+        5,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        200,
+        802,
+        552,
+        714,
+        683,
+        995,
+        113,
+        432,
+        490,
+        179,
+        416,
+        988
+      ],
+      "target": 1534,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        6,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        235,
+        735,
+        234,
+        949,
+        880,
+        246,
+        171,
+        141,
+        162,
+        682,
+        466,
+        554
+      ],
+      "target": 2374,
+      "hidden_subset_indices_0based": [
+        4,
+        6,
+        7,
+        8,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        831,
+        601,
+        350,
+        998,
+        978,
+        369,
+        833,
+        224,
+        562,
+        306,
+        131,
+        913
+      ],
+      "target": 3984,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        997,
+        478,
+        509,
+        446,
+        210,
+        656,
+        811,
+        185,
+        854,
+        750,
+        694,
+        353
+      ],
+      "target": 4250,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        669,
+        363,
+        333,
+        248,
+        396,
+        150,
+        161,
+        909,
+        148,
+        310,
+        217,
+        258
+      ],
+      "target": 2021,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        210,
+        488,
+        101,
+        244,
+        835,
+        581,
+        391,
+        313,
+        465,
+        864,
+        584,
+        185
+      ],
+      "target": 2184,
+      "hidden_subset_indices_0based": [
+        2,
+        3,
+        6,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        445,
+        752,
+        580,
+        698,
+        836,
+        528,
+        890,
+        998,
+        120,
+        973,
+        468,
+        444
+      ],
+      "target": 4838,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        745,
+        499,
+        544,
+        494,
+        678,
+        195,
+        475,
+        689,
+        231,
+        437,
+        922,
+        122
+      ],
+      "target": 3355,
+      "hidden_subset_indices_0based": [
+        2,
+        3,
+        6,
+        7,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        428,
+        122,
+        453,
+        223,
+        954,
+        507,
+        469,
+        585,
+        987,
+        634,
+        285,
+        800
+      ],
+      "target": 3226,
+      "hidden_subset_indices_0based": [
+        2,
+        6,
+        7,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        973,
+        816,
+        659,
+        786,
+        702,
+        167,
+        726,
+        825,
+        371,
+        801,
+        626,
+        997
+      ],
+      "target": 4513,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        3,
+        7,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        800,
+        768,
+        710,
+        623,
+        312,
+        420,
+        256,
+        608,
+        352,
+        574,
+        668,
+        959
+      ],
+      "target": 4385,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        5,
+        6,
+        7,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        508,
+        777,
+        677,
+        844,
+        891,
+        328,
+        393,
+        187,
+        465,
+        271,
+        303,
+        747
+      ],
+      "target": 3121,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        5,
+        7,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        892,
+        649,
+        129,
+        714,
+        420,
+        769,
+        776,
+        149,
+        466,
+        978,
+        990,
+        351
+      ],
+      "target": 4343,
+      "hidden_subset_indices_0based": [
+        0,
+        3,
+        5,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        667,
+        743,
+        533,
+        629,
+        408,
+        165,
+        370,
+        123,
+        870,
+        591,
+        831,
+        345
+      ],
+      "target": 3026,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        5,
+        6,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        991,
+        589,
+        624,
+        530,
+        463,
+        674,
+        675,
+        580,
+        482,
+        247,
+        934,
+        243
+      ],
+      "target": 3668,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        3,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        501,
+        689,
+        436,
+        910,
+        733,
+        822,
+        271,
+        319,
+        288,
+        291,
+        883,
+        383
+      ],
+      "target": 4004,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        399,
+        971,
+        551,
+        224,
+        744,
+        790,
+        371,
+        462,
+        312,
+        617,
+        767,
+        311
+      ],
+      "target": 2744,
+      "hidden_subset_indices_0based": [
+        2,
+        4,
+        6,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        909,
+        336,
+        504,
+        503,
+        833,
+        163,
+        326,
+        653,
+        542,
+        312,
+        119,
+        285
+      ],
+      "target": 3534,
+      "hidden_subset_indices_0based": [
+        0,
+        4,
+        7,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        561,
+        497,
+        892,
+        988,
+        509,
+        422,
+        660,
+        388,
+        200,
+        208,
+        179,
+        386
+      ],
+      "target": 2532,
+      "hidden_subset_indices_0based": [
+        1,
+        5,
+        6,
+        7,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        947,
+        298,
+        908,
+        734,
+        396,
+        962,
+        499,
+        656,
+        691,
+        495,
+        823,
+        867
+      ],
+      "target": 3043,
+      "hidden_subset_indices_0based": [
+        4,
+        5,
+        6,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        966,
+        665,
+        937,
+        530,
+        140,
+        516,
+        874,
+        101,
+        557,
+        448,
+        371,
+        773
+      ],
+      "target": 3303,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        5,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        793,
+        938,
+        223,
+        582,
+        753,
+        701,
+        507,
+        692,
+        999,
+        433,
+        764,
+        229
+      ],
+      "target": 3873,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        7,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        222,
+        710,
+        723,
+        761,
+        515,
+        486,
+        575,
+        855,
+        594,
+        811,
+        126,
+        632
+      ],
+      "target": 4352,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        4,
+        7,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        366,
+        983,
+        619,
+        182,
+        109,
+        229,
+        700,
+        227,
+        313,
+        578,
+        854,
+        862
+      ],
+      "target": 2981,
+      "hidden_subset_indices_0based": [
+        4,
+        5,
+        6,
+        7,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        851,
+        146,
+        574,
+        975,
+        438,
+        186,
+        583,
+        326,
+        673,
+        286,
+        645,
+        231
+      ],
+      "target": 2925,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        3,
+        7,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        406,
+        246,
+        684,
+        928,
+        706,
+        521,
+        322,
+        395,
+        995,
+        735,
+        607,
+        961
+      ],
+      "target": 3560,
+      "hidden_subset_indices_0based": [
+        1,
+        2,
+        4,
+        6,
+        8,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        351,
+        889,
+        357,
+        552,
+        924,
+        142,
+        619,
+        236,
+        448,
+        560,
+        880,
+        508
+      ],
+      "target": 3036,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        3,
+        7,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        560,
+        178,
+        332,
+        309,
+        701,
+        115,
+        971,
+        431,
+        862,
+        127,
+        500,
+        930
+      ],
+      "target": 3199,
+      "hidden_subset_indices_0based": [
+        3,
+        6,
+        8,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        530,
+        628,
+        218,
+        695,
+        605,
+        814,
+        763,
+        547,
+        869,
+        743,
+        660,
+        805
+      ],
+      "target": 5059,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        232,
+        991,
+        505,
+        908,
+        733,
+        919,
+        246,
+        485,
+        778,
+        692,
+        758,
+        510
+      ],
+      "target": 3911,
+      "hidden_subset_indices_0based": [
+        1,
+        4,
+        5,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        827,
+        695,
+        333,
+        425,
+        843,
+        798,
+        481,
+        842,
+        511,
+        632,
+        638,
+        403
+      ],
+      "target": 3426,
+      "hidden_subset_indices_0based": [
+        0,
+        4,
+        7,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        581,
+        574,
+        880,
+        452,
+        764,
+        181,
+        518,
+        756,
+        475,
+        158,
+        849,
+        915
+      ],
+      "target": 4713,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        7,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        353,
+        231,
+        602,
+        311,
+        609,
+        563,
+        883,
+        314,
+        167,
+        948,
+        834,
+        514
+      ],
+      "target": 1832,
+      "hidden_subset_indices_0based": [
+        1,
+        3,
+        4,
+        8,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        970,
+        231,
+        905,
+        234,
+        508,
+        938,
+        583,
+        154,
+        853,
+        211,
+        959,
+        293
+      ],
+      "target": 2840,
+      "hidden_subset_indices_0based": [
+        3,
+        6,
+        8,
+        9,
+        10
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        446,
+        493,
+        632,
+        134,
+        653,
+        622,
+        278,
+        793,
+        583,
+        295,
+        916,
+        921
+      ],
+      "target": 2807,
+      "hidden_subset_indices_0based": [
+        0,
+        1,
+        2,
+        4,
+        8
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        469,
+        886,
+        158,
+        680,
+        605,
+        283,
+        885,
+        902,
+        444,
+        479,
+        402,
+        508
+      ],
+      "target": 2761,
+      "hidden_subset_indices_0based": [
+        1,
+        4,
+        5,
+        9,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    },
+    {
+      "values": [
+        607,
+        482,
+        642,
+        798,
+        718,
+        625,
+        180,
+        161,
+        178,
+        996,
+        907,
+        932
+      ],
+      "target": 4802,
+      "hidden_subset_indices_0based": [
+        0,
+        2,
+        4,
+        9,
+        10,
+        11
+      ],
+      "difficulty_name": "n12_v3digit_k5to7"
+    }
+  ]
+}

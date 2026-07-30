@@ -1,0 +1,16 @@
+.venv/
+file_cache_dir/
+__pycache__/
+.pytest_cache/
+*.pyc
+total_cost.jsonl
+
+# API keys and secrets
+.env
+.env.*
+secrets.json
+credentials.json
+
+# Large scratch artifacts excluded from the curated codebase (see README):
+# per-rollout sample dumps, checkpoints, per-step four-cell files.
+*_rollout_samples.jsonl
