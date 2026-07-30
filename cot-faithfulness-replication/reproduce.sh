@@ -38,6 +38,7 @@ analyze() {
   $PY scripts/analyze_mentions_split.py     # results/mentions_split.json (offline: judge files are committed)
   $PY scripts/analyze_judge_disagreements.py  # results/judge_disagreements.json (offline)
   $PY scripts/analyze_natural_flip.py       # results/natural_flip.json (needs the resample transcripts)
+  $PY scripts/analyze_flip_confound.py      # results/flip_confound.json (needs the resample transcripts)
   $PY scripts/analyze_following.py          # results/following_tables.json
   $PY scripts/analyze_faithfulness.py       # results/faithfulness_tables.json
   $PY scripts/analyze_sonnet45.py           # results/sonnet45_detail.json
@@ -103,15 +104,30 @@ full() {
     $PY scripts/run_gpqa.py --model "$MODEL" --tier2
   done
 
-  echo "-- 6. unhinted resamples: the natural flip-to-correct baseline (the post's footnote) --"
-  # Extra unhinted samples on each model's correct-hint-eligible questions. Only the two models
-  # the post cites are needed; the other resample files in the archive were exploratory.
+  echo "-- 6. unhinted resamples: the natural flip-to-correct baseline --"
+  # Extra unhinted samples on each model's correct-hint-eligible questions. Feeds
+  # analyze_natural_flip.py (the post's correct-hint footnote) and analyze_flip_confound.py
+  # (how much of the faithfulness gap survives the spontaneous-flip confound). Collected for
+  # the 10 Claude + 6 open-weight models; the GPT/Gemini group has no resamples, so the
+  # confound analysis covers 16 of the 30 models and says so.
   $PY scripts/run_unhinted_resamples.py --model claude-sonnet-4-5-20250929 \
       --baseline-results results/tier1_sonnet-4-5_full.jsonl --sample-indices 3 4 5 6 \
       --out results/resamples_true_eligible_sonnet-4-5_full.jsonl
   $PY scripts/run_unhinted_resamples.py --model claude-opus-4-1-20250805 \
       --baseline-results results/tier1_opus-4-1_standard.jsonl --sample-indices 3 4 5 6 7 8 \
       --out results/resamples_true_eligible_opus-4-1_standard.jsonl
+  for PAIR in "claude-haiku-4-5-20251001 haiku-4-5" "claude-opus-4-5-20251101 opus-4-5" \
+              "claude-opus-4-6 opus-4-6" "claude-sonnet-4-6 sonnet-4-6" \
+              "claude-opus-4-7 opus-4-7" "claude-opus-4-8 opus-4-8" \
+              "claude-fable-5 fable-5" "claude-sonnet-5 sonnet-5" \
+              "deepseek/deepseek-r1 deepseek-r1" "qwen/qwen3-235b-a22b-thinking-2507 qwen3-235b-think" \
+              "openai/gpt-oss-120b gpt-oss-120b" "deepseek/deepseek-v3.2 deepseek-v3.2" \
+              "moonshotai/kimi-k2.5 kimi-k2.5" "z-ai/glm-5.2 glm-5.2"; do
+    set -- $PAIR; MODEL=$1; SHORT=$2
+    $PY scripts/run_unhinted_resamples.py --model "$MODEL" \
+        --baseline-results "results/tier1_${SHORT}_standard.jsonl" --sample-indices 3 4 5 6 \
+        --out "results/resamples_true_eligible_${SHORT}_standard.jsonl"
+  done
 
   echo "-- 7. judging (Claude Opus 4.8 verbalization judge, MMLU + GPQA, all 30 models) --"
   # MMLU: judge every collected tier1/tier2 file. GPQA: judge every collected grid.
