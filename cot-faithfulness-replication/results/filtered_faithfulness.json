@@ -460,7 +460,7 @@
     "gpqa",
     "mmlu"
    ],
-   "n_questions_eligible": 107,
+   "n_questions_eligible": 108,
    "n_questions_kept": 53,
    "correct_raw_unfiltered": 0.4663551401869159,
    "correct_raw_filtered": 0.6177304964539008,
@@ -855,8 +855,8 @@
   "median_gap_same_questions": 0.13358967944107267,
   "n_survive_same_questions": 26,
   "median_gap_mentions_filtered": 0.1360507543840335,
-  "n_questions_eligible": 3576,
+  "n_questions_eligible": 3577,
   "n_questions_kept": 2095,
-  "share_questions_dropped": 0.41414988814317677
+  "share_questions_dropped": 0.4143136706737489
  }
 }

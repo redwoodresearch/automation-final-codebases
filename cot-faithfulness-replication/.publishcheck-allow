@@ -1,0 +1,3 @@
+# Large files committed on purpose (see README: the DeepSeek R1 t=0 transcripts are committed so
+# the judge-dependence figure can be recomputed without fetching the Hugging Face archive).
+results/*_deepseek-r1_t0*.jsonl.gz

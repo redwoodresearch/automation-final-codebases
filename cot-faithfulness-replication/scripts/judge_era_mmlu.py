@@ -28,7 +28,7 @@ from lib.judge_variants import VARIANTS, judge_verbalization_variant
 from lib.llm import set_concurrency
 from lib.run_utils import git_hash, load_done_task_ids
 from lib.tier1 import all_conditions, response_texts
-from judge_mmlu_tier2 import hint_type_and_source, tier2_conditions_in
+from scripts.judge_mmlu_tier2 import hint_type_and_source, tier2_conditions_in
 
 
 def stems(temp: str) -> dict[str, str]:

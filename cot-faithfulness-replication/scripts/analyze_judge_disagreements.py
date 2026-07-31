@@ -63,7 +63,9 @@ def main() -> None:
         "agreement_matrix": dict(sorted(matrix.items())),
         "era_verdict_pattern_when_opus48_faithful": dict(sorted(era_pattern.items())),
         "opus48_faithful_era_not_by_hint_type": dict(sorted(by_type.items())),
-        "appendix_examples": examples,
+        # sorted for the same reason as the counters above: dict key order here comes from a
+        # set intersection, whose iteration order varies per process under hash randomization.
+        "appendix_examples": {k: examples[k] for k in sorted(examples)},
     }
     missing = [t for t in EXAMPLES if t not in examples]
     assert not missing, f"appendix examples no longer disagreements: {missing}"
