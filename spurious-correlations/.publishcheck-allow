@@ -1,0 +1,17 @@
+# Large raw-data files committed on purpose: each is an input the offline reproduce path reads
+# (reproduce.sh regenerates figures/numbers from these without a GPU). Not accidental leakage.
+# (Inline comments are not allowed on glob lines, so the notes live above each path.)
+
+# per-seed diagonal fine-tunes -> near-tie collapse/commit
+codebase/results/ft_grid_mass_diag_fitted.jsonl
+# third-cell sweep -> threecell_by_partner figure
+knockout/results/threecell_full/runs.jsonl
+# counterexample injection grid -> counterexample_flip_curves
+codebase/results/counterex_ext_raw.jsonl
+# salience dose raw -> salience_nats figure
+inoc_data/salience_flip_raw_v2.jsonl
+# chat-format fine-tunes -> chat-format ranking check
+knockout/results/chat_ft_subset/chat_ft_raw.jsonl
+# per-passage mean-activation cache -> decision-token signature analysis (analyze_signature_decision_token.py,
+# the Spearman 0.85 vs 0.63 number); input to the decision-token/mean-pooled readout regenerate path
+codebase/results/reads_expansion/decision_token_signature_means_v2.npz

@@ -1,0 +1,74 @@
+{
+  "note": "Full-37 near-tie collapse / commitment numbers for the blog, committed data only.",
+  "validation": {
+    "criterion": "spread(max-min of 3 ft_seeds) >= 15 nats; unstable = signs disagree",
+    "my_unstable_n": 10,
+    "census_unstable_n": 10,
+    "unstable_exact_match": true,
+    "my_highspread_n": 13,
+    "census_highspread_n": 13,
+    "highspread_exact_match": true
+  },
+  "commit_rate_by_stratum": {
+    "near_tie": {
+      "commit": 23,
+      "n": 66,
+      "rate": 0.348
+    },
+    "mid_gap": {
+      "commit": 121,
+      "n": 144,
+      "rate": 0.84
+    },
+    "well_separated": {
+      "commit": 452,
+      "n": 453,
+      "rate": 0.998
+    },
+    "overall": {
+      "commit": 596,
+      "n": 663,
+      "rate": 0.899
+    }
+  },
+  "commit_spearmans": {
+    "per_pair_commit_vs_abs_ft_delta": 0.476,
+    "per_pair_commit_vs_additive_s_gap": 0.364,
+    "stratum_level_rate_vs_mean_gap_3pts": 1.0
+  },
+  "constant_label_collapse": {
+    "detector": {
+      "confident_mean_abs_d_nats": 4.0,
+      "at_chance_acc_band": [
+        0.4,
+        0.6
+      ],
+      "one_sided_min_abs_fracpos_minus_half": 0.25,
+      "eval": "confounded-diagonal held-out; d_values per-example, single lr 1e-5"
+    },
+    "by_stratum": {
+      "near_tie": {
+        "collapse_seeds": 46,
+        "n_seeds": 114,
+        "n_pairs": 38,
+        "rate": 0.404
+      },
+      "mid_gap": {
+        "collapse_seeds": 32,
+        "n_seeds": 231,
+        "n_pairs": 77,
+        "rate": 0.139
+      },
+      "well_separated": {
+        "collapse_seeds": 4,
+        "n_seeds": 663,
+        "n_pairs": 221,
+        "rate": 0.006
+      }
+    }
+  },
+  "coverage": {
+    "commit_rate": "full-37, all 663 pairs x 3 fine-tune seeds (merged_readouts_v2)",
+    "collapse": "mass-diag subset: 336 pairs x 3 seeds, single lr 1e-5 (near_tie 38 pairs/114 seeds, mid_gap 77/231, well_sep 221/663)"
+  }
+}

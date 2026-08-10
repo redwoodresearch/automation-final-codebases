@@ -1,0 +1,10 @@
+# Redraw path (reproduce.sh) — pure CPU, no GPU/API keys.
+numpy
+scipy
+matplotlib
+attrs        # imported by the cross-model figure's lib closure (codebase/lib/cross_model.py)
+scikit-learn # nuisance-control battery (codebase/lib/confound_controls.py: length/topic/layout/BoW classifiers)
+# adjustText is optional (signature_scatter.py degrades gracefully without it).
+
+# Regenerating the shipped data from scratch additionally needs: torch, transformers, modal
+# (and Modal credentials). Not required to reproduce the figures.

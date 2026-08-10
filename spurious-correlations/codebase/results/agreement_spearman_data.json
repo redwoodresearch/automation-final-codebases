@@ -1,0 +1,250 @@
+[
+ [
+  "Qwen3-1.7B probe @ L8",
+  0.83,
+  124,
+  "probe",
+  "per-pair",
+  ""
+ ],
+ [
+  "Qwen3-1.7B probe @ L14",
+  0.78,
+  124,
+  "probe",
+  "per-pair",
+  ""
+ ],
+ [
+  "Qwen3-1.7B probe @ L21",
+  0.84,
+  124,
+  "probe",
+  "per-pair",
+  ""
+ ],
+ [
+  "Decision-token probe read",
+  0.92,
+  37,
+  "decision",
+  "per-feature",
+  ""
+ ],
+ [
+  "Qwen3-8B fine-tune",
+  0.888,
+  33,
+  "ft",
+  "per-pair",
+  "*"
+ ],
+ [
+  "Qwen3-8B probe @ L12",
+  0.83,
+  124,
+  "probe",
+  "per-pair",
+  ""
+ ],
+ [
+  "Qwen3-8B probe @ L25",
+  0.85,
+  124,
+  "probe",
+  "per-pair",
+  ""
+ ],
+ [
+  "Qwen3-8B decision-token read",
+  0.89,
+  37,
+  "decision",
+  "per-feature",
+  ""
+ ],
+ [
+  "Qwen3-8B mean-pooled read",
+  0.67,
+  37,
+  "meanpooled",
+  "per-feature",
+  ""
+ ],
+ [
+  "Qwen3-32B fine-tune",
+  0.721,
+  33,
+  "ft",
+  "per-pair",
+  "*"
+ ],
+ [
+  "Qwen3-32B probe (selected layer)",
+  0.924,
+  51,
+  "probe",
+  "per-pair",
+  "*+"
+ ],
+ [
+  "Llama-3.1-8B fine-tune",
+  0.854,
+  33,
+  "ft",
+  "per-pair",
+  "*"
+ ],
+ [
+  "Llama-3.1-8B probe @ L11",
+  0.79,
+  124,
+  "probe",
+  "per-pair",
+  ""
+ ],
+ [
+  "Llama-3.1-8B probe @ L22",
+  0.87,
+  124,
+  "probe",
+  "per-pair",
+  ""
+ ],
+ [
+  "Llama-3.1-8B decision-token read",
+  0.86,
+  37,
+  "decision",
+  "per-feature",
+  ""
+ ],
+ [
+  "Llama-3.1-8B mean-pooled read",
+  0.65,
+  37,
+  "meanpooled",
+  "per-feature",
+  ""
+ ],
+ [
+  "OLMo-2-7B fine-tune",
+  0.821,
+  33,
+  "ft",
+  "per-pair",
+  "*"
+ ],
+ [
+  "OLMo-2-7B probe @ L11",
+  0.81,
+  124,
+  "probe",
+  "per-pair",
+  ""
+ ],
+ [
+  "OLMo-2-7B probe @ L22",
+  0.85,
+  124,
+  "probe",
+  "per-pair",
+  ""
+ ],
+ [
+  "OLMo-2-7B decision-token read",
+  0.87,
+  37,
+  "decision",
+  "per-feature",
+  ""
+ ],
+ [
+  "OLMo-2-7B mean-pooled read",
+  0.71,
+  37,
+  "meanpooled",
+  "per-feature",
+  ""
+ ],
+ [
+  "DPO (preference optimization)",
+  0.95,
+  55,
+  "alt",
+  "per-pair",
+  "\u00a7"
+ ],
+ [
+  "Alternate label tokens",
+  0.94,
+  37,
+  "alt",
+  "per-feature",
+  ""
+ ],
+ [
+  "Verbalized free-form answer",
+  0.86,
+  55,
+  "alt",
+  "per-pair",
+  "\u00a7"
+ ],
+ [
+  "Fine-tune, chat format",
+  0.83,
+  100,
+  "alt",
+  "per-pair",
+  ""
+ ],
+ [
+  "Reward model (scalar value head)",
+  0.78,
+  37,
+  "alt",
+  "per-feature",
+  ""
+ ],
+ [
+  "Reversal \u2014 probe",
+  0.97,
+  201,
+  "reversal",
+  "per-pair",
+  ""
+ ],
+ [
+  "Reversal \u2014 fine-tune",
+  0.9,
+  201,
+  "reversal",
+  "per-pair",
+  ""
+ ],
+ [
+  "Generative behavior (behavior\u00d7cue grid)",
+  0.89,
+  20,
+  "behavior",
+  "per-pair",
+  "\u2021"
+ ],
+ [
+  "LLM predicts strength (best)",
+  0.51,
+  21,
+  "weak",
+  "per-feature",
+  ""
+ ],
+ [
+  "In-context learning (16-shot)",
+  0.64,
+  32,
+  "icl",
+  "per-pair",
+  ""
+ ]
+]

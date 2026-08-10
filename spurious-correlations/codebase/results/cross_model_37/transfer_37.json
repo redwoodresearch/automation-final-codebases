@@ -1,0 +1,634 @@
+{
+  "pair_set": "reads_expansion xmodel (read-position-across-models check)",
+  "n_pairs": 100,
+  "probe_last": {
+    "read": "last",
+    "reference": "qwen3_1p7b",
+    "n_pairs": 100,
+    "per_model": {
+      "qwen3_8b": {
+        "label": "Qwen3-8B",
+        "family": "Qwen3",
+        "params_b": 8.2,
+        "post_trained": true,
+        "s_pr_spearman": 0.986,
+        "kendall": 0.928,
+        "ci": [
+          0.973,
+          0.992
+        ],
+        "n_features": 37,
+        "per_pair_delta_spearman": 0.986,
+        "additive_law": {
+          "n_pairs": 100,
+          "r2_insample": 0.933,
+          "resid_sd": 1.578,
+          "loo_r2": 0.844
+        },
+        "winner_agreement": {
+          "n": 100,
+          "overall": 0.98,
+          "n_large_gap": 34,
+          "large_gap_agreement": 1.0,
+          "flips": [
+            "argumentative_structure__figurative_language",
+            "code_presence__second_person_address"
+          ]
+        }
+      },
+      "qwen3_32b": {
+        "label": "Qwen3-32B",
+        "family": "Qwen3",
+        "params_b": 32.8,
+        "post_trained": true,
+        "s_pr_spearman": 0.98,
+        "kendall": 0.898,
+        "ci": [
+          0.967,
+          0.988
+        ],
+        "n_features": 37,
+        "per_pair_delta_spearman": 0.98,
+        "additive_law": {
+          "n_pairs": 100,
+          "r2_insample": 0.937,
+          "resid_sd": 1.751,
+          "loo_r2": 0.852
+        },
+        "winner_agreement": {
+          "n": 100,
+          "overall": 0.98,
+          "n_large_gap": 34,
+          "large_gap_agreement": 1.0,
+          "flips": [
+            "argumentative_structure__figurative_language",
+            "code_presence__negation_density"
+          ]
+        }
+      },
+      "llama31_8b": {
+        "label": "Llama-3.1-8B",
+        "family": "Llama-3.1",
+        "params_b": 8.0,
+        "post_trained": false,
+        "s_pr_spearman": 0.977,
+        "kendall": 0.88,
+        "ci": [
+          0.948,
+          0.98
+        ],
+        "n_features": 37,
+        "per_pair_delta_spearman": 0.942,
+        "additive_law": {
+          "n_pairs": 100,
+          "r2_insample": 0.933,
+          "resid_sd": 1.867,
+          "loo_r2": 0.842
+        },
+        "winner_agreement": {
+          "n": 100,
+          "overall": 0.9,
+          "n_large_gap": 34,
+          "large_gap_agreement": 1.0,
+          "flips": [
+            "code_presence__argumentative_structure",
+            "code_presence__ends_with_string",
+            "code_presence__figurative_language",
+            "code_presence__first_person_voice",
+            "code_presence__imperative_mood",
+            "code_presence__question_vs_statement",
+            "code_presence__second_person_address",
+            "code_presence__sentence_complexity",
+            "code_presence__temporal_scope",
+            "substring_high_entropy__harmful_vs_benign"
+          ]
+        }
+      },
+      "olmo2_7b": {
+        "label": "OLMo-2-7B",
+        "family": "OLMo-2",
+        "params_b": 7.3,
+        "post_trained": false,
+        "s_pr_spearman": 0.985,
+        "kendall": 0.916,
+        "ci": [
+          0.96,
+          0.988
+        ],
+        "n_features": 37,
+        "per_pair_delta_spearman": 0.98,
+        "additive_law": {
+          "n_pairs": 100,
+          "r2_insample": 0.925,
+          "resid_sd": 1.871,
+          "loo_r2": 0.825
+        },
+        "winner_agreement": {
+          "n": 100,
+          "overall": 0.98,
+          "n_large_gap": 34,
+          "large_gap_agreement": 1.0,
+          "flips": [
+            "code_presence__negation_density",
+            "substring_high_entropy__harmful_vs_benign"
+          ]
+        }
+      },
+      "qwen3_1p7b_base": {
+        "label": "Qwen3-1.7B-Base",
+        "family": "Qwen3",
+        "params_b": 1.7,
+        "post_trained": false,
+        "s_pr_spearman": 0.987,
+        "kendall": 0.925,
+        "ci": [
+          0.974,
+          0.99
+        ],
+        "n_features": 37,
+        "per_pair_delta_spearman": 0.98,
+        "additive_law": {
+          "n_pairs": 100,
+          "r2_insample": 0.934,
+          "resid_sd": 1.584,
+          "loo_r2": 0.844
+        },
+        "winner_agreement": {
+          "n": 100,
+          "overall": 0.96,
+          "n_large_gap": 34,
+          "large_gap_agreement": 1.0,
+          "flips": [
+            "argumentative_structure__figurative_language",
+            "code_presence__negation_density",
+            "code_presence__topic_medical",
+            "formal_register__all_caps"
+          ]
+        }
+      },
+      "qwen3_8b_base": {
+        "label": "Qwen3-8B-Base",
+        "family": "Qwen3",
+        "params_b": 8.2,
+        "post_trained": false,
+        "s_pr_spearman": 0.975,
+        "kendall": 0.88,
+        "ci": [
+          0.961,
+          0.985
+        ],
+        "n_features": 37,
+        "per_pair_delta_spearman": 0.971,
+        "additive_law": {
+          "n_pairs": 100,
+          "r2_insample": 0.932,
+          "resid_sd": 1.648,
+          "loo_r2": 0.84
+        },
+        "winner_agreement": {
+          "n": 100,
+          "overall": 0.95,
+          "n_large_gap": 34,
+          "large_gap_agreement": 1.0,
+          "flips": [
+            "argumentative_structure__figurative_language",
+            "code_presence__negation_density",
+            "code_presence__specific_emoji",
+            "formal_register__all_caps",
+            "substring_high_entropy__harmful_vs_benign"
+          ]
+        }
+      }
+    },
+    "reference_additive": {
+      "n_pairs": 100,
+      "r2_insample": 0.927,
+      "resid_sd": 1.675,
+      "loo_r2": 0.824
+    }
+  },
+  "probe_mean": {
+    "read": "mean",
+    "reference": "qwen3_1p7b",
+    "n_pairs": 100,
+    "per_model": {
+      "qwen3_8b": {
+        "label": "Qwen3-8B",
+        "family": "Qwen3",
+        "params_b": 8.2,
+        "post_trained": true,
+        "s_pr_spearman": 0.993,
+        "kendall": 0.937,
+        "ci": [
+          0.98,
+          0.995
+        ],
+        "n_features": 37,
+        "per_pair_delta_spearman": 0.987,
+        "additive_law": {
+          "n_pairs": 100,
+          "r2_insample": 0.942,
+          "resid_sd": 1.549,
+          "loo_r2": 0.86
+        },
+        "winner_agreement": {
+          "n": 100,
+          "overall": 0.98,
+          "n_large_gap": 34,
+          "large_gap_agreement": 1.0,
+          "flips": [
+            "domain_jargon__narrative_vs_expository",
+            "numerical_density__question_vs_statement"
+          ]
+        }
+      },
+      "qwen3_32b": {
+        "label": "Qwen3-32B",
+        "family": "Qwen3",
+        "params_b": 32.8,
+        "post_trained": true,
+        "s_pr_spearman": 0.984,
+        "kendall": 0.901,
+        "ci": [
+          0.961,
+          0.989
+        ],
+        "n_features": 37,
+        "per_pair_delta_spearman": 0.981,
+        "additive_law": {
+          "n_pairs": 100,
+          "r2_insample": 0.935,
+          "resid_sd": 1.806,
+          "loo_r2": 0.843
+        },
+        "winner_agreement": {
+          "n": 100,
+          "overall": 0.97,
+          "n_large_gap": 34,
+          "large_gap_agreement": 1.0,
+          "flips": [
+            "code_presence__sentence_complexity",
+            "code_presence__temporal_scope",
+            "domain_jargon__narrative_vs_expository"
+          ]
+        }
+      },
+      "llama31_8b": {
+        "label": "Llama-3.1-8B",
+        "family": "Llama-3.1",
+        "params_b": 8.0,
+        "post_trained": false,
+        "s_pr_spearman": 0.984,
+        "kendall": 0.904,
+        "ci": [
+          0.961,
+          0.989
+        ],
+        "n_features": 37,
+        "per_pair_delta_spearman": 0.97,
+        "additive_law": {
+          "n_pairs": 100,
+          "r2_insample": 0.941,
+          "resid_sd": 1.513,
+          "loo_r2": 0.858
+        },
+        "winner_agreement": {
+          "n": 100,
+          "overall": 0.95,
+          "n_large_gap": 34,
+          "large_gap_agreement": 1.0,
+          "flips": [
+            "argumentative_structure__acronym_density",
+            "argumentative_structure__first_person_voice",
+            "domain_jargon__narrative_vs_expository",
+            "emotional_tone__refusal_language",
+            "numerical_density__argumentative_structure"
+          ]
+        }
+      },
+      "olmo2_7b": {
+        "label": "OLMo-2-7B",
+        "family": "OLMo-2",
+        "params_b": 7.3,
+        "post_trained": false,
+        "s_pr_spearman": 0.985,
+        "kendall": 0.91,
+        "ci": [
+          0.966,
+          0.99
+        ],
+        "n_features": 37,
+        "per_pair_delta_spearman": 0.978,
+        "additive_law": {
+          "n_pairs": 100,
+          "r2_insample": 0.936,
+          "resid_sd": 1.469,
+          "loo_r2": 0.85
+        },
+        "winner_agreement": {
+          "n": 100,
+          "overall": 0.96,
+          "n_large_gap": 34,
+          "large_gap_agreement": 1.0,
+          "flips": [
+            "code_presence__hedging",
+            "domain_jargon__narrative_vs_expository",
+            "emotional_tone__refusal_language",
+            "numerical_density__question_vs_statement"
+          ]
+        }
+      },
+      "qwen3_1p7b_base": {
+        "label": "Qwen3-1.7B-Base",
+        "family": "Qwen3",
+        "params_b": 1.7,
+        "post_trained": false,
+        "s_pr_spearman": 0.984,
+        "kendall": 0.919,
+        "ci": [
+          0.97,
+          0.992
+        ],
+        "n_features": 37,
+        "per_pair_delta_spearman": 0.973,
+        "additive_law": {
+          "n_pairs": 100,
+          "r2_insample": 0.938,
+          "resid_sd": 1.535,
+          "loo_r2": 0.848
+        },
+        "winner_agreement": {
+          "n": 100,
+          "overall": 0.99,
+          "n_large_gap": 34,
+          "large_gap_agreement": 1.0,
+          "flips": [
+            "domain_jargon__narrative_vs_expository"
+          ]
+        }
+      },
+      "qwen3_8b_base": {
+        "label": "Qwen3-8B-Base",
+        "family": "Qwen3",
+        "params_b": 8.2,
+        "post_trained": false,
+        "s_pr_spearman": 0.977,
+        "kendall": 0.883,
+        "ci": [
+          0.958,
+          0.988
+        ],
+        "n_features": 37,
+        "per_pair_delta_spearman": 0.964,
+        "additive_law": {
+          "n_pairs": 100,
+          "r2_insample": 0.93,
+          "resid_sd": 1.685,
+          "loo_r2": 0.83
+        },
+        "winner_agreement": {
+          "n": 100,
+          "overall": 0.99,
+          "n_large_gap": 34,
+          "large_gap_agreement": 1.0,
+          "flips": [
+            "domain_jargon__narrative_vs_expository"
+          ]
+        }
+      }
+    },
+    "reference_additive": {
+      "n_pairs": 100,
+      "r2_insample": 0.941,
+      "resid_sd": 1.494,
+      "loo_r2": 0.856
+    }
+  },
+  "fine_tune": {
+    "reference": "qwen3_1p7b (committed fine-tune, merged_readouts_v2 ft_delta)",
+    "n_ref_pairs": 100,
+    "per_model": {
+      "qwen3_8b": {
+        "label": "Qwen3-8B",
+        "family": "Qwen3",
+        "params_b": 8.2,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "n_pairs_used": 100,
+        "n_dropped_pairs": 0,
+        "dropped_pairs": [],
+        "s_ft_spearman": 0.915,
+        "kendall": 0.754,
+        "ci": [
+          0.82,
+          0.937
+        ],
+        "n_features": 37,
+        "per_pair_delta_spearman": 0.803,
+        "additive_law": {
+          "n_pairs": 100,
+          "r2_insample": 0.847,
+          "resid_sd": 6.609,
+          "loo_r2": 0.626
+        },
+        "winner_agreement": {
+          "n": 100,
+          "overall": 0.91,
+          "n_large_gap": 34,
+          "large_gap_agreement": 0.971,
+          "flips": [
+            "argumentative_structure__emotional_tone",
+            "argumentative_structure__sentence_complexity",
+            "code_presence__emotional_tone",
+            "code_presence__imperative_mood",
+            "code_presence__substring_high_entropy",
+            "emotional_tone__refusal_language",
+            "emotional_tone__substring_high_entropy",
+            "formal_register__all_caps",
+            "harmful_vs_benign__entity_mention_trigger"
+          ]
+        },
+        "probe_ft_agreement": 0.785
+      },
+      "llama31_8b": {
+        "label": "Llama-3.1-8B",
+        "family": "Llama-3.1",
+        "params_b": 8.0,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "n_pairs_used": 100,
+        "n_dropped_pairs": 0,
+        "dropped_pairs": [],
+        "s_ft_spearman": 0.859,
+        "kendall": 0.664,
+        "ci": [
+          0.73,
+          0.892
+        ],
+        "n_features": 37,
+        "per_pair_delta_spearman": 0.744,
+        "additive_law": {
+          "n_pairs": 100,
+          "r2_insample": 0.894,
+          "resid_sd": 4.527,
+          "loo_r2": 0.754
+        },
+        "winner_agreement": {
+          "n": 100,
+          "overall": 0.83,
+          "n_large_gap": 34,
+          "large_gap_agreement": 0.971,
+          "flips": [
+            "argumentative_structure__figurative_language",
+            "argumentative_structure__first_person_voice",
+            "argumentative_structure__second_person_address",
+            "argumentative_structure__sentence_complexity",
+            "code_presence__domain_jargon",
+            "code_presence__formal_register",
+            "code_presence__hedging",
+            "code_presence__imperative_mood",
+            "code_presence__narrative_vs_expository",
+            "code_presence__question_vs_statement",
+            "code_presence__substring_high_entropy",
+            "emotional_tone__ends_with_string",
+            "emotional_tone__refusal_language",
+            "emotional_tone__trailing_signature",
+            "formal_register__all_caps",
+            "harmful_vs_benign__entity_mention_trigger",
+            "starts_with_string__specific_emoji"
+          ]
+        },
+        "probe_ft_agreement": 0.856
+      },
+      "olmo2_7b": {
+        "label": "OLMo-2-7B",
+        "family": "OLMo-2",
+        "params_b": 7.3,
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "n_pairs_used": 100,
+        "n_dropped_pairs": 0,
+        "dropped_pairs": [],
+        "s_ft_spearman": 0.868,
+        "kendall": 0.721,
+        "ci": [
+          0.773,
+          0.91
+        ],
+        "n_features": 37,
+        "per_pair_delta_spearman": 0.821,
+        "additive_law": {
+          "n_pairs": 100,
+          "r2_insample": 0.914,
+          "resid_sd": 3.629,
+          "loo_r2": 0.779
+        },
+        "winner_agreement": {
+          "n": 100,
+          "overall": 0.87,
+          "n_large_gap": 34,
+          "large_gap_agreement": 0.971,
+          "flips": [
+            "argumentative_structure__figurative_language",
+            "argumentative_structure__first_person_voice",
+            "argumentative_structure__second_person_address",
+            "argumentative_structure__sentence_complexity",
+            "code_presence__all_caps",
+            "code_presence__emotional_tone",
+            "code_presence__figurative_language",
+            "code_presence__imperative_mood",
+            "code_presence__question_vs_statement",
+            "domain_jargon__narrative_vs_expository",
+            "emotional_tone__refusal_language",
+            "harmful_vs_benign__entity_mention_trigger",
+            "starts_with_string__specific_emoji"
+          ]
+        },
+        "probe_ft_agreement": 0.859
+      },
+      "qwen3_32b": {
+        "label": "Qwen3-32B",
+        "family": "Qwen3",
+        "params_b": 32.8,
+        "seeds": [
+          0,
+          1,
+          2
+        ],
+        "n_pairs_used": 100,
+        "n_dropped_pairs": 0,
+        "dropped_pairs": [],
+        "s_ft_spearman": 0.821,
+        "kendall": 0.64,
+        "ci": [
+          0.697,
+          0.861
+        ],
+        "n_features": 37,
+        "per_pair_delta_spearman": 0.677,
+        "additive_law": {
+          "n_pairs": 100,
+          "r2_insample": 0.802,
+          "resid_sd": 4.21,
+          "loo_r2": 0.564
+        },
+        "winner_agreement": {
+          "n": 100,
+          "overall": 0.81,
+          "n_large_gap": 34,
+          "large_gap_agreement": 0.941,
+          "flips": [
+            "argumentative_structure__emotional_tone",
+            "argumentative_structure__formal_register",
+            "code_presence__domain_jargon",
+            "code_presence__emotional_tone",
+            "code_presence__figurative_language",
+            "code_presence__imperative_mood",
+            "code_presence__sycophantic_agreement",
+            "code_presence__temporal_scope",
+            "deception__ai_self_reference",
+            "domain_jargon__hedging",
+            "emotional_tone__all_caps",
+            "emotional_tone__harmful_vs_benign",
+            "emotional_tone__refusal_language",
+            "formal_register__all_caps",
+            "formal_register__refusal_language",
+            "harmful_vs_benign__entity_mention_trigger",
+            "language__hedging",
+            "starts_with_string__trailing_signature",
+            "substring_common_word__ai_self_reference"
+          ]
+        },
+        "probe_ft_agreement": 0.637
+      }
+    },
+    "pairwise_ft_agreement": {
+      "n_common_pairs": 100,
+      "matrix": {
+        "llama31_8b__vs__olmo2_7b": 0.927,
+        "llama31_8b__vs__qwen3_32b": 0.727,
+        "llama31_8b__vs__qwen3_8b": 0.819,
+        "olmo2_7b__vs__qwen3_32b": 0.763,
+        "olmo2_7b__vs__qwen3_8b": 0.861,
+        "qwen3_32b__vs__qwen3_8b": 0.827
+      },
+      "mean": 0.821,
+      "min": 0.727
+    }
+  }
+}

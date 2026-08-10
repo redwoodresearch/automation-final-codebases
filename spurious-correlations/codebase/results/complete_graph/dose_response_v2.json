@@ -1,0 +1,736 @@
+{
+ "summary": {
+  "n_analyzed": 33,
+  "n_failed_gate": 0,
+  "failed_features": [],
+  "n_expected_sign": 33,
+  "binomial_p_greater": 1.1641532182693481e-10,
+  "median_spearman": 0.8474620130450385,
+  "mean_spearman": 0.7273067567768879,
+  "frac_spearman_ge_0.3": 0.8787878787878788
+ },
+ "per_feature": {
+  "formal_register": {
+   "analyzed": true,
+   "type": "style_voice",
+   "dose_type": "judge",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.8474620130450385,
+   "spearman_ci": [
+    0.7882207122876449,
+    0.8896451624092284
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.79906931882318,
+   "spearman_intended_proj_L20": 0.8065177892085997,
+   "spearman_realized_proj_L21": 0.8490242593421292,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 185.27362060546875,
+    "2": 206.08026123046875,
+    "3": 220.61375427246094
+   },
+   "moves_as_expected": true
+  },
+  "numerical_density": {
+   "analyzed": true,
+   "type": "surface_mechanical",
+   "dose_type": "density",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.9351971214094659,
+   "spearman_ci": [
+    0.9088470527648587,
+    0.9510231383259908
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.86890007559272,
+   "spearman_intended_proj_L20": 0.9108459616189395,
+   "spearman_realized_proj_L21": 0.9166607935319822,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 40.684444427490234,
+    "2": 94.06605529785156,
+    "3": 127.87267303466797
+   },
+   "moves_as_expected": true
+  },
+  "deception": {
+   "analyzed": true,
+   "type": "content_behavior",
+   "dose_type": "judge",
+   "n": 175,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.16436417586086371,
+   "spearman_ci": [
+    0.0160743641672907,
+    0.3128810345660499
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.18264099309759738,
+   "spearman_intended_proj_L20": 0.0597449574903087,
+   "spearman_realized_proj_L21": 0.25235488789284855,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 49.13563537597656,
+    "2": 73.4676513671875,
+    "3": 83.51856994628906
+   },
+   "moves_as_expected": true
+  },
+  "substring_high_entropy": {
+   "analyzed": true,
+   "type": "triggers",
+   "dose_type": "inject",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.5315435361347512,
+   "spearman_ci": [
+    0.41706344667322726,
+    0.6324516839436154
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.5270423206424547,
+   "spearman_intended_proj_L20": 0.5315435361347512,
+   "spearman_realized_proj_L21": 0.5034359460606328,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 17.885866165161133,
+    "2": 34.81142807006836,
+    "4": 59.15507125854492
+   },
+   "moves_as_expected": true
+  },
+  "ai_self_reference": {
+   "analyzed": true,
+   "type": "content_behavior",
+   "dose_type": "judge",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.6760355289746481,
+   "spearman_ci": [
+    0.592312394520575,
+    0.7467003050347458
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.5418515865360723,
+   "spearman_intended_proj_L20": 0.6337711413153525,
+   "spearman_realized_proj_L21": 0.6936670290159487,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 57.95513916015625,
+    "2": 100.42195892333984,
+    "3": 119.68058013916016
+   },
+   "moves_as_expected": true
+  },
+  "emotional_tone": {
+   "analyzed": true,
+   "type": "style_voice",
+   "dose_type": "judge",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.9109217735052859,
+   "spearman_ci": [
+    0.8675992510330272,
+    0.9388251461906814
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.912108748974431,
+   "spearman_intended_proj_L20": 0.8765366968665458,
+   "spearman_realized_proj_L21": 0.9074573309261554,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 84.22574615478516,
+    "2": 169.13629150390625,
+    "3": 178.87147521972656
+   },
+   "moves_as_expected": true
+  },
+  "entity_mention_trigger": {
+   "analyzed": true,
+   "type": "content_behavior",
+   "dose_type": "entity",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.027307373986599,
+   "spearman_ci": [
+    -0.12074832029123751,
+    0.17429285175464945
+   ],
+   "spearman_realized_proj_L20_lenadj": -0.08342252712389583,
+   "spearman_intended_proj_L20": 0.027307373986599,
+   "spearman_realized_proj_L21": 0.012503376367490382,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 23.264720916748047,
+    "2": 32.600582122802734,
+    "3": 40.78520965576172
+   },
+   "moves_as_expected": true
+  },
+  "all_caps": {
+   "analyzed": true,
+   "type": "triggers",
+   "dose_type": "transform",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.9485680505726332,
+   "spearman_ci": [
+    0.9348519119865155,
+    0.9554607863815129
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.9493909176293056,
+   "spearman_intended_proj_L20": 0.9682614658984554,
+   "spearman_realized_proj_L21": 0.9496707590574855,
+   "raw_norm_movement_by_level": {
+    "0": 174.8858184814453,
+    "1": 267.25848388671875
+   },
+   "moves_as_expected": true
+  },
+  "acronym_density": {
+   "analyzed": true,
+   "type": "style_voice",
+   "dose_type": "density",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.8898319496088819,
+   "spearman_ci": [
+    0.8514622984516393,
+    0.913775483546587
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.8178212670704813,
+   "spearman_intended_proj_L20": 0.864533455553755,
+   "spearman_realized_proj_L21": 0.88692889243869,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 49.375755310058594,
+    "2": 73.44275665283203,
+    "3": 106.39907836914062
+   },
+   "moves_as_expected": true
+  },
+  "imperative_mood": {
+   "analyzed": true,
+   "type": "discourse_structure",
+   "dose_type": "judge",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.7614282228899041,
+   "spearman_ci": [
+    0.6945583324317736,
+    0.8139597346378076
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.6989490577578108,
+   "spearman_intended_proj_L20": 0.72829666665358,
+   "spearman_realized_proj_L21": 0.685811323365672,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 36.9898567199707,
+    "2": 92.3143539428711,
+    "3": 96.68177795410156
+   },
+   "moves_as_expected": true
+  },
+  "code_presence": {
+   "analyzed": true,
+   "type": "surface_mechanical",
+   "dose_type": "judge",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.6687812102563988,
+   "spearman_ci": [
+    0.5841164557250107,
+    0.7367832840170412
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.6376233557959383,
+   "spearman_intended_proj_L20": 0.6291698988121162,
+   "spearman_realized_proj_L21": 0.5695748433181426,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 43.05426025390625,
+    "2": 75.7098159790039,
+    "3": 91.16034698486328
+   },
+   "moves_as_expected": true
+  },
+  "leetspeak": {
+   "analyzed": true,
+   "type": "triggers",
+   "dose_type": "transform",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.9510693568210817,
+   "spearman_ci": [
+    0.9362637244177112,
+    0.9586300022483112
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.9521336734547603,
+   "spearman_intended_proj_L20": 0.9682614658984554,
+   "spearman_realized_proj_L21": 0.9505455048255249,
+   "raw_norm_movement_by_level": {
+    "0": 252.93838500976562,
+    "1": 304.3948059082031
+   },
+   "moves_as_expected": true
+  },
+  "narrative_vs_expository": {
+   "analyzed": true,
+   "type": "discourse_structure",
+   "dose_type": "judge",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.8895730642623435,
+   "spearman_ci": [
+    0.8472645967850989,
+    0.9176920674588773
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.8640701562632207,
+   "spearman_intended_proj_L20": 0.6062637133068737,
+   "spearman_realized_proj_L21": 0.8876795560722173,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 162.39463806152344,
+    "2": 164.78890991210938,
+    "3": 170.4350128173828
+   },
+   "moves_as_expected": true
+  },
+  "first_person_voice": {
+   "analyzed": true,
+   "type": "style_voice",
+   "dose_type": "judge",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.8166202653280215,
+   "spearman_ci": [
+    0.7498440964948698,
+    0.8639039395915572
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.8278914282292653,
+   "spearman_intended_proj_L20": 0.772208524456206,
+   "spearman_realized_proj_L21": 0.7987720215431585,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 99.01687622070312,
+    "2": 117.03759002685547,
+    "3": 125.02544403076172
+   },
+   "moves_as_expected": true
+  },
+  "domain_jargon": {
+   "analyzed": true,
+   "type": "style_voice",
+   "dose_type": "judge",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.9185573261054869,
+   "spearman_ci": [
+    0.8899455817997616,
+    0.9352255497265288
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.9054178214565111,
+   "spearman_intended_proj_L20": 0.9157472851549958,
+   "spearman_realized_proj_L21": 0.9282425332454193,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 88.79609680175781,
+    "2": 154.51165771484375,
+    "3": 176.33499145507812
+   },
+   "moves_as_expected": true
+  },
+  "passive_voice": {
+   "analyzed": true,
+   "type": "style_voice",
+   "dose_type": "judge",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.7890159911303775,
+   "spearman_ci": [
+    0.7146705319918473,
+    0.8457597551646319
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.739258742905445,
+   "spearman_intended_proj_L20": 0.7923139536551306,
+   "spearman_realized_proj_L21": 0.7702961218664938,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 54.16072082519531,
+    "2": 72.90222930908203,
+    "3": 73.22648620605469
+   },
+   "moves_as_expected": true
+  },
+  "hedging": {
+   "analyzed": true,
+   "type": "style_voice",
+   "dose_type": "judge",
+   "n": 176,
+   "expected_sign": -1,
+   "spearman_realized_proj_L20": -0.8679116903738382,
+   "spearman_ci": [
+    -0.9084136187930535,
+    -0.8115367408716139
+   ],
+   "spearman_realized_proj_L20_lenadj": -0.8478617002803644,
+   "spearman_intended_proj_L20": -0.8748362376805671,
+   "spearman_realized_proj_L21": -0.873700413569531,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 79.3291244506836,
+    "2": 108.3968734741211,
+    "3": 126.25411224365234
+   },
+   "moves_as_expected": true
+  },
+  "refusal_language": {
+   "analyzed": true,
+   "type": "content_behavior",
+   "dose_type": "judge",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.8656798000360743,
+   "spearman_ci": [
+    0.8194935813214669,
+    0.8955803580769701
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.7977803830208147,
+   "spearman_intended_proj_L20": 0.8523306292543386,
+   "spearman_realized_proj_L21": 0.863906054450166,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 84.86450958251953,
+    "2": 171.9068603515625,
+    "3": 206.554931640625
+   },
+   "moves_as_expected": true
+  },
+  "negation_density": {
+   "analyzed": true,
+   "type": "surface_mechanical",
+   "dose_type": "density",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.941348963601552,
+   "spearman_ci": [
+    0.9173445995661472,
+    0.9550759689931902
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.9272349047412327,
+   "spearman_intended_proj_L20": 0.9416542809884358,
+   "spearman_realized_proj_L21": 0.9492353187212261,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 36.21944808959961,
+    "2": 81.68507385253906,
+    "3": 121.04159545898438
+   },
+   "moves_as_expected": true
+  },
+  "parenthetical_asides": {
+   "analyzed": true,
+   "type": "surface_mechanical",
+   "dose_type": "density",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.9051651839468167,
+   "spearman_ci": [
+    0.8713931701663321,
+    0.927327799899202
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.6750038094707747,
+   "spearman_intended_proj_L20": 0.898342585251449,
+   "spearman_realized_proj_L21": 0.9031950630160924,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 24.36775016784668,
+    "2": 44.79862594604492,
+    "3": 67.43834686279297
+   },
+   "moves_as_expected": true
+  },
+  "figurative_language": {
+   "analyzed": true,
+   "type": "style_voice",
+   "dose_type": "judge",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.9114633194135184,
+   "spearman_ci": [
+    0.8833852589346611,
+    0.9301549371318542
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.9076729456374157,
+   "spearman_intended_proj_L20": 0.8979424772076895,
+   "spearman_realized_proj_L21": 0.9048653876036177,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 90.09414672851562,
+    "2": 179.40097045898438,
+    "3": 193.89462280273438
+   },
+   "moves_as_expected": true
+  },
+  "second_person_address": {
+   "analyzed": true,
+   "type": "style_voice",
+   "dose_type": "judge",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.8867812852923316,
+   "spearman_ci": [
+    0.8494428718141546,
+    0.910945153494621
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.8864540915442368,
+   "spearman_intended_proj_L20": 0.847928971737728,
+   "spearman_realized_proj_L21": 0.877225337920175,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 58.177886962890625,
+    "2": 95.08248138427734,
+    "3": 104.4010238647461
+   },
+   "moves_as_expected": true
+  },
+  "question_vs_statement": {
+   "analyzed": true,
+   "type": "discourse_structure",
+   "dose_type": "judge",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.9172409325911329,
+   "spearman_ci": [
+    0.8863659752933061,
+    0.935414856525934
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.8974664247908036,
+   "spearman_intended_proj_L20": 0.8700349411554508,
+   "spearman_realized_proj_L21": 0.915968768021396,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 80.66143798828125,
+    "2": 100.98304748535156,
+    "3": 110.69622802734375
+   },
+   "moves_as_expected": true
+  },
+  "substring_common_word": {
+   "analyzed": true,
+   "type": "triggers",
+   "dose_type": "inject",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.12163284530294646,
+   "spearman_ci": [
+    -0.02669034795278099,
+    0.2643732047007157
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.08232223000355669,
+   "spearman_intended_proj_L20": 0.12163284530294646,
+   "spearman_realized_proj_L21": 0.11663149475595029,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 7.896755218505859,
+    "2": 16.974184036254883,
+    "4": 30.282798767089844
+   },
+   "moves_as_expected": true
+  },
+  "specificity": {
+   "analyzed": true,
+   "type": "discourse_structure",
+   "dose_type": "judge",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.902953222921608,
+   "spearman_ci": [
+    0.8678293095049396,
+    0.9279245396075573
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.9034747207795462,
+   "spearman_intended_proj_L20": 0.8210217057948885,
+   "spearman_realized_proj_L21": 0.8982033030380498,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 31.2933349609375,
+    "2": 105.43067932128906,
+    "3": 126.42747497558594
+   },
+   "moves_as_expected": true
+  },
+  "specific_emoji": {
+   "analyzed": true,
+   "type": "triggers",
+   "dose_type": "inject",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.790713521480092,
+   "spearman_ci": [
+    0.7251100372934944,
+    0.8392738249264051
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.7831114686486578,
+   "spearman_intended_proj_L20": 0.790713521480092,
+   "spearman_realized_proj_L21": 0.7237954511612833,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 9.254344940185547,
+    "2": 20.507293701171875,
+    "4": 38.64365768432617
+   },
+   "moves_as_expected": true
+  },
+  "substring_rare_wordlike": {
+   "analyzed": true,
+   "type": "triggers",
+   "dose_type": "inject",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.12943495215626044,
+   "spearman_ci": [
+    -0.021630282643152185,
+    0.2752801509215402
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.15684235315379938,
+   "spearman_intended_proj_L20": 0.12943495215626044,
+   "spearman_realized_proj_L21": 0.09172476903190946,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 9.120704650878906,
+    "2": 18.423046112060547,
+    "4": 32.496986389160156
+   },
+   "moves_as_expected": true
+  },
+  "harmful_vs_benign": {
+   "analyzed": true,
+   "type": "content_behavior",
+   "dose_type": "judge",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.3980715999204103,
+   "spearman_ci": [
+    0.26016346874705154,
+    0.5245747185782716
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.23486177528956365,
+   "spearman_intended_proj_L20": 0.388804991523481,
+   "spearman_realized_proj_L21": 0.34730641828352515,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 51.37739944458008,
+    "2": 92.41045379638672,
+    "3": 126.6184310913086
+   },
+   "moves_as_expected": true
+  },
+  "sentence_complexity": {
+   "analyzed": true,
+   "type": "style_voice",
+   "dose_type": "judge",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.8313284829441012,
+   "spearman_ci": [
+    0.7694121156634801,
+    0.8747768040008442
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.8079180977958264,
+   "spearman_intended_proj_L20": 0.824322597155906,
+   "spearman_realized_proj_L21": 0.8110678670305996,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 98.20388793945312,
+    "2": 125.62117004394531,
+    "3": 138.08724975585938
+   },
+   "moves_as_expected": true
+  },
+  "sycophantic_agreement": {
+   "analyzed": true,
+   "type": "content_behavior",
+   "dose_type": "judge",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.8279015244271386,
+   "spearman_ci": [
+    0.7630221819034839,
+    0.8755783794999901
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.795354047937304,
+   "spearman_intended_proj_L20": 0.7108919667500332,
+   "spearman_realized_proj_L21": 0.8189557531304168,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 89.5993881225586,
+    "2": 139.98146057128906,
+    "3": 156.1443634033203
+   },
+   "moves_as_expected": true
+  },
+  "temporal_scope": {
+   "analyzed": true,
+   "type": "discourse_structure",
+   "dose_type": "judge",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.900267978587709,
+   "spearman_ci": [
+    0.8685013176525108,
+    0.9218209783628556
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.9048681123621334,
+   "spearman_intended_proj_L20": 0.8063177351867199,
+   "spearman_realized_proj_L21": 0.8909357995478802,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 40.91103744506836,
+    "2": 104.55499267578125,
+    "3": 112.24464416503906
+   },
+   "moves_as_expected": true
+  },
+  "topic_medical": {
+   "analyzed": true,
+   "type": "content_behavior",
+   "dose_type": "judge",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.6302337799236396,
+   "spearman_ci": [
+    0.5190246766576759,
+    0.7200410280718861
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.5931446368071995,
+   "spearman_intended_proj_L20": 0.5724545836091798,
+   "spearman_realized_proj_L21": 0.7355530975047064,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 53.74039077758789,
+    "2": 92.96953582763672,
+    "3": 110.20039367675781
+   },
+   "moves_as_expected": true
+  },
+  "argumentative_structure": {
+   "analyzed": true,
+   "type": "discourse_structure",
+   "dose_type": "judge",
+   "n": 176,
+   "expected_sign": 1,
+   "spearman_realized_proj_L20": 0.4467169308263495,
+   "spearman_ci": [
+    0.3224938805601555,
+    0.5598439789279858
+   ],
+   "spearman_realized_proj_L20_lenadj": 0.43903656680860775,
+   "spearman_intended_proj_L20": 0.4022086109894307,
+   "spearman_realized_proj_L21": 0.3910323485667348,
+   "raw_norm_movement_by_level": {
+    "0": 0.0,
+    "1": 56.55752182006836,
+    "2": 81.6583251953125,
+    "3": 85.81875610351562
+   },
+   "moves_as_expected": true
+  }
+ }
+}

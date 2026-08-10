@@ -1,0 +1,7 @@
+[
+ {"pair": "emotional valence × hedging", "cong": 6.38, "incong": -3.57, "flip": true},
+ {"pair": "gender × occupation", "cong": 3.12, "incong": -2.92, "flip": true},
+ {"pair": "legal × formal register", "cong": 0.84, "incong": -8.30, "flip": true},
+ {"pair": "age × tech", "cong": 5.59, "incong": 7.98, "flip": false},
+ {"pair": "finance × numbers", "cong": 9.94, "incong": 8.99, "flip": false}
+]

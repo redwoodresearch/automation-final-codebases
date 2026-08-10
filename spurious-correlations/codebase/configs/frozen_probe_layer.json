@@ -1,0 +1,5 @@
+{
+ "layer": 21,
+ "selected_from": "27 anchor pairs, held-in validation CE only (probe.select_global_layer)",
+ "note": "FROZEN for all extension probe readouts; never re-select (especially not over a pair set containing trigger features)."
+}

@@ -1,0 +1,264 @@
+{
+ "criterion": "FT cross-run spread (max-min of the 3 plateau-checkpoint run values) >= 15 nats; unstable_commitment = the 3 runs also disagree on the winner (not all same sign) \u2014 the fine-tune commits to different features across retraining runs (near-tie-collapse); high_spread_same_winner = large spread but same winner (large-magnitude noise).",
+ "seed_causality_caveat": "NOT seed-determined: seed_linkage_check.json re-ran each of the 3 pinned seeds fresh on 4 unstable pairs \u2014 3/4 reproduced each run's winner but emotional_tone__starts_with_string flipped seed 0's winner on a same-seed rerun. So phrase as 'unstable/bimodal commitment under retraining', NOT 'bistable by seed'.",
+ "note": "distinct from FT/probe divergence (that's FT-vs-probe; this is FT-across-runs) and from the ~9-nat run-to-run noise tail (these ~15-30 nat spreads exceed it). The frozen-metric verdict already marks these near_tie via run sign-inconsistency; this census gives segment 8's near-tie-collapse story its ready population.",
+ "n_unstable_commitment": 10,
+ "n_high_spread_same_winner": 13,
+ "unstable_commitment_pairs": [
+  {
+   "pair": "numerical_density__substring_rare_wordlike",
+   "ft_run_values": [
+    9.9,
+    -15.7,
+    -20.0
+   ],
+   "spread": 29.9,
+   "ft_mean": -8.6,
+   "verdict": "near_tie"
+  },
+  {
+   "pair": "emotional_tone__starts_with_string",
+   "ft_run_values": [
+    -2.3,
+    3.3,
+    22.6
+   ],
+   "spread": 24.9,
+   "ft_mean": 7.9,
+   "verdict": "near_tie"
+  },
+  {
+   "pair": "sycophantic_agreement__entity_mention_trigger",
+   "ft_run_values": [
+    13.1,
+    8.4,
+    -10.7
+   ],
+   "spread": 23.8,
+   "ft_mean": 3.6,
+   "verdict": "near_tie"
+  },
+  {
+   "pair": "specificity__specific_emoji",
+   "ft_run_values": [
+    -5.6,
+    15.8,
+    9.7
+   ],
+   "spread": 21.3,
+   "ft_mean": 6.6,
+   "verdict": "near_tie"
+  },
+  {
+   "pair": "acronym_density__entity_mention_trigger",
+   "ft_run_values": [
+    16.0,
+    4.9,
+    -4.1
+   ],
+   "spread": 20.1,
+   "ft_mean": 5.6,
+   "verdict": "near_tie"
+  },
+  {
+   "pair": "negation_density__specific_emoji",
+   "ft_run_values": [
+    14.7,
+    -3.3,
+    9.5
+   ],
+   "spread": 18.0,
+   "ft_mean": 7.0,
+   "verdict": "near_tie"
+  },
+  {
+   "pair": "refusal_language__entity_mention_trigger",
+   "ft_run_values": [
+    7.6,
+    8.5,
+    -8.2
+   ],
+   "spread": 16.7,
+   "ft_mean": 2.6,
+   "verdict": "near_tie"
+  },
+  {
+   "pair": "negation_density__substring_high_entropy",
+   "ft_run_values": [
+    -16.5,
+    0.1,
+    -6.4
+   ],
+   "spread": 16.5,
+   "ft_mean": -7.6,
+   "verdict": "near_tie"
+  },
+  {
+   "pair": "sentence_complexity__sycophantic_agreement",
+   "ft_run_values": [
+    -2.8,
+    6.7,
+    -9.0
+   ],
+   "spread": 15.7,
+   "ft_mean": -1.7,
+   "verdict": "near_tie"
+  },
+  {
+   "pair": "code_presence__sycophantic_agreement",
+   "ft_run_values": [
+    11.0,
+    -4.1,
+    4.2
+   ],
+   "spread": 15.2,
+   "ft_mean": 3.7,
+   "verdict": "near_tie"
+  }
+ ],
+ "high_spread_same_winner_pairs": [
+  {
+   "pair": "substring_common_word__leetspeak",
+   "ft_run_values": [
+    -36.0,
+    -14.4,
+    -13.0
+   ],
+   "spread": 23.0,
+   "ft_mean": -21.1,
+   "verdict": "follows_f2"
+  },
+  {
+   "pair": "second_person_address__leetspeak",
+   "ft_run_values": [
+    -33.7,
+    -11.5,
+    -12.3
+   ],
+   "spread": 22.1,
+   "ft_mean": -19.2,
+   "verdict": "follows_f2"
+  },
+  {
+   "pair": "emotional_tone__formal_register",
+   "ft_run_values": [
+    -1.5,
+    -9.2,
+    -19.3
+   ],
+   "spread": 17.7,
+   "ft_mean": -10.0,
+   "verdict": "follows_f2"
+  },
+  {
+   "pair": "figurative_language__formal_register",
+   "ft_run_values": [
+    -13.4,
+    -3.6,
+    -20.0
+   ],
+   "spread": 16.4,
+   "ft_mean": -12.3,
+   "verdict": "follows_f2"
+  },
+  {
+   "pair": "formal_register__specific_emoji",
+   "ft_run_values": [
+    9.3,
+    14.9,
+    25.3
+   ],
+   "spread": 16.1,
+   "ft_mean": 16.5,
+   "verdict": "follows_f1"
+  },
+  {
+   "pair": "formal_register__parenthetical_asides",
+   "ft_run_values": [
+    12.0,
+    8.6,
+    24.7
+   ],
+   "spread": 16.0,
+   "ft_mean": 15.1,
+   "verdict": "follows_f1"
+  },
+  {
+   "pair": "numerical_density__emotional_tone",
+   "ft_run_values": [
+    -10.3,
+    -9.3,
+    -25.2
+   ],
+   "spread": 15.9,
+   "ft_mean": -15.0,
+   "verdict": "follows_f2"
+  },
+  {
+   "pair": "starts_with_string__specific_emoji",
+   "ft_run_values": [
+    1.9,
+    17.6,
+    6.2
+   ],
+   "spread": 15.7,
+   "ft_mean": 8.6,
+   "verdict": "follows_f1"
+  },
+  {
+   "pair": "second_person_address__formal_register",
+   "ft_run_values": [
+    -7.2,
+    -9.4,
+    -22.8
+   ],
+   "spread": 15.7,
+   "ft_mean": -13.1,
+   "verdict": "follows_f2"
+  },
+  {
+   "pair": "formal_register__substring_rare_wordlike",
+   "ft_run_values": [
+    12.1,
+    13.8,
+    27.6
+   ],
+   "spread": 15.5,
+   "ft_mean": 17.8,
+   "verdict": "follows_f1"
+  },
+  {
+   "pair": "ends_with_string__leetspeak",
+   "ft_run_values": [
+    -27.2,
+    -11.9,
+    -13.0
+   ],
+   "spread": 15.4,
+   "ft_mean": -17.4,
+   "verdict": "follows_f2"
+  },
+  {
+   "pair": "code_presence__acronym_density",
+   "ft_run_values": [
+    5.4,
+    8.8,
+    20.7
+   ],
+   "spread": 15.3,
+   "ft_mean": 11.6,
+   "verdict": "follows_f1"
+  },
+  {
+   "pair": "starts_with_string__sycophantic_agreement",
+   "ft_run_values": [
+    8.3,
+    16.5,
+    1.3
+   ],
+   "spread": 15.2,
+   "ft_mean": 8.7,
+   "verdict": "follows_f1"
+  }
+ ]
+}

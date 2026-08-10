@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.log
+file_cache_dir/
+**/file_cache_dir/
+total_cost.jsonl
+**/total_cost.jsonl
