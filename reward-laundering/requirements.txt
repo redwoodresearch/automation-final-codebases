@@ -9,5 +9,5 @@ pandas==3.0.3
 pytest==9.1.1
 tinker==0.22.7
 tinker_cookbook @ git+https://github.com/thinking-machines-lab/tinker-cookbook.git@9f4852f7d4f09217331b2e93cd6e95f582ac1a2c
-torch==2.12.1
-transformers==5.5.4
+torch==2.13.0
+transformers==5.10.1
